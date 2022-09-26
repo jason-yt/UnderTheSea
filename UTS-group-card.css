@@ -1,0 +1,107 @@
+.group-card{
+    margin: 10px;
+    width: 400px;
+    box-shadow:2px 3px 7px 1px rgba(49, 49, 49, 0.3);
+    border-radius: 8px;
+    background: #fff;
+    position: relative;
+}
+.group-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px 8px 0px 0px;
+    margin-bottom:0px ;
+    vertical-align: bottom;
+}
+.group-hover{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px 8px 0px 0px;
+    background: rgba(0, 13, 35, 0.5);
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition:  opacity 0.5s;
+}
+.group-card>.group-hover:hover{
+    opacity:1 ;
+    transition:  opacity 0.5s;
+}
+.group-hover p{
+    
+    padding: 5px;
+    width: 100px;
+    border:1px solid #fff;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.group-card-info{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+.group-card-title,.group-card-license,.group-card-people{
+    padding:5px 5px;
+    display: flex;
+    /* margin: 0px 20px; */
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.group-card-info p{
+    font-size: 14px;
+    color: rgb(131, 131, 131);
+}
+.group-card-title{
+    width: 130px;
+}
+.schedule {
+    /* border:1px solid #194d73; */
+    width: 100px;
+    height: 4px;
+    background-color: #A0DFF9;
+    border-radius: 5px;
+}
+.schedule-line{
+    /* border:1px solid #194d73; */
+    width: 80px;
+    height: 4px;
+    background-color: #154770;
+    border-radius: 5px;
+}
+.group-card-title h3{
+    font-size: 22px;
+    font-weight: 450;
+    color: black;
+}
+.group-card-title p{
+    font-size: 10px;
+    color: rgb(49,49, 49);
+}
+.group-card-people p:last-child{
+    
+    font-size: 50px;
+    font-weight:500 ;
+    color: rgb(49,49, 49);
+}
+.group-card-people p:last-child span{
+    font-size: 15px;
+    margin-left: -10px ;
+}
+.license-tag{
+    width:fit-content;
+    background-color:#154770;
+    color: #fff;
+    padding: 5px;
+    font-size: 10px;
+    margin: 3px 0px;
+}

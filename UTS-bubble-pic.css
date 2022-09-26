@@ -1,0 +1,85 @@
+.bubble-pic{
+    width: 180px;
+    height: 180px;
+    border: 0.5px solid #fff;
+    box-shadow:2px 3px 7px 1px rgba(4, 101, 162, 0.3);
+    border-radius: 500px;
+    position: relative;
+    overflow: hidden;  
+    transition: transform 1s;
+}
+
+.bubble-pic:hover{
+    transform: scale(150%);
+    transition: transform 1s ;
+}
+.bubble-pic:hover img{
+    transform: scale(120%);
+    transition: transform 1ss;
+}
+.bubble-pic:hover .bubble{
+    opacity: 0.2;
+    transition: opacity 1s;
+}
+
+.bubble-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 100px;
+    transition: transform 1s;
+     
+}
+
+.bubble{
+    box-shadow:15px 10px 35px 15px rgba(255, 255, 255,.8 ) inset;
+    width: 180px;
+    height: 180px;
+    background-color:rgb(10, 140, 221);
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:.7;
+    transition: opacity 1s;
+}
+
+.bubble-pic:hover .bubble-text{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.bubble-text{
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    color: #fff;
+    text-shadow:1px 1px 1px rgb(2, 27, 43,.4);
+    position: absolute;
+    top: 80px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.bubble-a,.bubble-a>.bubble{
+    width: 110px;
+    height: 110px;
+}
+.bubble-b,.bubble-b>.bubble{
+    width: 150px;
+    height: 150px;
+}
+
+.bubble-d,.bubble-d>.bubble{
+    width: 130px;
+    height: 130px;
+}
+.bubble-e,.bubble-e>.bubble{
+    width: 120px;
+    height: 120px;
+}
+
+
