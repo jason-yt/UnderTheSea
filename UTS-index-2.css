@@ -305,7 +305,7 @@
         color: #0f1b33;
     }
     .main-nav-btn:hover >.sub-menu a:hover{
-        color: #17a0ca
+        color: #e4f2f7
     }
  }
 
@@ -908,7 +908,7 @@ position: relative;
     top: -15px;
     left: -15px;
     border-radius: 10px;
-    box-shadow: 2px 3px 8px 5px rgb(1, 45, 72,.15);
+    /* box-shadow: 2px 3px 8px 5px rgb(1, 45, 72,.15); */
 }
 
 
@@ -916,18 +916,27 @@ position: relative;
     display: flex;
     align-items: center;
     position: relative;
+    /* margin-left: ; */
     
 }
+
+.group-card{
+    margin-left: 150px;
+}
+.group-card-1{
+    margin-right: 130px;
+}
+
 .group-card-part>a{
     text-decoration: none;
 }
 .group-card-part>i{
     position: absolute;
-    right: -15%
+    right:0%
 }
 .group-card-part>.fa-circle-chevron-left{
     
-    left: -15%;
+    left: 5%;
 }
 
 
