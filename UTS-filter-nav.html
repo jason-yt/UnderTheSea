@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="UTS-filter-nav.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="filter-nav">
+        <nav class="nav-bar">
+            <div class="select-list">
+                <label for="diving-select">潛水方式</label>
+                 <select name="diving" id="diving-select" >
+                        <option value="">請選擇潛水方式</option>
+                        <option value="freediving">自由潛水</option>
+                        <option value="scubadiving">水肺潛水</option>
+                </select>
+            </div>
+            <ul class="filter-ul">
+                <li class="filter-li">活動方式</li>
+                <li class="filter-li"><a href="#">岸潛</a></li>
+                <li class="filter-li"><a href="#">船潛</a></li>
+                <li class="filter-li"><a href="#">泳池</a></li>
+                <li class="filter-li"><button>立即找潛團</button></li>
+                <li class="filter-li">
+                    <label for="filter-switch">
+                        <i class="fa-solid fa-filter"></i>
+                    </label>
+                    <input type="checkbox" id="filter-switch">
+                    <div class="filter-menu">
+                        <div class="filtr-title">   
+                            <p>篩選條件</p>
+                        </div>
+                     
+                        <div class="filter-select-num">
+                            <div class="filter-select num-people">
+                                <label for="num-people">揪團人數</label>
+                                <select name="num-people" id="num-people">
+                                    <option value="">選擇揪團人數</option>
+                                    <option value="s">1-5人</option>
+                                    <option value="m">6-10人</option>
+                                    <option value="l">11-24人</option>
+                                    <option value="xl">25人以上</option>
+                                </select>
+                            </div>
+                            <div class="filter-select num-day">
+                                <label for="num-day">行程天數</label>
+                                <select name="num-day" id="num-day">
+                                    <option value="">選擇行程天數</option>
+                                    <option value="s">1-3天</option>
+                                    <option value="m">4-7天</option>
+                                    <option value="l">8-24天</option>
+                                    <option value="xl">25天以上</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- <div class="filter-select date">
+                            時間
+                            <input type="date">
+                        </div> -->
+                        <div class="filter-select travel-type">
+                            <div class="in-checkbox">
+                                <input type="checkbox" id="travel-type-in" name="travel-type-in"
+                                checked>
+                                 <label for="travel-type-in">國內</label>
+                            </div>
+                            <div class="out-checkbox">
+                                <input type="checkbox" id="travel-type-out" name="travel-type-out"
+                             checked>
+                              <label for="travel-type-out">國外</label>
+                            </div>
+                         
+                             
+                        </div> 
+                        <div class="filter-select cocah">
+                            <input type="checkbox" id="cocah" name="cocah"
+                            checked>
+                             <label for="cocah">需要教練/導潛</label>
+                        </div> 
+                        <div class="filter-submit">
+                            <input type="submit" value="確定">
+                        </div>
+
+
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+</body>
+</html>
