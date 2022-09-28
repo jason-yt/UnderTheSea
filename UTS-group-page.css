@@ -60,10 +60,11 @@
 .group-mian-head>h2{
     color: rgb(255, 255, 255);
     font-weight: 650;
-    font-size: 40px;
+    font-size: 30px;
     position: absolute;
-    top: 120px;
-    left: 44.5%;
+    bottom:290px;
+    left: 25.2%;
+    width: 50.5%;
     padding-bottom: 8px;
     border-bottom: 1.8px solid  rgb(255, 255, 255);
     z-index:6;
@@ -433,12 +434,7 @@ margin: auto;
     bottom:  -30px;
     /* top: 335px; */
 }
-.group-featured-pic a>p{
-    /* width: 1000px; */
-    
-    
 
-}
 
 .group-featured-pic a:last-child{
     /* display: block; */

@@ -437,7 +437,7 @@
     position: absolute;
     right: 0;
     top: 320px;
-    padding: 0 10px;
+    padding: 0 10px 3px;
     font-weight:bold;
     font-size: 30px;
     background-color: #fff;
@@ -787,9 +787,9 @@
     letter-spacing:1px;
     word-spacing: 20px; 
     -webkit-text-stroke:1.5px  rgba(255, 255, 255, 0.8);
-        
-      
 }
+
+
 .bubble-pic-part{
     display: flex;
     justify-content: space-between;
