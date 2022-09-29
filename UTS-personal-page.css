@@ -173,10 +173,6 @@ header{
     position: relative;
    
 }
-/* .personal-info-box>p:first-child{
-    text-align: center;
-    line-height: 50px;
-} */
 
 .info-title{
     font-size: 12px;
@@ -327,8 +323,7 @@ width: 35%;
 }
 .depth-pic-info{
     display: flex;
-/* justify-content: space-between; */
-/* align-items: center; */
+
 }
 
 .active-group{
