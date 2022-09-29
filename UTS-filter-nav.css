@@ -24,15 +24,36 @@
     flex-grow: 5;
     max-width: 100%;
 }
-
 .filter-ul>.filter-li{
     flex-grow: 2;
     text-align: center;
     line-height: 40px;
     width: 20px;
-    background-color: rgb(240, 238, 238,.3);
+ 
     border-radius: 5px;
     height: 40px;
+}
+
+.filter-ul>.filter-li>label{
+
+    text-align: center;
+    line-height: 40px;
+    padding: 10px 50px;
+
+    background-color: rgb(240, 238, 238,.3);
+    border-radius: 5px;
+
+}
+
+.filter-ul>.filter-li:last-child>label{
+
+    text-align: center;
+    line-height: 0px;
+    padding: 0px 0px;
+
+    background-color: transparent;
+    border-radius: 0px;
+
 }
 .filter-ul>li:last-child{
     flex-grow: 1;
@@ -41,12 +62,12 @@
 .filter-ul>li:first-child{
     background-color:transparent;
 }
-.filter-ul>li:hover{
+/* .filter-ul>li:hover{
 background-color: rgba(49, 176, 235, 0.6);
-}
-.filter-ul>li:first-child,.filter-ul>li:last-child:hover{
+} */
+/* .filter-ul>li:first-child,.filter-ul>li:last-child:hover{
     background-color:transparent;
-}
+} */
 
 .filter-ul>li a{
     text-decoration: none;
@@ -54,16 +75,16 @@ background-color: rgba(49, 176, 235, 0.6);
     color: #fff;
 
 }
-.filter-ul>.filter-li:nth-child(5){
+.filter-ul>.filter-li:nth-child(8){
     background-color:transparent;
 }
 .filter-li>button{
-    background-color: #0390e7;
+    background-color: #ffffff;
     border-radius: 4px;
     border: 0;
     box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
     box-sizing: border-box;
-    color: #fff;
+    color:#09264c;
     cursor: pointer;
     display: inherit;
     font-size: 15px;
@@ -85,8 +106,9 @@ background-color: rgba(49, 176, 235, 0.6);
 }
 
 .filter-li>button:hover {
-    background-color: #065dd8;
-    transform: scale(102%)
+    background-color: #c3d6e4;;
+    transform: scale(102%);
+
   }
 
 
@@ -232,3 +254,21 @@ select,.filter-select :focus{
 #filter-switch{
     display: none;
 }
+
+#filter-btn-1,#filter-btn-2,#filter-btn-3{
+    display: none;
+}
+#filter-btn-1:checked+li>label{
+background-color: #0376d3;
+color: #fff;
+}
+
+#filter-btn-2:checked+li>label{
+    background-color: #0376d3;
+    color: #fff;
+}
+#filter-btn-3:checked+li>label{
+    background-color: #0376d3;
+    color: #fff;
+}
+
