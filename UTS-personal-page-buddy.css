@@ -206,9 +206,33 @@ header{
     color: #545556;
 
 }
+.diving-type{
+    /* position: absolute; */
+    /* bottom:20px; */
+    /* right: 0; */
+    /* width:80%; */
+    height: 30px;
+    color: #fff;
+    background-color: #0F1B33;
+    z-index: 2;
+    font-family: 'Quicksilver', sans-serif;
+    /* writing-mode:vertical-rl; */
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0px 25%;
+    padding: 5px 15px;
+    margin-bottom:10px ;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
 .personal-btn{
     display: flex;
     margin: 0px 25%;
+}
+.personal-btn a{
+    text-decoration: none;
 }
 .follow-btn,.chat-btn{
     border-radius: 5px;
@@ -223,6 +247,7 @@ header{
     align-items: center;
     gap: 10px;
     cursor:pointer;
+    text-decoration: none;
 
 }
 .follow-btn{
