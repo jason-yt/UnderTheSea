@@ -452,3 +452,9 @@ footer{
     padding-bottom: 25px;
 }
 
+.col>a{
+    text-decoration: none;
+}
+.fa-circle-chevron-right{
+    color: #fff;
+}

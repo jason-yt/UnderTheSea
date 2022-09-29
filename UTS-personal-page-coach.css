@@ -87,7 +87,12 @@ header{
     top: 20px;
     color: #fff;
     z-index: 10;
+    
 }
+.fa-chevron-left{
+   font-size: 30px;
+}
+
 .fa-chevron-left{
     font-size: 30px;
 }
