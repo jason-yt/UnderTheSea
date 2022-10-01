@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/quicksilver" rel="stylesheet">
-    <link rel="stylesheet" href="UTS-free-page.css">
+    <link rel="stylesheet" href="UTS-headr.css">
+    <link rel="stylesheet" href="UTS-scuba-page.css">
     <link rel="icon" href="logo.ico" type="image/x-icon" >
     <title>Under The Sea</title>
     <style>
@@ -47,7 +48,7 @@
                        
                     </form>
                     <ul>
-                        <li class="main-nav-btn">
+                        <li class="main-nav-btn free-btn">
                             <a href="UTS-free-page.html">自由潛水</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-btn">
@@ -84,7 +85,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="main-nav-btn">
+                        <li class="main-nav-btn scuba-btn">
                             <a href="UTS-scuba-page.html">水肺潛水</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-btn">
@@ -121,8 +122,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="main-nav-btn group-btn">
-                            <a href="#">揪團潛水</a>
+                        <li class="main-nav-btn">
+                            <a href="UTS-group-page.html">揪團潛水</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-btn">
                                     <a href="#">
@@ -289,10 +290,35 @@
         </div>
      
     </header>
-  
-
-
-
-   
+    <div class="head-main-cover">
+        <input type="radio" id="coach" name="dive-switch">
+        <input type="radio" id="buddy" name="dive-switch">
+        <div class="cover-bg">
+           
+            <label for="buddy" class="dive-btn">
+                潛伴
+            </label>
+            
+            <label for="coach" class="dive-btn">
+                教練
+            </label>
+            <div class="cover-search">
+                <input type="search" class="cover-search-bar">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <h2 class="cover-title">立即找到你的</h2> 
+            <div class="cover-text"><p>潛伴</p> <p>教練</p><p>水肺潛水</p></div>
+           
+            <img class="circle-pic" src="pic/circle.png" alt="circle">
+            <img class="diving-woman-pic" src="pic/scuba-man.png" alt="scuba-man"> 
+            <div class="circle-bg"></div>  
+            <div class="circle-bg-1"></div>
+            <div class="circle-bg-2"></div>             
+            <div class="circle-bg-3"></div> 
+            <div class="circle-bg-4"></div>             
+        </div>
+        </div>
+    </div>
+    
 </body>
 </html>

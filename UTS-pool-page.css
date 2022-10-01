@@ -82,8 +82,8 @@
 
 .pool-main-cotent>h2{
     font-size: 30px;
-    margin-left: 21.3%;
-    color:#fff;
+    margin-left: 19.3%;
+    color: #0f1b33;
     margin-bottom: 50px;
     margin-top: 120px;
 }
@@ -92,7 +92,8 @@
 .pool-main-cotent{
     position: relative;
     /* top: 100px; */
-    left: -50px;
+    /* left: -50px; */
+    margin: auto;
 }
 .pool-main-head{
     min-width: 100%;
@@ -111,6 +112,6 @@ background-size: cover;
 
 footer{
     margin-top: 1350px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     padding-bottom:50px ;
 }
