@@ -87,7 +87,7 @@
     
 }
 .class-info{
-    width: 70%;
+    max-width: 70%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -101,20 +101,24 @@
     height: 100%;
 }
 
-.class-info>a:first-child>.coach-class{
+.class-info>a>.coach-class{
+   
     width: 900px;
     height: 300px;
     margin: 10px;
     position: relative;
-   
+    max-width: 1200px;
 }
-.class-info>a>.coach-class{
+.class-sec>a>.coach-class{
     width: 270px;
     position: relative;
    
 }
 
 
+.class-sec{
+    display: flex;
+}
 .class-info a{
    
     position: relative;
@@ -237,7 +241,6 @@ a:nth-child(4)>.coach-class>.class-tag{
     margin-left: 25px;
     color: #08294a;
 }
-
 
 
 
@@ -705,7 +708,7 @@ footer{
 
     text-align: center;
     line-height: 40px;
-    padding: 10px 48px;
+    padding: 10px 30px;
 
     background-color: rgb(240, 238, 238,.3);
     border-radius: 5px;
@@ -715,12 +718,30 @@ footer{
 
     text-align: center;
     line-height: 40px;
-    padding: 10px 48px;
+    padding: 10px 30px;
 
     background-color: rgb(240, 238, 238,.3);
     border-radius: 5px;
 
 }
 .filter-nav{
-    margin:120px 120px 80px 120px ;
+    margin: auto;
+    width: 100%;
+}
+.nav-bar{
+    margin: auto;
+    width: 100%;
+}
+
+
+
+.filter-ul>li:nth-child(7)>label{
+
+    text-align: center;
+    line-height: 40px;
+    padding: 10px 30px;
+    
+    background-color: rgb(240, 238, 238,.3);
+    border-radius: 5px;
+
 }
