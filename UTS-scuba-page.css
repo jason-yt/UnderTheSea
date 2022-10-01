@@ -255,4 +255,13 @@
     border-radius: 250px;
 }
 
+footer{
+    background-image: url(pic/footer-bg.png);
+        margin-top: 0px;
+        padding-top: 180px;
+        padding-bottom:20px ;
+        background-size: cover;
+    }
+    
+    
 
