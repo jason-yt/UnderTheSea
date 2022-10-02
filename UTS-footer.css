@@ -1,3 +1,4 @@
+
 .footer-nav{
     display: flex;
     justify-content: center;
@@ -9,7 +10,10 @@
     position: relative;
     z-index: 1;
     margin: auto;
+
 }
+
+
 .footer-item>li:hover a{
     color: #f6fafc;
     border-bottom: 1px solid #f6fafc;;
@@ -21,6 +25,7 @@
     font-weight: 300;
     display: inline-block;
     padding: 17px 0px 3px;
+    border-bottom: 1px solid transparent;;
 
 }
 .footer-item h2{
@@ -46,4 +51,5 @@
     position: relative;
     margin: auto;
     opacity: .3;
+    padding-bottom: 30px;
 }

@@ -54,6 +54,9 @@
 .main-nav-btn a:hover{
     color: #fff;
 }
+/* .main-nav-btn a:focus{
+    color: #fff;
+} */
 .sub-menu{
     display: none;
 }

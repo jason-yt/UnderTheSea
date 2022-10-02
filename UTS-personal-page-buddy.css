@@ -410,7 +410,7 @@ width: 35%;
 footer{
     margin-top: 0px;
     padding-top:50px ;
-    padding-bottom: 25px;
+
 }
 #main-body-switch:checked+.personal-main-conent>footer{
     margin-top: 80px;
