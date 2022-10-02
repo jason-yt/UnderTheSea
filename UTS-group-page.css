@@ -402,7 +402,7 @@ margin: auto;
     height: 100%;
     vertical-align: middle;
     border-radius: 10px;
-
+    box-shadow: 1px 2px 5px rgba(1, 33, 59, 0.55);
 }
 
 .featured-pic-text p{

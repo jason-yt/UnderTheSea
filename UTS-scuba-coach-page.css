@@ -141,6 +141,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+    box-shadow: 1px 2px 5px rgba(1, 33, 59, 0.55);
 }
 
 .coach-class h2{
@@ -220,6 +221,7 @@ a:nth-child(4)>.coach-class>.class-tag{
 .rank-list{
     margin-bottom: 40px;
     margin-left: 20px;
+    box-shadow: 1px 2px 5px rgba(1, 33, 59, 0.55);
 }
 .new-coach>.rank-list{
     background-color: rgb(30, 80, 134);
