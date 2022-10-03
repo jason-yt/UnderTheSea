@@ -206,7 +206,7 @@ header{
     color: #fff;
     background-color: #0F1B33;
     z-index: 2;
-    font-family: 'Quicksilver', sans-serif;
+    font-family: 'Quicksilver','Roboto Flex', sans-serif;
     /* writing-mode:vertical-rl; */
     font-size: 25px;
     line-height: 30px;
