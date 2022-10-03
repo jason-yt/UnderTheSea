@@ -110,6 +110,13 @@ background-size: cover;
 
 }
 
+.pool-ul{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+
 footer{
     margin-top: 1350px;
     /* margin-left: 100px; */
