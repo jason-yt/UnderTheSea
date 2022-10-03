@@ -350,8 +350,12 @@ margin: auto;
 .filter-menu{
     z-index: 50;
 }
+.group-section{
+    max-width: 1200px;
+    margin: auto;
+}
 .group-section>h2{
-    margin-left: 8%;
+  
     font-size:25px;
     margin-bottom: -30px;
     margin-top: 80px;

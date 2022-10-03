@@ -1,17 +1,22 @@
 .pool-nav{
     position: relative;
     top: 0;
-
+    max-width: 1200px;
+    margin: auto;
 }
 .pool-ul{
     display: flex;
-    justify-content: center;
-    /* margin: auto; */
+
+   margin: auto;
     position: relative;
+    width: 880px;
+    height: 100%;
 }
 .pool-li{
+    position: relative;
+}
+.sub-list{
     position: absolute;
-
 }
 .pool-li>label>p{
     position: relative;
@@ -24,13 +29,9 @@
     border-radius: 5px 5px 0px 0px;
     padding: 10px 15px;
     top: 10px;
-    left: -8px;
+    left: 3px;
     cursor: pointer;
     
-}
-.pool-li:nth-child(3)>label>p{
-   
-    left: -26px;
 }
 .pool-li:nth-child(1)>label>p{
     padding: 15px 20px;
@@ -38,17 +39,13 @@
     top: 0px;
     left: 0px;
 }
-.pool-li:nth-child(1){
-    left: 280px
+
+
+.pool-li:nth-child(3)>label>p{
+ 
+    left: 6px;
 }
-.pool-li:nth-child(2){
-    left: 380px;
-    /* border-left:1px solid #fff ; */
-}
-.pool-li:nth-child(3){
-    left: 480px;
-    /* border-left:1px solid #fff ; */
-}
+
 .sub-item{
     margin: auto;
     margin-top: 20px;
@@ -195,12 +192,12 @@
 
 .pool-li:nth-child(2)>.sub-list{
     display: none;
-    margin-left:-100px ;
+    margin-left:-80px ;
 }
 
 .pool-li:nth-child(3)>.sub-list{
     display: none;
-    margin-left:-200px ;
+    margin-left:-160px ;
 }
 
 
@@ -248,13 +245,13 @@
     background-color: rgb(2, 86, 135);
     padding: 15px 20px;
     top: 0;
-    left: -18px;
+    /* left: -18px; */
 }
 #location-switch-2:checked+#location-switch-1+.pool-ul>.pool-li:nth-child(3)>label>p{
     background-color: rgb(39, 170, 245);
     padding: 10px 15px;
     top: 10px;
-    left: -26px;
+    /* left: -26px; */
 }
 #location-switch-3:checked+#location-switch-2+#location-switch-1+.pool-ul>.pool-li:nth-child(1)>label>p{
     background-color: rgb(39, 170, 245);
@@ -265,11 +262,11 @@
     background-color: rgb(39, 170, 245);
     padding: 10px 15px;
     top: 10px;
-    left: -18px;
+    /* left: -18px; */
 }
 #location-switch-3:checked+#location-switch-2+#location-switch-1+.pool-ul>.pool-li:nth-child(3)>label>p{
     background-color: rgb(2, 86, 135);
     padding: 15px 20px;
     top: 0;
-    left: -36px;
+    /* left: -36px; */
 }
