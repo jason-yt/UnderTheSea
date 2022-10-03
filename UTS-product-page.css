@@ -59,6 +59,7 @@
 .product-main-head{
     position: relative;
     top: 79px;
+    margin-bottom: 180px;
 }
 .product-main-title{
     position: absolute;
@@ -88,6 +89,7 @@
     width:200px;
     margin: 20px;
     position: relative;
+
 }
 .product-item-in-1{
     height: 50%;
@@ -100,6 +102,7 @@
     height: 100%;
     overflow: hidden;
     border-radius: 8px;
+
     
 }
 .product-item img{
@@ -133,7 +136,9 @@
     margin: auto;
 }
 .product-group{
-    width: 100%;
+    width: 1200px;
+   
+    margin: auto;
     margin-bottom: 100px;
 }
 .product-group h2{
@@ -142,7 +147,7 @@
     font-weight: 600;
     margin-top: 100px;
     margin-bottom: 30px;
-    margin-left: 8%;
+
 }
 .product-item-list{
     width: 1200px;

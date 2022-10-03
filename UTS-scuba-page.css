@@ -41,6 +41,7 @@
 }
 
 
+
 .uts-header{
     position: sticky;
     top: 0;
@@ -58,7 +59,8 @@
 
 .cover-bg-main{
     width: 50%;
-    margin-left:100px;
+
+    margin-left:8%;
 }
 .cover-bg-pic{
     width: 50%;
@@ -266,10 +268,215 @@
     border-radius: 250px;
 }
 footer{
-    background-image: url(pic/footer-bg.png);
+
     margin-top: 0px;
     padding-top: 180px;
     padding-bottom:20px ;
     background-size: cover;
 }
 
+.buddy-body {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 16px;
+    /* height:300px ; */
+}
+.body-item-main{
+    width: 60%;
+}
+
+.body-item-2{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.body-item-1{
+    width: 20%;
+}
+.dive-body-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+.coach-body {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    height: 620px;
+}
+.dive-coach-item{
+    margin:20px auto;
+    max-width: 900px;
+    height: 300px
+    
+}
+.coach-item-2{
+    width: 900px;
+}
+
+.dive-coach-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.main-dive-body{
+    max-width: 1200px;
+    margin: auto;
+}
+.dive-coach-item-1{
+    max-width: 255px; 
+    height: 616px;
+}
+.dive-coach-item-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.dive-body-item h3{
+    color: #f1f7f9;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    text-shadow: 1px 1px 3px rgba(1, 33, 59, 0.35);
+    top: -23%;
+    left: 5%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 120px;
+    padding-bottom: 15px;
+}
+
+.dive-body-item p{
+    color: #f1f7f9;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    text-shadow: 1px 1px 3px rgba(1, 33, 59, 0.35);
+    top: -20%;
+    left: 5%;
+   
+}
+.body-item-main h3{
+    width: 220px;
+}
+.body-item-2>.dive-body-item>h3{
+    top: -35%;
+    font-size: 22px;
+    width: 88px;
+    padding-bottom: 10px;
+}
+.body-item-2>.dive-body-item>p{
+    top: -32%;
+    text-shadow: 1px 1px 3px rgba(1, 33, 59, 0.8);
+    width: 88px;
+}
+.main-dive-body h2{
+    font-size: 30px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    color: #0f1b33;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.dive-coach-item h3{
+    color: #f1f7f9;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    text-shadow: 1px 1px 3px rgba(1, 33, 59, 0.35);
+    top: -38%;
+    left: 5%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 120px;
+    padding-bottom: 15px;
+}
+.dive-coach-item p{
+    color: #f1f7f9;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    text-shadow: 1px 1px 3px rgba(1, 33, 59, 0.35);
+    top: -33%;
+    left: 5%;
+   
+}
+
+.dive-coach-item-1 h3{
+    color: #f1f7f9;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    text-shadow: 1px 1px 3px rgba(1, 33, 59, 0.35);
+    top: -20%;
+    left: 5%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 180px;
+    padding-bottom: 15px;
+
+}
+.dive-coach-item-1 p{
+    color: #f1f7f9;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    text-shadow: 1px 1px 3px rgba(1, 33, 59, 0.35);
+    top: -17%;
+    left: 5%;
+
+}
+.dive-body-item,.dive-coach-item,.dive-coach-item-1 {
+    cursor: pointer;
+}
+.dive-pic{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+   max-width: 1200px;
+   gap: 16px;
+   margin: 10px;
+
+}
+
+.dive-pic img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dive-body{
+    justify-content: center;
+
+}
+.dive-video{
+    width: 1200px;
+    gap: 16px;
+    display: flex;
+
+    justify-content: center;
+}
+.dive-video iframe{
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.free-main-body{
+    background-image: url(pic/personal-bg.png);
+    background-size: cover;
+    margin-top: -70px;
+}
+.title-h2{
+    padding-top: 80px;
+
+}
+
+.main-dive-body>.title-h2-3,.main-dive-body>.title-h2-4{
+    color: #edf1fe;
+}
