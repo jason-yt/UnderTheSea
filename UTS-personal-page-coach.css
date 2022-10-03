@@ -208,6 +208,7 @@ header{
     z-index: 2;
     font-family: 'Quicksilver','Roboto Flex', sans-serif;
     /* writing-mode:vertical-rl; */
+    font-weight: 800;
     font-size: 25px;
     line-height: 30px;
     margin: 0px 25%;

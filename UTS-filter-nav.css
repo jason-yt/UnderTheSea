@@ -272,3 +272,6 @@ color: #fff;
     color: #fff;
 }
 
+select>option{
+    color: #09264c;
+}
