@@ -188,7 +188,7 @@
     opacity: 0;
     transition:  opacity .5s;
 }
-#coach:checked+#buddy+.cover-bg> label:nth-child(2){
+#coach:checked+#buddy+.cover-bg label:nth-child(2){
     background: rgb(9, 54, 82);
 }
 
