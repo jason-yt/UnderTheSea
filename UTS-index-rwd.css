@@ -1,0 +1,262 @@
+.uts-title{
+    min-height: 100vh;
+    min-width: 100%;
+    overflow: hidden;
+    background-image: url(main-content.jpg);
+    background-size: cover;
+    margin: auto;
+    
+}
+.cover-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 354px;
+    min-height: 100vh;
+    margin-top: -5%;
+    
+}
+.cover-logo{
+    width: 354px;
+    height: 291px;
+
+    display: flex;
+    justify-content: center;
+
+}
+.cover-logo img{
+    width: 75%;
+    height: 75%;
+
+}
+.cover-main>i{
+    font-size: 50px;
+    color: #fff;
+
+}
+ @media screen and (max-width:576px) {
+    .cover-logo img{
+        width: 65%;
+        height: 65%;
+    
+    }
+    .cover-main>i{
+        font-size: 50px;
+
+    }
+
+    .cover-main{
+        margin-top: -10%;
+    }
+ }
+
+
+.uts-content{
+    position: relative;
+    max-width: 100%;
+    background-image: url(main-content-bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.animation-content{
+    position: absolute;
+    width: 20%;
+    height: 88%;
+    text-align: center;
+    opacity: .3;
+    /* background-color: #fff; */
+   
+}
+
+
+.animation-content>img{
+    position: sticky;
+    top:140px;
+    max-width: 45%;
+
+    margin: auto;
+}
+.free-intro-content{
+    width: 300px;
+    margin: auto;
+    background-color: rgba(0, 152, 212, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+}
+.free-intro-title>h2{
+    color: #fff;
+    font-weight: 700;
+    width: 180px;
+    font-size: 45px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.free-intro-title>img{
+    width: 300px;
+    margin-bottom: 10px;
+}
+.free-intro-text p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 350;
+    text-align: center;
+}
+.free-intro-text p:nth-child(2){
+    font-size: 30px;
+}
+
+.free-intro-text>.highlight-text{
+    font-size: 50px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    text-align: center;
+    margin: 20px 0px;
+    font-weight: 550;
+    color: #078dda;;
+}
+.free-intro-text p:nth-child(3){
+    margin-bottom: 10px;
+   
+}
+
+
+
+
+
+.group-card-part{
+    /* position: absolute; */
+    width: 300px;
+    margin: auto;
+    margin-top:50px ;
+}
+
+
+
+.group-card-part a{
+    text-decoration: none;
+
+}
+.group-card-part>a:nth-child(1){
+
+    margin: 20px 0px;
+}
+
+
+.group-card-part>a:nth-child(2){
+    color: #0f1b33;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    align-items: center;
+    margin-right: 25px;
+
+
+}
+.group-card-part>a:nth-child(2)>i{
+    color: #0f1b33;
+    font-size: 15px;
+    position: relative;
+    bottom: -1.5px;
+
+}
+
+
+.free-card-main,.scuba-card-main{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+@media screen and (max-width:575px) {
+    .free-card-main,.scuba-card-main{
+        width: 480px;  
+    }
+    
+}
+@media screen and (min-width:576px) {
+    .free-card-main,.scuba-card-main{
+        width: 480px;  
+    }
+}
+@media screen and (min-width:768px) {
+    .free-card-main,.scuba-card-main{
+        width: 848px;  
+    }
+}
+@media screen and (min-width:996px) {
+    .free-card-main,.scuba-card-main{
+        width: 1076px;  
+    }
+}
+@media screen and (min-width:1200px){
+    .free-card-main,.scuba-card-main{
+        width: 1280px;
+       
+    }
+    
+}
+
+.swiper-slide {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+  }
+
+
+
+
+.scuba-intro-content{
+    width: 300px;
+    margin: auto;
+    background-color: rgba(115, 209, 246, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+}
+.scuba-intro-title>h2{
+    color: #fff;
+    font-weight: 700;
+    width: 180px;
+    font-size: 45px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.scuba-intro-title>img{
+    width: 300px;
+    margin-bottom: 10px;
+}
+.scuba-intro-text p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 350;
+    text-align: center;
+}
+.scuba-intro-text p:nth-child(2){
+    font-size: 30px;
+}
+.scuba-intro-text p:nth-child(3){
+    margin-bottom: 10px;
+   
+}
+
+
+
+.scuba-intro-text>.highlight-text{
+    font-size: 50px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    text-align: center;
+    margin: 20px 0px;
+    font-weight: 550;
+    color: #078dda;;
+}

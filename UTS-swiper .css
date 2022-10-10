@@ -1,0 +1,36 @@
+.swiper {
+    max-width: 500px;
+
+  }
+
+@media screen and (max-width:575px) {
+    .G-mySwiper {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width:576px) {
+    .G-mySwiper {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width:768px) {
+    .G-mySwiper {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width:992px) {
+    .G-mySwiper {
+    max-width: 900px;
+  }
+}
+@media screen and (min-width:1200px) {
+    .G-mySwiper {
+    max-width: 1000px;
+  }
+}
+  .swiper-slide {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
