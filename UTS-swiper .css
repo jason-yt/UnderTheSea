@@ -1,36 +1,72 @@
+/* .flex{
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  margin-left: 20px;
+  flex-direction: column;
+} */
 .swiper {
-    max-width: 500px;
+  max-width: 280px;
 
-  }
-
-@media screen and (max-width:575px) {
-    .G-mySwiper {
-    max-width: 300px;
-  }
 }
-@media screen and (min-width:576px) {
-    .G-mySwiper {
-    max-width: 300px;
+.G-mySwiper{
+      max-width: 350px;
+  }
+
+.swiper-wrapper{
+  margin-bottom: 20px;
+}    
+/* @media screen and (max-width:575px) {
+  .swiper {
+  max-width: 240px;
+}
+} */
+/* @media screen and (min-width:576px) {
+  .swiper {
+      max-width: 280px;
+  }
+  .G-mySwiper{
+      max-width: 350px;
+  }
+  
+  .flex{
+
+  width: 576px;
+  flex-direction: row;
+  margin-left: 0px;
+  margin: auto;
   }
 }
 @media screen and (min-width:768px) {
-    .G-mySwiper {
-    max-width: 450px;
-  }
+  .swiper {
+  max-width: 320px;
+}
+.flex{
+  width: 768px;
+  flex-direction: row;
+  margin-left: 0px;
+  margin: auto;
+}
 }
 @media screen and (min-width:992px) {
-    .G-mySwiper {
-    max-width: 900px;
-  }
+  .swiper {
+  max-width: 450px;
+  flex-direction: row;
 }
+.flex{
+  /* display: flex; */
+
+/* 
 @media screen and (min-width:1200px) {
-    .G-mySwiper {
-    max-width: 1000px;
-  }
+  .swiper {
+  max-width: 550px;
 }
-  .swiper-slide {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
+} */
+
+
+.swiper-slide {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
 

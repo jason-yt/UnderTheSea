@@ -320,122 +320,116 @@
 } */
 @media screen and (max-width:768px) {
     .diving-card{
-        width: 240px;
-        height: 380px;
+        width: 153.6px;
+        height: 243.2px;
        
     }
     .card-title{
-        height: 380px;
-        width: 60px;
+        height: 243.2px;
+        width: 38.4px;
     }
     .card_pic {
-        width: 240px;
-        height: 380px;
-       
+        width: 153.6px;
+        height: 243.2px;
       
     }
     .card-profile{
-        width: 240px;
-        height: 380px;
+        width: 153.6px;
+        height: 243.2px;
     }
-
-
     .card-title p{
-        font-size: 45px;
-        margin-top:10px;
-        margin-left: 10px;
+        font-size: 28.8px;
+        margin-top:6.4px;
+        margin-left: 6.4px;
 
      }
 
 
      .card-license-tag{
         width:fit-content;
-        font-size: 14px;
-        padding: 5px;
-        margin-right:10px ;
-        margin-top: 10px;
-        letter-spacing:1.5px;
+        font-size: 12px;
+        padding: 3.2px;
+        margin-right:6.4px;
+        margin-top: 6.4px;
+        letter-spacing:1px;
     }
 
     .personal-tag p{
-        font-size:14px ;
-        padding: 10px 10px 80px;
+        font-size: 12px;
+        padding: 6.4px 6.4px 51.2px;
     }   
     .personal-tag p>i{
-        padding:0 5px ;
+        padding:0 3.2px ;
     }
     
     .name{
-        font-size: 50px;
+        font-size: 32px;
         font-weight:600;
-        padding:10px 10px 0px;
+        padding:6.4px 6.4px 0px;
     }
     .coach{
         right: 0;
-        top: 320px;
-        padding: 3px 10px 3px;
-        font-size: 30px;
+        top: 204.8px;
+        padding: 1.92px 6.4px 1.92px;
+        font-size: 19.2px;
     }
 
 }
 
 @media screen and (min-width:769px) {
     .diving-card{
-        width: 240px;
-        height: 380px;
+        width: 153.6px;
+        height: 243.2px;
        
     }
     .card-title{
-        height: 380px;
-        width: 60px;
+        height: 243.2px;
+        width: 38.4px;
     }
     .card_pic {
-        width: 240px;
-        height: 380px;
-       
+        width: 153.6px;
+        height: 243.2px;
       
     }
     .card-profile{
-        width: 240px;
-        height: 380px;
+        width: 153.6px;
+        height: 243.2px;
     }
-
-
     .card-title p{
-        font-size: 45px;
-        margin-top:10px;
-        margin-left: 10px;
+        font-size: 28.8px;
+        margin-top:6.4px;
+        margin-left: 6.4px;
 
      }
 
 
      .card-license-tag{
         width:fit-content;
-        font-size: 14px;
-        padding: 5px;
-        margin-right:10px ;
-        margin-top: 10px;
-        letter-spacing:1.5px;
+        font-size: 12px;
+        padding: 3.2px;
+        margin-right:6.4px;
+        margin-top: 6.4px;
+        letter-spacing:1px;
     }
 
     .personal-tag p{
-        font-size:14px ;
-        padding: 10px 10px 80px;
+        font-size: 12px;
+        padding: 6.4px 6.4px 51.2px;
     }   
     .personal-tag p>i{
-        padding:0 5px ;
+        padding:0 3.2px ;
     }
     
     .name{
-        font-size: 50px;
+        font-size: 32px;
         font-weight:600;
-        padding:10px 10px 0px;
+        padding:6.4px 6.4px 0px;
     }
     .coach{
         right: 0;
-        top: 320px;
-        padding: 3px 10px 3px;
-        font-size: 30px;
+        top: 204.8px;
+        padding: 1.92px 6.4px 1.92px;
+        font-size: 19.2px;
     }
 
 
@@ -511,63 +505,61 @@
 
 @media screen and (min-width:1200px) {
     .diving-card{
-        width: 198.4px;
-        height: 314.13px;
+        width: 240px;
+        height: 380px;
        
     }
     .card-title{
-        height: 314.13px;
-        width: 49.6px;
+        height: 380px;
+        width: 60px;
     }
     .card_pic {
-        width: 198.4px;
-        height: 314.13px;
+        width: 240px;
+        height: 380px;
+       
+      
     }
     .card-profile{
-        width: 198.4px;
-        height: 314.13px;
+        width: 240px;
+        height: 380px;
     }
+
+
     .card-title p{
-        font-size: 37.2px;
-        margin-top:8.27px;
-        margin-left: 8.27px;
+        font-size: 45px;
+        margin-top:10px;
+        margin-left: 10px;
 
      }
+
 
      .card-license-tag{
         width:fit-content;
         font-size: 14px;
-        padding: 4.13px;
-        margin-right:8.27px ;
-        margin-top: 8.27px;
-
+        padding: 5px;
+        margin-right:10px ;
+        margin-top: 10px;
+        letter-spacing:1.5px;
     }
 
     .personal-tag p{
-        font-size: 14px;
-        padding: 8.27px 8.27px  66.13px;
+        font-size:14px ;
+        padding: 10px 10px 80px;
     }   
     .personal-tag p>i{
-        padding:0 4.13px ;
+        padding:0 5px ;
     }
     
     .name{
-        font-size: 41.33px;
+        font-size: 50px;
         font-weight:600;
-        padding:8.27px 8.27px 0px;
+        padding:10px 10px 0px;
     }
     .coach{
         right: 0;
-        top: 264.53px;
-        padding: 2.48px  8.27px 2.48px;
-        font-size: 24.8px;
+        top: 320px;
+        padding: 3px 10px 3px;
+        font-size: 30px;
     }
-    .card-info:hover>.card-profile{
-        opacity: 1;
-    
-        transition:opacity .5s;
-    
-    }
-    
 }
 

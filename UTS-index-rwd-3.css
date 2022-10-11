@@ -13,7 +13,7 @@
     align-items: center;
     flex-direction: column;
     margin: auto;
-    /* width: 354px; */
+    width: 354px;
     min-height: 100vh;
     margin-top: -5%;
     
@@ -62,39 +62,11 @@
     flex-direction: column;
     align-items: center;
 }
-.animation-content{
-    position: absolute;
-    width: 20%;
-    height: 88%;
-    text-align: center;
-    opacity: 1;
-    /* background-color: #fff; */
-   
-}
-
-
-.animation-content>img{
-    position: sticky;
-    top:140px;
-    max-width: 45%;
-
-    margin: auto;
-}
-.freediving-content{
-    margin-right: auto;
-    margin-top: 100px;
-    border-top:2.54px dotted rgb(255, 255, 255,.5);
-    width: 100%;
-    padding-top:50px ;
-}
-.scubadiving-content{
-    margin-right: auto;
-    margin-top: 100px;
-    border-top:2.54px dotted rgb(255, 255, 255,.5);
-    width: 100%;
-    padding-top:50px ;
-}
-
+/* ------------free-title,scuba-title-------------- */
+/* .free-title,.scuba-title{
+    background-image: url(main-content-bg.jpg);
+    height: 1200px;
+} */
 
 /* -------------text-area-------------- */
 
@@ -135,38 +107,21 @@
 }
 
 .G-cards{
-    
     margin-top: 50px;
+    
 }
 .G-mySwiper{
 
-    margin-bottom: 50px;
-
+    margin-bottom: 20px;
+    margin-left: -25px;
 }
 .G-swiper-slide{
     margin: 30px 0px;
   
 }
-.swiper-slide{
-    margin-bottom: 50px;
-}
-
-.swiper {
-    max-width: 280px;
-    margin-left: 0;
-}
 
 
-
-@media screen and (min-width:769px) {
-    .freediving-content{
-        margin: auto;
-        margin-top: 100px;
-    }
-    .scubadiving-content{
-        margin: auto;
-        margin-top: 100px;
-    }
+@media screen and (min-width:768px) {
     .free-intro-main,.scuba-intro-main{
         position: absolute;
     }
@@ -211,47 +166,16 @@
     }
 
     .G-cards{
-        margin: auto;
         display: flex;
-        justify-content: space-between;
-        width: 700px;
-        margin-top: 50px;
-        margin-bottom: 50px;
 
     }
     .G-mySwiper{
         margin: auto;
     }
-   .buddycard-flex{
-        margin: auto;
-        display: flex;
-        width: 700px;
-
-    }
-
-    .freecard-part, .scubacard-part {
-        max-width: 250px;
-        margin: auto;
-    }
-    .freecard-part>.swiper-wrapper>.swiper-slide, .scubacard-part>.swiper-wrapper>.swiper-slide {
-        justify-content: center;
-        display: flex;
-      
-    }
-   
-
  
+    
 
 }
- /* @media screen and (min-width:993px) {
-    .G-mySwiper{
-        max-width: 300px;
-    }
-    .G-cards{
-        width:800px;
-    }
- } */
-
 
  @media screen and (min-width:1024px) {
   
@@ -260,33 +184,6 @@
         margin: auto;
 
     }
-    .G-cards{
-        width:996px;
-    }
-
-
-    .G-mySwiper{
-        max-width: 450px;
-        margin: auto;
-    }
-   .buddycard-flex{
-      
-        width: 1010px;
-        justify-content: space-between;
-
-    }
-
-    .freecard-part, .scubacard-part {
-        max-width: 420px;
-        margin: auto;
-    }
-
-    .freecard-part>.swiper-wrapper>.swiper-slide, .scubacard-part>.swiper-wrapper>.swiper-slide {
-        justify-content: center;
-        display: flex;
-      
-    }
-
 }
 
 @media screen and (min-width:1200px) {
@@ -296,24 +193,6 @@
         margin: auto;
 
     }
-    .buddycard-flex{
-        
-        width: 1200px;
-       
-
-    }
-    .freecard-part, .scubacard-part {
-        max-width: 420px;
-        margin: auto;
-    }
-
-    .G-cards{
-       
-        width: 1200px;
-
-    }
-
-
  } 
 
 
