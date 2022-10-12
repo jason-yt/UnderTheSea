@@ -19,7 +19,7 @@
     <link rel="icon" href="logo.ico" type="image/x-icon" >
     <title>Under The Sea</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Oswald:wght@300;400;600&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750;8..144,100,800,750&display=swap');
         *{
             font-family: "Noto Sans TC", sans-serif, "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;;
         }
@@ -296,11 +296,13 @@
     </header>
     <div class="group-buy-content">
         <div class="group-buy-main">
-            <div class="back-btn">
-                <a href="javascript:history.back()"><i class="fa-solid fa-chevron-left"></i></a>
-            </div>
-            <div class="group-product-pic">
-                <img src="pic/group-card-1.jpg" alt="">
+            <div class="group-product-main-pic">
+                <div class="back-btn">
+                    <a href="javascript:history.back()"><i class="fa-solid fa-chevron-left"></i></a>
+                </div>
+                <div class="group-product-pic">
+                    <img src="pic/group-card-1.jpg" alt="">
+                </div>
             </div>
             <div class="group-buy-info">
                 <div class="group-product-title">
@@ -406,60 +408,103 @@
         </div>
         <footer class="uts-footer">
             <nav class="footer-nav">
-            <ul class="footer-item">
-                <li><h2>自由潛水</h2></li>
-                <li><a href="UTS-free-buddy-page.html">尋找潛伴</a></li>
-                <li><a href="UTS-free-coach-page.html">尋找教練</a></li>
-                <li><a href="#">證照考試</a></li>
-                <li><a href="#">活動競賽</a></li>
-                <li><a href="UTS-pool-page.html">練習場地</a></li>
-            </ul>
-            <ul class="footer-item">
-                <li><h2>水肺潛水</h2></li>
-                <li><a href="UTS-scuba-buddy-page.html">尋找潛伴</a></li>
-                <li><a href="UTS-scuba-coach-page.html">尋找教練</a></li>
-                <li><a href="#">證照考試</a></li>
-                <li><a href="#">活動競賽</a></li>
-                <li><a href="UTS-pool-scuba-page.html">練習場地</a></li>
-            </ul>
-            <ul class="footer-item">
-                <li><h2>揪團潛水</h2></li>
-                <li><a href="#">一日潛旅</a></li>
-                <li><a href="#">國內潛旅</a></li>
-                <li><a href="#">國外潛旅</a></li>
-                <li><a href="#">團練專區</a></li>
-                <li><a href="#">主題潛旅</a></li>
-            </ul>
-            <ul class="footer-item">
-                <li><h2>裝備租借</h2></li>
-                <li><a href="#">蛙鞋</a></li>
-                <li><a href="#">面鏡</a></li>
-                <li><a href="#">防寒衣</a></li>
-                <li><a href="#">潛水錶</a></li>
-                <li><a href="#">浮球</a></li>
-            </ul>
-            <ul class="footer-item">
-                <li><h2>潛點介紹</h2></li>
-                <li><a href="#">北台灣</a></li>
-                <li><a href="#">中台灣</a></li>
-                <li><a href="#">南台灣</a></li>
-                <li><a href="#">離島</a></li>
-                <li><a href="#">國外潛點</a></li>
-            </ul>
-            <ul class="footer-item">
-                <li><h2>潛水百科</h2></li>
-                <li><a href="#">自潛知識</a></li>
-                <li><a href="#">水肺知識</a></li>
-                <li><a href="#">安全觀念</a></li>
-                <li><a href="#">競賽項目</a></li>
-                <li><a href="#">世界紀錄</a></li>
-            </ul>
+                <input type="checkbox" id="li-pull-1st">
+                <ul class="footer-item">
+                   
+                    <label for="li-pull-1st">
+                        <li>
+                            <h2>自由潛水</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                    <li><a href="UTS-free-buddy-page.html">尋找潛伴</a></li>
+                    <li><a href="UTS-free-coach-page.html">尋找教練</a></li>
+                    <li><a href="#">證照考試</a></li>
+                    <li><a href="#">活動競賽</a></li>
+                    <li><a href="UTS-pool-page.html">練習場地</a></li>
+                </ul>
+                <input type="checkbox" id="li-pull-2nd">
+                <ul class="footer-item">
+                   
+                    <label for="li-pull-2nd">
+                        <li>
+                            <h2>水肺潛水</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                 
+                    <li><a href="UTS-scuba-buddy-page.html">尋找潛伴</a></li>
+                    <li><a href="UTS-scuba-coach-page.html">尋找教練</a></li>
+                    <li><a href="#">證照考試</a></li>
+                    <li><a href="#">活動競賽</a></li>
+                    <li><a href="UTS-pool-scuba-page.html">練習場地</a></li>
+                </ul>
+                <input type="checkbox" id="li-pull-3rd">
+                <ul class="footer-item">
+                    <label for="li-pull-3rd">
+                        <li>
+                            <h2>揪團潛水</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                  
+                    <li><a href="#">一日潛旅</a></li>
+                    <li><a href="#">國內潛旅</a></li>
+                    <li><a href="#">國外潛旅</a></li>
+                    <li><a href="#">團練專區</a></li>
+                    <li><a href="#">主題潛旅</a></li>
+                </ul>
+                <input type="checkbox" id="li-pull-4th">
+                <ul class="footer-item">
+                   
+                    <label for="li-pull-4th">
+                        <li>
+                            <h2>裝備租借</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                   
+                    <li><a href="#">蛙鞋</a></li>
+                    <li><a href="#">面鏡</a></li>
+                    <li><a href="#">防寒衣</a></li>
+                    <li><a href="#">潛水錶</a></li>
+                    <li><a href="#">浮球</a></li>
+                </ul>
+                <input type="checkbox" id="li-pull-5th">
+                <ul class="footer-item">
+                    <label for="li-pull-5th">
+                        <li>
+                            <h2>潛點介紹</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                 
+                    <li><a href="#">北台灣</a></li>
+                    <li><a href="#">中台灣</a></li>
+                    <li><a href="#">南台灣</a></li>
+                    <li><a href="#">離島</a></li>
+                    <li><a href="#">國外潛點</a></li>
+                </ul> 
+                <input type="checkbox" id="li-pull-6th">
+                <ul class="footer-item">
+                    <label for="li-pull-6th">
+                        <li>
+                            <h2>潛水百科</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                    <li><a href="#">自潛知識</a></li>
+                    <li><a href="#">水肺知識</a></li>
+                    <li><a href="#">安全觀念</a></li>
+                    <li><a href="#">競賽項目</a></li>
+                    <li><a href="#">世界紀錄</a></li>
+                </ul>
             </nav>
     
             <div class="copyright">
                 本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。
                 若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
-                COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.
+                COPYRIGHT © 2022 UnderTheSea Co.,Ltd. All rights reserved.
             </div>
        </footer>
     </div>

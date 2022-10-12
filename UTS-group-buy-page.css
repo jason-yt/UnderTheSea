@@ -66,22 +66,24 @@ header{
 }
 .group-buy-content{
     position: relative;
-    background-image: url(main-content-bg-group.jpg);
+    background-image: url(group-buy-bg.png);
     background-size:cover ;
    
 }
 .group-buy-main{
-    display: flex;
+    display: block;
     max-width: 1200px;
     position: relative;
     top:79px;
     margin: auto;
-    margin-bottom: 300px;
+    /* margin-bottom: 300px; */
 }
 .group-product-pic{
-    width: 60%;
-    max-height:100%;
+    width:95%;
+    /* max-height:100%; */
     position: relative;
+    margin: auto;
+    margin-bottom: 20px;
     
 }
 .back-btn{
@@ -104,9 +106,13 @@ header{
     top: 100px;
 }
 .group-buy-info{
-    width: 40%;
+    width: 95%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-bottom:10px ;
+    border-radius: 0px 0px 8px 8px;
+    padding-top: 10px;
 }
 .group-product-title{
     width: 80%;
@@ -313,13 +319,22 @@ display: none;
 .buy-btn>button:hover {
     background-color: rgb(0, 81, 162);
 }
+ @media screen and (min-width:768px) {
+    .group-buy-main{
+        display: flex;
+    }
+
+ 
+    
+ }
 
 
 
-
-
-
+ .uts-footer{
+    background-color:transparent;
+    /* border-top:1px solid #0f1b33 ; */
+}
 footer{
-    margin-top: 400px;
+    margin-top: 200px;
     
 }
