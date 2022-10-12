@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -11,13 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/quicksilver" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="UTS-index-2.css"> -->
     <link rel="stylesheet" href="UTS-bubble-pic.css">
     <link rel="stylesheet" href="UTS-buddy-card.css">
     <link rel="stylesheet" href="UTS-group-card.css">
     <link rel="stylesheet" href="UTS-headr_2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    <!-- <link rel="stylesheet" href="UTS-swiper .css"> -->
     <link rel="stylesheet" href="UTS-footer.css">
     <link rel="stylesheet" href="UTS-index-rwd.css">
     <link rel="icon" href="logo.ico" type="image/x-icon" >
@@ -25,15 +24,18 @@
     <style>
 
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Oswald:wght@300;400;600&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750;8..144,100,800,750&display=swap');  
-        /* @import url('http://fonts.cdnfonts.com/css/quicksilver'); */
+        @import url('http://fonts.cdnfonts.com/css/quicksilver');
         *{
             font-family: "Noto Sans TC", sans-serif, "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;;
         }
+        
     </style>
+       
 </head>
 <body>
+    
     <div class="uts-index">
-    <header class="uts-header">
+        <header class="uts-header">
     
     <input type="checkbox" id="menu-switch">
    
@@ -299,18 +301,18 @@
 
     </div>
  
-    </header>
-    <div class="uts-title">
+        </header>
+        <div class="uts-title">
         <div class="cover-main">
             <div class="cover-logo">
                 <img src="pic/logo_main.png" alt="uts-logo">
             </div>
-            <i class="fa-solid fa-circle-chevron-down arrow-icon"></i>
+            <a class="down" href="#uts-body"><i class="fa-solid fa-circle-chevron-down arrow-icon"></i></a> 
         </div>
-    </div>
-    <div class="uts-content">
+        </div>
+        <div class="uts-content" id="uts-body" >
         <div class="animation-content">
-            <img src="diving_animation.gif" alt="diving_animation">
+            <img src="diving_animation.gif" alt="diving_animation" id="diving-man">
         </div>
 
 
@@ -2352,10 +2354,31 @@
                 COPYRIGHT © 2022 UnderTheSea Co.,Ltd. All rights reserved.
             </div>
         </footer>
+        </div>
     </div>
-   
 
-    </div>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        
+        var fadeStart=800 // 100px scroll or less will equiv to 1 opacity
+            ,fadeUntil=9000 // 200px scroll or more will equiv to 0 opacity
+            ,fading = $('#diving-man');
+
+            $(window).bind('scroll', function(){
+            var offset = $(document).scrollTop()
+             ,opacity=0.3
+                 ;
+            if( offset<=fadeStart ){
+            opacity=1;
+            }else if( offset<=fadeUntil ){
+            opacity=1-offset/fadeUntil;
+            }
+            fading.css('opacity',opacity).html(opacity);
+            });
+    </script>
+    
+
       <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js">
     </script>

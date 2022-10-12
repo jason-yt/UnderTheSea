@@ -1,5 +1,8 @@
 
-
+html{
+    scroll-behavior: smooth;
+    
+}
 .uts-title{
     min-height: 100vh;
     min-width: 100%;
@@ -35,9 +38,10 @@
     height: 75%;
 
 }
-.cover-main>i{
+.cover-main a>i{
     font-size: 50px;
     color: #fff;
+    text-shadow: 0px 1.5px 4px rgb(0,0,0,.15);
 
 }
 
@@ -53,6 +57,7 @@
     flex-direction: column;
     align-items: center;
     border-bottom:1px solid  #0f1b33 ;
+    
     /* padding-bottom: 150px; */
 }
 .animation-content{
@@ -60,7 +65,7 @@
     width: 30%;
     height: 7280px;
     text-align: center;
-    opacity: .5;
+    opacity: 1;
     right: 0;
     /* background-color: #fff; */
    
