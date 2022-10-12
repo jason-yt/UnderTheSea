@@ -263,8 +263,9 @@
         transition: transform .3s;
     }
     .copyright{
+        margin: auto;
         width: 300px ;
-        margin: 0px 20px;
+
     }
 
     
@@ -300,6 +301,11 @@
     .footer-item>label>li{
         justify-content: center;
     }
-    
+    .copyright{
+        margin: auto;
+        width: 500px ;
+
+    }
+
 
 }

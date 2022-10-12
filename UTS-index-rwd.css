@@ -1,3 +1,5 @@
+
+
 .uts-title{
     min-height: 100vh;
     min-width: 100%;
@@ -56,18 +58,20 @@
 .uts-content{
     position: relative;
     max-width: 100%;
-    background-image: url(main-content-bg.jpg);
+    background-image: url(index-bg-rwd.jpg);
     background-size: cover;
+    background-position:center ;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .animation-content{
     position: absolute;
-    width: 20%;
-    height: 88%;
+    width: 45%;
+    height: 100%;
     text-align: center;
-    opacity: 1;
+    opacity: .5;
+    right: 0;
     /* background-color: #fff; */
    
 }
@@ -76,10 +80,47 @@
 .animation-content>img{
     position: sticky;
     top:140px;
-    max-width: 45%;
-
+    width: 80px;
     margin: auto;
 }
+.bubble-pic-content>h2{
+    font-family:Oswald ;
+    font-size: 130px;
+    font-weight: 700;
+    /* transform: scaleX(120%); */
+    max-width: 1200px;
+    text-align: left;
+    word-break: normal;
+    padding-top: 320px;
+    color: rgba(255, 255, 255, 0.25);
+    letter-spacing:1px;
+    word-spacing: 20px; 
+    /* -webkit-text-stroke:1.5px  rgba(255, 255, 255, 0.3); */
+    /* line-height: 180px; */
+}
+
+.bubble-pic-main{
+    margin-top: 20px;
+
+}
+
+.bubble-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.bubble-group-part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+
+
 .freediving-content{
     margin-right: auto;
     margin-top: 100px;
@@ -156,7 +197,31 @@
     margin-left: 0;
 }
 
+ @media screen and (min-width:576px) {
+    .bubble-group{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
 
+    .animation-content{
+      margin: auto;
+      width: 40%;
+      left: 0;
+       
+    }
+    
+    
+    .animation-content>img{
+        position: sticky;
+        top:140px;
+    
+        margin: auto;
+    }
+
+ }
 
 @media screen and (min-width:769px) {
     .freediving-content{
@@ -238,10 +303,11 @@
         display: flex;
       
     }
-   
-
- 
-
+    .main-nav-btn:hover >.sub-menu a{
+        color: #0f1b33;
+    }    
+  
+  
 }
  /* @media screen and (min-width:993px) {
     .G-mySwiper{
@@ -287,6 +353,17 @@
       
     }
 
+    .bubble-group{
+        width: 1000px;
+        gap: 50px;
+    }
+    .bubble-pic-content>h2{
+        text-align: center;
+    }
+    .bubble-group-part{
+        width: 400px;
+    }
+
 }
 
 @media screen and (min-width:1200px) {
@@ -312,7 +389,13 @@
         width: 1200px;
 
     }
-
+    .bubble-group{
+        width: 1200px;
+        
+    }
+    .bubble-group-part{
+        width: 550px;
+    }
 
  } 
 

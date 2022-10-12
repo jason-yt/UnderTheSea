@@ -7,20 +7,11 @@
     position: relative;
     overflow: hidden;  
     transition: transform 1s;
+
 }
 
-.bubble-pic:hover{
-    transform: scale(150%);
-    transition: transform 1s ;
-}
-.bubble-pic:hover img{
-    transform: scale(120%);
-    transition: transform 1ss;
-}
-.bubble-pic:hover .bubble{
-    opacity: 0.2;
-    transition: opacity 1s;
-}
+
+
 
 .bubble-pic img{
     width: 100%;
@@ -40,14 +31,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    opacity:.7;
+    opacity:.3;
     transition: opacity 1s;
 }
 
-.bubble-pic:hover .bubble-text{
-    opacity: 1;
-    transition: opacity 1s;
-}
+
 
 .bubble-text{
     text-align: center;
@@ -67,19 +55,55 @@
 .bubble-a,.bubble-a>.bubble{
     width: 110px;
     height: 110px;
+    order: 1;
 }
 .bubble-b,.bubble-b>.bubble{
     width: 150px;
     height: 150px;
+    order: 2;
 }
 
 .bubble-d,.bubble-d>.bubble{
     width: 130px;
     height: 130px;
+    order: 3;
 }
 .bubble-e,.bubble-e>.bubble{
     width: 120px;
     height: 120px;
+    order: 4;
+}
+
+.bubble-f,.bubblef->.bubble{
+  
+    order: 4;
 }
 
 
+
+
+
+
+ @media screen and (min-width:1024px) {
+    .bubble-pic:hover{
+        transform: scale(150%);
+        transition: transform 1s ;
+    }
+    .bubble-pic:hover img{
+        transform: scale(120%);
+        transition: transform 1ss;
+    }
+    .bubble-pic:hover .bubble-text{
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    .bubble{
+        opacity: 0.6;
+        transition: opacity 1s;
+    }
+
+    .bubble-pic:hover .bubble{
+        opacity: 0.2;
+        transition: opacity 1s;
+    }
+ }
