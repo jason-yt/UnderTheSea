@@ -12,18 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/quicksilver" rel="stylesheet">
     <link rel="stylesheet" href="UTS-header_rwd.css">
-    <link rel="stylesheet" href="UTS-group-card.css">
-    <link rel="stylesheet" href="UTS-group-buy-page.css">
-    <link rel="stylesheet" href="UTS-filter-nav.css">
     <link rel="stylesheet" href="UTS-footer.css">
+    <link rel="stylesheet" href="UTS-personal-page-coach-rwd.css">
     <link rel="icon" href="logo.ico" type="image/x-icon" >
     <title>Under The Sea</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Oswald:wght@300;400;600&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750;8..144,100,800,750&display=swap');
         *{
-            font-family: "Noto Sans TC", sans-serif, "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;;
+            font-family: "Noto Sans TC", sans-serif, "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
         }
-        
     </style>
 </head>
 <body>
@@ -520,119 +517,167 @@
     
      
     </header>
-
-
-
-    <div class="group-buy-content">
-        <div class="group-buy-main">
-            <div class="group-product-main-pic">
-                <div class="back-btn">
-                    <a href="javascript:history.back()"><i class="fa-solid fa-chevron-left"></i></a>
+    <div class="personal-main-title">
+        <div class="back-btn">
+            <a href="javascript:history.back()"><i class="fa-solid fa-chevron-left"></i></a>
+        </div>
+        <div class="personal-main-content">
+            <div class="personal-cover-pic">
+                
+                <img src="pic/person-cover.jpg" alt="Jack-Henderson">
+                <div class="coach-tg">
+                    <p>COACH</p>
                 </div>
-                <div class="group-product-pic">
-                    <img src="pic/group-card-1.jpg" alt="">
+                <div class="personal-name">
+                    <h2>Bill Henderson</h2>
                 </div>
             </div>
-            <div class="group-buy-info">
-                <div class="group-product-title">
-                    <h2>蘭嶼八代灣</h2>
-                    <div class="group-progres">
-                        <span>揪團進度</span>
-                        <span>
-                            <span></span>
-                        </span>
-                        64%
-                    </div>
-                </div>
-                <div class="group-product-info">
-                    <div class="group-date">
-                        <p class="product-info-title">行程時間</p>
-                        <p>
-                            2022.10.08 (六) 
-                            AM08:00-PM12:00
-                        </p>
-                    </div>
-                    <div class="group-people">
-                        <p class="product-info-title">團員人數</p>
-                        <p>12</p>
-                    </div>
-                    <div class="group-coach">
-                        <p class="product-info-title">導潛教練</p>
-                        <p>Jack、Dora</p>
-                    </div>
-                    <div class="license-need">
-                        <p class="product-info-title">證照需求</p>
-                        <p>ADIA 3 <span>(同等級即可)</span></p>
-                    </div>
-                    <div class="group-price">
-                        <p class="product-info-title">行程費用</p>
-                        <p>$NT3,000</p>
-                        <p>*行程費用:包含蘭嶼船隻、潛導、浮球、責任險與活動保險</p>
-                    </div>
-                    <div class="group-schedule">
-                        <p class="product-info-title">行程概要</p>
-                        <p>(總行程約6小時,實際行程隨天候海況調整)
-                            <br>
-                            <span>07:45  蘭嶼紅頭港集合</span>
-                            <br>
-                            <span>08:00  蘭嶼紅頭港出港</span>
-                            <br>
-                            <span>08:30  到達船潛地點，開始下潛</span>
-                            <br>
-                            <span>11:30  上船歸賦</span>
-                            <br>
-                            <span>12:00  抵達紅頭港</span>
-                        </p>
-                    </div>
-                    <p></p>
-                </div>
-                <div class="group-product-add">
-                    <div class="ship-add add-selet">
-                        <h3>船票加購</h3>
-                        <input type="checkbox" id="ship">
-                        <label for="ship">
-                            <span>台東－蘭嶼 來回船票</span>   <span>+NT$2,000</span>
-                        </label>
-                    </div>
-                    <div class="hotel-day add-selet">
-                        <h3>加購民宿</h3>
-                        <input type="radio" id="hotel-1" name="hotel-day">
-                        <label for="hotel-1" >
-                            <span>不需要加購</span>
-                        </label>
-                        <input type="radio" id="hotel-2" name="hotel-day">
-                        <label for="hotel-2">
-                            <span>來潛水 民宿2天1夜</span><span>+NT$3,000</span>
-                        </label>
-                        <input type="radio" id="hotel-3" name="hotel-day">
-                        <label for="hotel-3">
-                            <span>來潛水 民宿3天2夜</span><span>+NT$4,500</span>
-                        </label>
-                    </div>
-                    <div class="moto-day add-selet">
-                        <h3>加購機車</h3>
-                        <input type="radio" id="moto-1" name="moto-day">
-                        <label for="moto-1">
-                            <span>不需要加購</span>
-                        </label>
-                        <input type="radio" id="moto-2"name="moto-day">
-                        <label for="moto-2">
-                            <span>租機車1天</span><span>+NT$400</span>
-                        </label>
-                        <input type="radio" id="moto-3" name="moto-day">
-                        <label for="moto-3">
-                            <span>租機車2天</span><span>+NT$750</span>
-                        </label>
-                    </div>
-                    <div class="total">
-                        <p>總共<span>$NT8,800</span></p>
-                    </div>
-                    <div class="buy-btn">
-
-                        <button>立即報名</button>
-                    </div>
-                </div>
+            <div class="personal-info">
                 
+                <div class="personal-info-item">
+                    <div class="tag-group">
+                        <div class="license-tag-group">
+                            <div class="personal-license-tag">PIDA</div>
+                            <div class="personal-license-tag">ADIA 4</div>
+                        </div>
+                        <div class="diving-type">Free Diving</div>
+                    </div>
+                    <div class="personal-name">
+                        <h2>Bill Henderson</h2>
+                    </div>
+                    <div class="personal-info-bar">
+                        <div class="personal-year personal-info-box">
+                            <p class="info-title">潛齡</p>
+                            <p>3 <span>y</span></p>
+                        </div>
+                        <div class="personal-friend personal-info-box">
+                            <p class="info-title">潛友</p>
+                            <p>560<span>人</span></p>
+                        </div>
+                        <div class="personal-depth personal-info-box">
+                            <p class="info-title">深度</p>
+                            <p>48<span>m</span></p>
+                        </div>
+                    </div>
+                    <div class="personal-intro-text">
+                        <p>『海洋會因為大家的努力，越來越好的』 如果你想認識大海、認識自己，並學習如何在安全的前提下，開心的、自由的潛水；歡迎找我聊聊！</p>
+                    </div>
+                </div>
+                <div class="personal-btn">
+                    <input type="checkbox" id="follow">
+                    <label for="follow" class="follow-btn"><i class="fa-solid fa-plus"></i>追蹤</label>
+                    <a href="#"><div class="chat-btn"><i class="fa-solid fa-comment"></i>私訊</div></a>
+                </div>
+            </div>
+        </div>
+        <div class="personal-social-icon">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+       
+    </div>
+    <input type="checkbox" id="main-body-switch">
+    <div class="personal-main-conent">
+        <div class="pagedown-btn-div">
+            <label label for="main-body-switch" class="personal-more-page">
+                <i class="fa-solid fa-circle-chevron-down pagedown-btn"></i>
+            </label>
+            
+        </div>
+        <div class="main-content-body">
+            <div class="main-content-info">
+                <div class="main-depth">
+                    <div class="depth-text">
+                        <h2>最大深度</h2>
+                        <p>45m</p>
+                    </div>
+                    <div class="depth-pic">
+                        <img src="pic/chart.png" alt="dep-chart">
+                        <div class="depth-pic-info">
+                            <div class="location depth-info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                蘭嶼八代灣
+                            </div>
+                            <div class="time depth-info-item">
+                                <i class="fa-solid fa-stopwatch"></i>0:02:06:23
+                            </div>
+                            <div class="date depth-info-item">
+                                <i class="fa-solid fa-calendar"></i>2022.09.28
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-active">
+                    <h2>最近活動</h2>
+                    <div class="active-group">
+                        <h2>最近活動</h2>
+                        <div class="active-bar">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>蘭嶼八代灣 </p><p>30m </p><p>2022.09.28</p>
+                        </div>
+                        <div class="active-bar">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>綠島鋼鐵礁 </p><p>35m </p><p>2022.09.26</p>
+                        </div>
+                        <div class="active-bar">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>東北角龍洞 </p><p>20m </p><p>2022.09.20</p>
+                        </div>
+                        <div class="active-bar">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>小琉球美人洞 </p><p>25m </p><p>2022.09.13</p>
+                        </div>
+                        <div class="active-bar">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>墾丁獨立礁 </p><p>24m </p><p>2022.09.08</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                    <h2>水下集錦</h2>
+                    <div class="row row-cols-1 row-cols-md-3">
+                        <div class="col">
+                            <a href="#">
+                               
+                                <img src="pic/pic-col-1.png" alt="pic">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="pic/pic-col-2.png" alt="pic"></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="pic/pic-col-3.png" alt="pic"></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="pic/pic-col-1.png" alt="pic"></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="pic/pic-col-2.png" alt="pic"></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="pic/pic-col-3.png" alt="pic"></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="pic/pic-col-1.png" alt="pic"></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="pic/pic-col-2.png" alt="pic"></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="pic/pic-col-3.png" alt="pic"></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="pic/pic-col-1.png" alt="pic"></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="pic/pic-col-2.png" alt="pic"></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="pic/pic-col-3.png" alt="pic"></a>
+                        </div>
+                    </div>
             </div>
         </div>
         <footer class="uts-footer">
@@ -738,6 +783,8 @@
        </footer>
     </div>
     
-    
 </body>
 </html>
+
+
+
