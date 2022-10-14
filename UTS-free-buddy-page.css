@@ -1,74 +1,4 @@
-@media screen and (min-width:768px) {
-    /* li:nth-child(3)>.sub-menu a{
-        color: #fff;
-    } */
-    
-    .sub-icon{
-        color: #0f1b33;
-        font-size: 30px;
-        padding-bottom: 15px;
-    }
-    .main-nav-btn:hover>.sub-menu{
-        display:none ;
-    }
-    .main-nav-btn:nth-child(1)>.sub-menu{
-        display:flex ;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: rgba(97, 134, 164, 0.85);
-        /* padding: 10px; */
-        width: 100%;
-        justify-content: center;
-        z-index: 10;
-    }
-    .sub-menu-btn a{
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        padding: 10px 35px;
-        font-size: 14px;
-        font-weight: 350;
-       
-    }
-    .main-nav-btn>.sub-menu a{
-        color: #0f1b33;
-    }
-    /* .main-nav-btn>a:hover >.sub-menu a:hover{
-        color: #e4f2f7;
-    } */
-    ul>.freedivg-btn >a{
-        color:rgb(255, 255, 255);
-        font-weight: 500;
-        font-size: 15px;
-    }
 
-    
-    .freedivg-btn>ul>li:nth-child(1) a{
-        color: #e4f2f7;
-        font-weight: 400;
-    }
-    .freedivg-btn>ul>li:nth-child(1) a>i{
-        color: #e4f2f7;
-        
-    }
-    .personal-main-title{
-
-        margin-top:79px ;
-
-    }
- 
-
-
-}
- @media screen and (max-width:767px) {
-    .personal-main-title{
-
-        margin-top:0px ;
-
-    }
-     
- }
  header{
     position: sticky;
     top: 0;
@@ -725,6 +655,78 @@
     }
 
 }
+
+@media screen and (min-width:768px) {
+    /* li:nth-child(3)>.sub-menu a{
+        color: #fff;
+    } */
+    
+    .sub-icon{
+        color: #0f1b33;
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    .main-nav-btn:hover>.sub-menu{
+        display:none ;
+    }
+    .main-nav-btn:nth-child(1)>.sub-menu{
+        display:flex ;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgba(97, 134, 164, 0.85);
+        /* padding: 10px; */
+        width: 100%;
+        justify-content: center;
+        z-index: 10;
+    }
+    .sub-menu-btn a{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding: 10px 35px;
+        font-size: 14px;
+        font-weight: 350;
+       
+    }
+    .main-nav-btn>.sub-menu a{
+        color: #0f1b33;
+    }
+    /* .main-nav-btn>a:hover >.sub-menu a:hover{
+        color: #e4f2f7;
+    } */
+    ul>.freedivg-btn >a{
+        color:rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    
+    .freedivg-btn>ul>li:nth-child(1) a{
+        color: #e4f2f7;
+        font-weight: 400;
+    }
+    .freedivg-btn>ul>li:nth-child(1) a>i{
+        color: #e4f2f7;
+        
+    }
+    .personal-main-title{
+
+        margin-top:79px ;
+
+    }
+ 
+
+
+}
+@media screen and (max-width:767px) {
+    .personal-main-title{
+
+        margin-top:0px ;
+
+    }
+     
+ }
 
 @media screen and (min-width:768px) {
     .diving-card{

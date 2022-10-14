@@ -1,13 +1,14 @@
-/* .uts-footer{
-    background-color:#0f1b33 ;
-    border-top:1px solid #0f1b33 ;
-} */
+.uts-footer{
+    
+    /* border-top:1px solid #0f1b33 ; */
+}
 
 .footer-nav{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background-color:#0f1b33 ;
 }
 .footer-nav{
     /* padding: 20px; */
@@ -169,6 +170,7 @@
     /* .uts-footer{
         background-color:#0F1B33 ;
     } */
+  
     
     .footer-nav{
         display: block;
@@ -274,14 +276,14 @@
     /* .uts-footer{
         background-color:transparent ;
     } */
-
+   
     
     .footer-nav{
         display: flex;
         justify-content: center;
         align-items: center;
         max-width: 800px;
-
+        background-color:transparent ;
     }
     .footer-item>li:first-child{
         background-color:transparent;
