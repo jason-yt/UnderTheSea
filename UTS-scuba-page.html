@@ -12,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/quicksilver" rel="stylesheet">
     <link rel="stylesheet" href="UTS-footer.css">
-    <link rel="stylesheet" href="UTS-headr_2.css">
+    <link rel="stylesheet" href="UTS-header_rwd.css">
     <link rel="stylesheet" href="UTS-scuba-page.css">
     <link rel="icon" href="logo.ico" type="image/x-icon" >
     <title>Under The Sea</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Oswald:wght@300;400;600&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750;8..144,100,800,750&display=swap');
         *{
             font-family: "Noto Sans TC", sans-serif, "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;;
         }
@@ -41,7 +41,7 @@
                 </h1>
             </div>
     
-            <nav class="main-nav">
+            <nav class="main-nav">  
                     <form action="" class="search">
                       
                         <input type="" name="search" id="search" placeholder="立即找潛伴">
@@ -49,7 +49,7 @@
                        
                     </form>
                     <ul>
-                        <li class="main-nav-btn free-btn">
+                        <li class="main-nav-btn">
                             <a href="UTS-free-page.html">自由潛水</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-btn">
@@ -79,14 +79,14 @@
                                     
                                 </li>
                                 <li class="sub-menu-btn">
-                                    <a href="UTS-pool-page.html">
+                                    <a href="UTS-pool-list.html">
                                         <i class="fa-solid fa-water-ladder sub-icon"></i>
                                         <span>練習場地</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="main-nav-btn scuba-btn">
+                        <li class="main-nav-btn">
                             <a href="UTS-scuba-page.html">水肺潛水</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-btn">
@@ -287,178 +287,541 @@
             <div class="singup">
                 <a href="#"><i class="fa-solid fa-user"></i></a>
             </div>
-    
+           
         </div>
+        <nav class="sec-main-nav">  
+            <!-- <div class="dir-btn">
+                <i class="fa-solid fa-chevron-left" id="btnLeft"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div> -->
+          
+    
+            <ul>
+                <li class="main-nav-btn">
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="UTS-free-buddy-page.html">
+                                <i class="fa-solid fa-users sub-icon"></i>
+                                <span>尋找潛伴</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="UTS-free-coach-page.html">
+    
+                                <i class="fa-solid fa-user-astronaut sub-icon"></i>
+                                <span>尋找教練</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-address-card sub-icon"></i>
+                                <span>證照考試</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                <span>活動競賽</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="UTS-pool-page.html">
+                                <i class="fa-solid fa-water-ladder sub-icon"></i>
+                                <span>練習場地</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="UTS-scuba-buddy-page.html">
+                                <i class="fa-solid fa-users sub-icon"></i>
+                                <span>尋找潛伴</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="UTS-scuba-coach-page.html">
+    
+                                <i class="fa-solid fa-user-astronaut sub-icon"></i>
+                                <span>尋找教練</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-address-card sub-icon"></i>
+                                <span>證照考試</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                <span>活動競賽</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="UTS-pool-scuba-page.html">
+                                <i class="fa-solid fa-water-ladder sub-icon"></i>
+                                <span>練習場地</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-car sub-icon"></i>
+                                <span>一日潛旅</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-ship sub-icon"></i>
+                                <span>國內潛旅</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-sharp fa-solid fa-plane sub-icon"></i>
+                                <span>國外潛旅</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-people-roof sub-icon"></i>
+                                <span>團練專區</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-sharp fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>主題潛旅</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+              
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-socks sub-icon"></i>
+                                <span>蛙鞋</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-mask sub-icon"></i>
+                                <span>面鏡</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-shirt sub-icon"></i>
+                                <span>防寒衣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-stopwatch sub-icon"></i>
+                                <span>潛水錶</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-circle-dot sub-icon"></i>
+                                <span>浮球</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+                
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>北台灣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>中台灣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>南台灣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>離島</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                
+                                <i class="fa-solid fa-plane-departure sub-icon"></i>
+                                <span>國外潛點</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">        
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-user-shield sub-icon"></i>
+                                <span>自潛知識</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-user-shield sub-icon"></i>
+                                <span>水肺知識</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-water sub-icon"></i>
+                                <span>安全觀念</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                <span>競賽項目</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-stopwatch sub-icon"></i>
+                                <span>世界紀錄</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+       
+    
      
     </header>
     <div class="head-main-cover">
         <input type="radio" id="coach" name="dive-switch">
         <input type="radio" id="buddy" name="dive-switch">
         <div class="cover-bg">
-           
-           
-            
             <div class="cover-bg-main">
-                <h2 class="cover-title">立即找到你的</h2>
-                <div class="cover-text">
-                    <p>水肺潛水</p><p>潛伴</p> <p>教練</p></div>
-                <div class="dive-btn-switch">
-                    <label for="buddy" class="dive-btn">
-                        潛伴
-                    </label>
-                    <label for="coach" class="dive-btn">
-                        教練
-                    </label>
+                <div class="cover-input">
+                    <div class="cover-search">
+                        <input type="search" class="cover-search-bar">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="dive-btn-switch">
+                        <label for="buddy" class="dive-btn dive-btn-buddy">
+                            潛伴
+                        </label>
+                        <label for="coach"class="dive-btn dive-btn-coach">
+                            教練
+                        </label>
+                    </div>
                 </div>
-               
-                <div class="cover-search">
-                    <input type="search" class="cover-search-bar">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div class="cover-title">
+                    <h2>
+                        立即找到你的
+                    </h2>
                 </div>
-            </div>
-            <div class="cover-bg-pic">
-                <div class="bg-pic-img">
-                    <img class="circle-pic" src="pic/circle.png" alt="circle">
-                    <img class="diving-woman-pic" src="pic/scuba-man.png" alt="divivg-women">
-                </div>
-                <div class="circle-bg"></div>
-                <div class="circle-bg-1"></div>
-                <div class="circle-bg-2"></div>
-                <div class="circle-bg-3"></div>
-                <div class="circle-bg-4"></div>
                 
+                <div class="cover-text">
+                    <p>
+                        水肺潛水
+                        <span>潛伴</span>
+                        <span>教練</span>
+                    </p>
+                </div>
             </div>
-            
-            
         </div>
     </div>
     <div class="free-main-body">
         <div class="main-dive-body">
-            <h2 class="title-h2">潛伴活動</h2>
-            <div class="buddy-body dive-body">
-        
-                <div class="dive-body-item body-item-main">
-                    <img src="pic/dive-bd-1.png" alt="dive-bd">
-                    <h3>小琉球 海龜共遊</h3>
-                    <p>Linda 主揪</p>
-                </div>
-                <div class="body-item-2">
-                    <div class="dive-body-item">
-                        <img src="pic/dive-bd-2.png" alt="dive-bd">
-                        <h3>鯊魚共舞</h3>
-                        <p>Ray 主揪</p>
+            <div class="container-section container-buddy">
+                <h2 class="title-h2">潛伴活動</h2>
+                <div class="container">
+                    <div class="row row-cols-1 ">
+                
+                            <div class="colPadding col-12 col-md-8 col-lg-6">
+                                <div class="col">
+                                    <div class="dive-body-item body-item-main">
+                                        <img src="pic/dive-bd-1.jpg" alt="dive-bd">
+                                        <h3>小琉球 海龜共遊</h3>
+                                        <p>Linda 主揪</p>
+                                    </div>
+                                </div>
+                
+                            </div>
+                            <div class="colPadding col-12 col-md-4 col-lg-3">
+                                <div class="col">
+                                    <div class="row row-cols-2 row-cols-md-1">
+                                        <div class="col">
+                                            <div class="dive-body-item dive-body-item-2">
+                                                <img src="pic/dive-bd-2.jpg" alt="dive-bd">
+                                                <h3>鯊魚共舞</h3>
+                                                <p>Ray 主揪</p>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="dive-body-item dive-body-item-2">
+                                                <img src="pic/dive-bd-3.jpg" alt="dive-bd">
+                                                <h3>海底巡禮</h3>
+                                                <p>Will主揪</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="colPadding col-12 col-md-12 col-lg-3">
+                                <div class="col">
+                                    <div class="dive-body-item dive-body-item-1">
+                                        <img src="pic/dive-bd-4.jpg" alt="dive-bd">
+                                        <h3>沈浸海底</h3>
+                                        <p>Gigi 主揪</p>
+                                    </div>
+                                </div>
+                            </div>
+                
                     </div>
-                    <div class="dive-body-item">
-                        <img src="pic/dive-bd-3.png" alt="dive-bd">
-                        <h3>海底巡禮</h3>
-                        <p>Will主揪</p>
-                    </div>
-                </div>
-                <div class="dive-body-item body-item-1">
-                    <img src="pic/dive-bd-4.png" alt="dive-bd">
-                    <h3>沈浸海底</h3>
-                    <p>Gigi 主揪</p>
                 </div>
             </div>
-            <h2>教練課程</h2>
-            <div class="coach-body dive-body">
-        
-                <div class="coach-item-2">
-                    <div class="dive-coach-item ">
-                        <img src="pic/dive-bd-5.png" alt="dive-bd">
-                        <h3>海底攝影</h3>
-                        <p>Kevin 教練</p>
-                    </div>
-                    <div class="dive-coach-item ">
-                        <img src="pic/dive-bd-1.png" alt="dive-bd">
-                        <h3>海中生態</h3>
-                        <p>Amy 教練</p>
+
+            <div class="container-section container-coach">
+                <h2>教練課程</h2>
+                <div class="container">
+                    <div class="row row-cols-1 ">
+                            <div class="colPadding col-12 col-md-8">
+                                <div class="col">
+                                    <div class="row row-cols-1">
+                                        <div class="col">
+                                            <div class="dive-coach-item dive-body-item-2">
+                                                <img src="pic/dive-bd-5.jpg" alt="dive-bd">
+                                                <h3>海底攝影</h3>
+                                                <p>Kevin 教練</p>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="dive-coach-item  dive-body-item-2">
+                                                <img src="pic/dive-bd-1.jpg" alt="dive-bd">
+                                                <h3>海中生態</h3>
+                                                <p>Amy 教練</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="colPadding col-12 col-md-4">
+                                <div class="col">
+                                    <div class="dive-coach-item dive-coach-item-1">
+                                        <img src="pic/dive-bd-4.jpg" alt="dive-bd">
+                                        <h3>FreeFall技巧</h3>
+                                        <p>Tony 教練</p>
+                                    </div>
+                                </div>
+                            </div>
+                
                     </div>
                 </div>
-                <div class="dive-coach-item-1 ">
-                    <img src="pic/dive-bd-4.png" alt="dive-bd">
-                    <h3>FreeFall技巧</h3>
-                    <p>Tony 教練</p>
+            </div>
+
+            <div class="container-section container-group">
+                <h2 class="title-h2-3">潛團照片</h2>
+                <div class="container">
+                    <div class="row row-cols-1 ">
+                
+                            <div class="colPadding col-6  col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="colPadding col-6 col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-4-sq.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="colPadding col-6 col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="colPadding col-6 col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-1-sq.jpg" alt="">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row row-cols-1 ">
+                
+                            <div class="colPadding col-6 col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-1-sq.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="colPadding col-6 col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-5-sq.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="colPadding col-6 col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="colPadding col-6 col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-3.jpg" alt="">
+                                </div>
+                            </div>
+                    </div>
                 </div>
             </div>
-            <h2 class="title-h2-3">潛團照片</h2>
-            <div class="dive-pic">
-                    <img src="pic/dive-bd-2.png" alt="">
-                    <img src="pic/dive-bd-3.png" alt="">
-                    <img src="pic/dive-bd-2.png" alt="">
-                    <img src="pic/dive-bd-3.png" alt="">
-                    <img src="pic/dive-bd-2.png" alt="">
-                    <img src="pic/dive-bd-3.png" alt="">
-                    <img src="pic/dive-bd-2.png" alt="">
-                    <img src="pic/dive-bd-3.png" alt="">
-            </div>
-            <h2 class="title-h2-4">潛團影片</h2>
-            <div class="dive-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/eu2pBpQolKE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/gvf1vq8h-ec?controls=0&amp;start=63" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4zTZTQ5rlKg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+         
+            <div class="container-section container-video">
+                <h2 class="title-h2-4">潛團影片</h2>
+                  <div class="container">
+                        <div class="row row-cols-1  row-cols-md-3 ">
+                            <div class="col">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/eu2pBpQolKE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="col">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/gvf1vq8h-ec?controls=0&amp;start=63" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="col">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4zTZTQ5rlKg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
+
+                        </div>
+                  </div>
             </div>
         </div>
         <footer class="uts-footer">
-                <nav class="footer-nav">
+            <nav class="footer-nav">
+                <input type="checkbox" id="li-pull-1st">
                 <ul class="footer-item">
-                    <li><h2>自由潛水</h2></li>
-                    <li><a href="#">尋找潛伴</a></li>
-                    <li><a href="#">尋找教練</a></li>
+                   
+                    <label for="li-pull-1st">
+                        <li>
+                            <h2>自由潛水</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                    <li><a href="UTS-free-buddy-page.html">尋找潛伴</a></li>
+                    <li><a href="UTS-free-coach-page.html">尋找教練</a></li>
                     <li><a href="#">證照考試</a></li>
                     <li><a href="#">活動競賽</a></li>
-                    <li><a href="#">練習場地</a></li>
+                    <li><a href="UTS-pool-page.html">練習場地</a></li>
                 </ul>
+                <input type="checkbox" id="li-pull-2nd">
                 <ul class="footer-item">
-                    <li><h2>水肺潛水</h2></li>
-                    <li><a href="#">尋找潛伴</a></li>
-                    <li><a href="#">尋找教練</a></li>
+                   
+                    <label for="li-pull-2nd">
+                        <li>
+                            <h2>水肺潛水</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                 
+                    <li><a href="UTS-scuba-buddy-page.html">尋找潛伴</a></li>
+                    <li><a href="UTS-scuba-coach-page.html">尋找教練</a></li>
                     <li><a href="#">證照考試</a></li>
                     <li><a href="#">活動競賽</a></li>
-                    <li><a href="#">練習場地</a></li>
+                    <li><a href="UTS-pool-scuba-page.html">練習場地</a></li>
                 </ul>
+                <input type="checkbox" id="li-pull-3rd">
                 <ul class="footer-item">
-                    <li><h2>揪團潛水</h2></li>
+                    <label for="li-pull-3rd">
+                        <li>
+                            <h2>揪團潛水</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                  
                     <li><a href="#">一日潛旅</a></li>
                     <li><a href="#">國內潛旅</a></li>
                     <li><a href="#">國外潛旅</a></li>
                     <li><a href="#">團練專區</a></li>
                     <li><a href="#">主題潛旅</a></li>
                 </ul>
+                <input type="checkbox" id="li-pull-4th">
                 <ul class="footer-item">
-                    <li><h2>裝備租借</h2></li>
+                   
+                    <label for="li-pull-4th">
+                        <li>
+                            <h2>裝備租借</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                   
                     <li><a href="#">蛙鞋</a></li>
                     <li><a href="#">面鏡</a></li>
                     <li><a href="#">防寒衣</a></li>
                     <li><a href="#">潛水錶</a></li>
                     <li><a href="#">浮球</a></li>
                 </ul>
+                <input type="checkbox" id="li-pull-5th">
                 <ul class="footer-item">
-                    <li><h2>潛點介紹</h2></li>
+                    <label for="li-pull-5th">
+                        <li>
+                            <h2>潛點介紹</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                 
                     <li><a href="#">北台灣</a></li>
                     <li><a href="#">中台灣</a></li>
                     <li><a href="#">南台灣</a></li>
                     <li><a href="#">離島</a></li>
                     <li><a href="#">國外潛點</a></li>
-                </ul>
+                </ul> 
+                <input type="checkbox" id="li-pull-6th">
                 <ul class="footer-item">
-                    <li><h2>潛水百科</h2></li>
+                    <label for="li-pull-6th">
+                        <li>
+                            <h2>潛水百科</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
                     <li><a href="#">自潛知識</a></li>
                     <li><a href="#">水肺知識</a></li>
                     <li><a href="#">安全觀念</a></li>
                     <li><a href="#">競賽項目</a></li>
                     <li><a href="#">世界紀錄</a></li>
                 </ul>
-                </nav>
-                <img src="/pic/footer-bg.png" alt="">
-                <div class="copyright">
-                    本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。
-                    若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
-                    COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.
-                </div>
-        </footer>
+            </nav>
+    
+            <div class="copyright">
+                本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。
+                若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
+                COPYRIGHT © 2022 UnderTheSea Co.,Ltd. All rights reserved.
+            </div>
+       </footer>
     </div>
         
-    
+
 </body>
 </html>

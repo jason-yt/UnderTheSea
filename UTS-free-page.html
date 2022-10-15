@@ -518,8 +518,8 @@
      
     </header>
     <div class="head-main-cover">
-        <!-- <input type="radio" id="coach" name="dive-switch">
-        <input type="radio" id="buddy" name="dive-switch"> -->
+        <input type="radio" id="coach" name="dive-switch">
+        <input type="radio" id="buddy" name="dive-switch">
         <div class="cover-bg">
             <div class="cover-bg-main">
                 <div class="cover-input">
@@ -528,12 +528,12 @@
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                     <div class="dive-btn-switch">
-                        <button class="dive-btn dive-btn-buddy">
+                        <label for="buddy" class="dive-btn dive-btn-buddy">
                             潛伴
-                        </button>
-                        <button class="dive-btn dive-btn-coach">
+                        </label>
+                        <label for="coach"class="dive-btn dive-btn-coach">
                             教練
-                        </button>
+                        </label>
                     </div>
                 </div>
                 <div class="cover-title">
@@ -554,69 +554,169 @@
     </div>
     <div class="free-main-body">
         <div class="main-dive-body">
-            <h2 class="title-h2">潛伴活動</h2>
-            <div class="buddy-body dive-body">
-        
-                <div class="dive-body-item body-item-main">
-                    <img src="pic/dive-bd-1.png" alt="dive-bd">
-                    <h3>小琉球 海龜共遊</h3>
-                    <p>Linda 主揪</p>
-                </div>
-                <div class="body-item-2">
-                    <div class="dive-body-item">
-                        <img src="pic/dive-bd-2.png" alt="dive-bd">
-                        <h3>鯊魚共舞</h3>
-                        <p>Ray 主揪</p>
+            <div class="container-section container-buddy">
+                <h2 class="title-h2">潛伴活動</h2>
+                <div class="container">
+                    <div class="row row-cols-1 ">
+                
+                            <div class="colPadding col-12 col-md-8 col-lg-6">
+                                <div class="col">
+                                    <div class="dive-body-item body-item-main">
+                                        <img src="pic/dive-bd-1.jpg" alt="dive-bd">
+                                        <h3>小琉球 海龜共遊</h3>
+                                        <p>Linda 主揪</p>
+                                    </div>
+                                </div>
+                
+                            </div>
+                            <div class="colPadding col-12 col-md-4 col-lg-3">
+                                <div class="col">
+                                    <div class="row row-cols-2 row-cols-md-1">
+                                        <div class="col">
+                                            <div class="dive-body-item dive-body-item-2">
+                                                <img src="pic/dive-bd-2.jpg" alt="dive-bd">
+                                                <h3>鯊魚共舞</h3>
+                                                <p>Ray 主揪</p>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="dive-body-item dive-body-item-2">
+                                                <img src="pic/dive-bd-3.jpg" alt="dive-bd">
+                                                <h3>海底巡禮</h3>
+                                                <p>Will主揪</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="colPadding col-12 col-md-12 col-lg-3">
+                                <div class="col">
+                                    <div class="dive-body-item dive-body-item-1">
+                                        <img src="pic/dive-bd-4.jpg" alt="dive-bd">
+                                        <h3>沈浸海底</h3>
+                                        <p>Gigi 主揪</p>
+                                    </div>
+                                </div>
+                            </div>
+                
                     </div>
-                    <div class="dive-body-item">
-                        <img src="pic/dive-bd-3.png" alt="dive-bd">
-                        <h3>海底巡禮</h3>
-                        <p>Will主揪</p>
-                    </div>
-                </div>
-                <div class="dive-body-item body-item-1">
-                    <img src="pic/dive-bd-4.png" alt="dive-bd">
-                    <h3>沈浸海底</h3>
-                    <p>Gigi 主揪</p>
                 </div>
             </div>
-            <h2>教練課程</h2>
-            <div class="coach-body dive-body">
-        
-                <div class="coach-item-2">
-                    <div class="dive-coach-item ">
-                        <img src="pic/dive-bd-5.png" alt="dive-bd">
-                        <h3>海底攝影</h3>
-                        <p>Kevin 教練</p>
-                    </div>
-                    <div class="dive-coach-item ">
-                        <img src="pic/dive-bd-1.png" alt="dive-bd">
-                        <h3>海中生態</h3>
-                        <p>Amy 教練</p>
+
+            <div class="container-section container-coach">
+                <h2>教練課程</h2>
+                <div class="container">
+                    <div class="row row-cols-1 ">
+                            <div class="colPadding col-12 col-md-8">
+                                <div class="col">
+                                    <div class="row row-cols-1">
+                                        <div class="col">
+                                            <div class="dive-coach-item dive-body-item-2">
+                                                <img src="pic/dive-bd-5.jpg" alt="dive-bd">
+                                                <h3>海底攝影</h3>
+                                                <p>Kevin 教練</p>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="dive-coach-item  dive-body-item-2">
+                                                <img src="pic/dive-bd-1.jpg" alt="dive-bd">
+                                                <h3>海中生態</h3>
+                                                <p>Amy 教練</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="colPadding col-12 col-md-4">
+                                <div class="col">
+                                    <div class="dive-coach-item dive-coach-item-1">
+                                        <img src="pic/dive-bd-4.jpg" alt="dive-bd">
+                                        <h3>FreeFall技巧</h3>
+                                        <p>Tony 教練</p>
+                                    </div>
+                                </div>
+                            </div>
+                
                     </div>
                 </div>
-                <div class="dive-coach-item-1 ">
-                    <img src="pic/dive-bd-4.png" alt="dive-bd">
-                    <h3>FreeFall技巧</h3>
-                    <p>Tony 教練</p>
+            </div>
+
+            <div class="container-section container-group">
+                <h2 class="title-h2-3">潛團照片</h2>
+                <div class="container">
+                    <div class="row row-cols-1 ">
+                
+                            <div class="colPadding col-6  col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="colPadding col-6 col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-4-sq.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="colPadding col-6 col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="colPadding col-6 col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-1-sq.jpg" alt="">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row row-cols-1 ">
+                
+                            <div class="colPadding col-6 col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-1-sq.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="colPadding col-6 col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-5-sq.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="colPadding col-6 col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="colPadding col-6 col-lg-3">
+                                <div class="col diving-group-pic">
+                                    <img src="pic/dive-bd-3.jpg" alt="">
+                                </div>
+                            </div>
+                    </div>
                 </div>
             </div>
-            <h2 class="title-h2-3">潛團照片</h2>
-            <div class="dive-pic">
-                    <img src="pic/dive-bd-2.png" alt="">
-                    <img src="pic/dive-bd-3.png" alt="">
-                    <img src="pic/dive-bd-2.png" alt="">
-                    <img src="pic/dive-bd-3.png" alt="">
-                    <img src="pic/dive-bd-2.png" alt="">
-                    <img src="pic/dive-bd-3.png" alt="">
-                    <img src="pic/dive-bd-2.png" alt="">
-                    <img src="pic/dive-bd-3.png" alt="">
-            </div>
-            <h2 class="title-h2-4">潛團影片</h2>
-            <div class="dive-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/eu2pBpQolKE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/gvf1vq8h-ec?controls=0&amp;start=63" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4zTZTQ5rlKg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+         
+            <div class="container-section container-video">
+                <h2 class="title-h2-4">潛團影片</h2>
+                  <div class="container">
+                        <div class="row row-cols-1  row-cols-md-3 ">
+                            <div class="col">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/eu2pBpQolKE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="col">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/gvf1vq8h-ec?controls=0&amp;start=63" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="col">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4zTZTQ5rlKg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
+
+                        </div>
+                  </div>
             </div>
         </div>
         <footer class="uts-footer">
