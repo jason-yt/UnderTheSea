@@ -11,16 +11,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/quicksilver" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="UTS-footer.css">
-    <link rel="stylesheet" href="UTS-headr.css">
+    <link rel="stylesheet" href="UTS-header_rwd.css">
     <link rel="stylesheet" href="UTS-product-page.css">
     <link rel="icon" href="logo.ico" type="image/x-icon" >
     <title>Under The Sea</title>
     <style>
-       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750;8..144,100,800,750&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Oswald:wght@300;400;600&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750;8..144,100,800,750&display=swap');  
+        @import url('http://fonts.cdnfonts.com/css/quicksilver');
         *{
             font-family: "Noto Sans TC", sans-serif, "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;;
         }
+        
     </style>
 </head>
 <body>
@@ -41,7 +46,7 @@
                 </h1>
             </div>
     
-            <nav class="main-nav">
+            <nav class="main-nav">  
                     <form action="" class="search">
                       
                         <input type="" name="search" id="search" placeholder="立即找潛伴">
@@ -49,7 +54,7 @@
                        
                     </form>
                     <ul>
-                        <li class="main-nav-btn free-btn">
+                        <li class="main-nav-btn">
                             <a href="UTS-free-page.html">自由潛水</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-btn">
@@ -79,7 +84,7 @@
                                     
                                 </li>
                                 <li class="sub-menu-btn">
-                                    <a href="UTS-pool-page.html">
+                                    <a href="UTS-pool-list.html">
                                         <i class="fa-solid fa-water-ladder sub-icon"></i>
                                         <span>練習場地</span>
                                     </a>
@@ -90,13 +95,13 @@
                             <a href="UTS-scuba-page.html">水肺潛水</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-btn">
-                                    <a href="UTS-scuba-buddy-page.html">
+                                    <a href="#">
                                         <i class="fa-solid fa-users sub-icon"></i>
                                         <span>尋找潛伴</span>
                                     </a>
                                 </li>
                                 <li class="sub-menu-btn">
-                                    <a href="UTS-scuba-coach-page.html">
+                                    <a href="#">
     
                                         <i class="fa-solid fa-user-astronaut sub-icon"></i>
                                         <span>尋找教練</span>
@@ -116,7 +121,7 @@
                                     
                                 </li>
                                 <li class="sub-menu-btn">
-                                    <a href="UTS-pool-scuba-page.html">
+                                    <a href="#">
                                         <i class="fa-solid fa-water-ladder sub-icon"></i>
                                         <span>練習場地</span>
                                     </a>
@@ -159,7 +164,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="main-nav-btn rent-btn">
+                        <li class="main-nav-btn">
                             <a href="UTS-product-page.html">裝備租借</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-btn">
@@ -287,76 +292,376 @@
             <div class="singup">
                 <a href="#"><i class="fa-solid fa-user"></i></a>
             </div>
-    
+           
         </div>
+        <nav class="sec-main-nav">  
+            <!-- <div class="dir-btn">
+                <i class="fa-solid fa-chevron-left" id="btnLeft"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div> -->
+          
+    
+            <ul>
+                <li class="main-nav-btn">
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="UTS-free-buddy-page.html">
+                                <i class="fa-solid fa-users sub-icon"></i>
+                                <span>尋找潛伴</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="UTS-free-coach-page.html">
+    
+                                <i class="fa-solid fa-user-astronaut sub-icon"></i>
+                                <span>尋找教練</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-address-card sub-icon"></i>
+                                <span>證照考試</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                <span>活動競賽</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="UTS-pool-page.html">
+                                <i class="fa-solid fa-water-ladder sub-icon"></i>
+                                <span>練習場地</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-users sub-icon"></i>
+                                <span>尋找潛伴</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+    
+                                <i class="fa-solid fa-user-astronaut sub-icon"></i>
+                                <span>尋找教練</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-address-card sub-icon"></i>
+                                <span>證照考試</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                <span>活動競賽</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-water-ladder sub-icon"></i>
+                                <span>練習場地</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-car sub-icon"></i>
+                                <span>一日潛旅</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-ship sub-icon"></i>
+                                <span>國內潛旅</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-sharp fa-solid fa-plane sub-icon"></i>
+                                <span>國外潛旅</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-people-roof sub-icon"></i>
+                                <span>團練專區</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-sharp fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>主題潛旅</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+              
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-socks sub-icon"></i>
+                                <span>蛙鞋</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-mask sub-icon"></i>
+                                <span>面鏡</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-shirt sub-icon"></i>
+                                <span>防寒衣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-stopwatch sub-icon"></i>
+                                <span>潛水錶</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-circle-dot sub-icon"></i>
+                                <span>浮球</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+                
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>北台灣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>中台灣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>南台灣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>離島</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                
+                                <i class="fa-solid fa-plane-departure sub-icon"></i>
+                                <span>國外潛點</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">        
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-user-shield sub-icon"></i>
+                                <span>自潛知識</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-user-shield sub-icon"></i>
+                                <span>水肺知識</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-water sub-icon"></i>
+                                <span>安全觀念</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                <span>競賽項目</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-stopwatch sub-icon"></i>
+                                <span>世界紀錄</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+       
+    
      
     </header>
     <div class="product-main-body">
         <div class="product-main-head">
             <div class="product-head-title">
                 <h2>
-                    準備好裝備，要下潛了嗎？
+                準備好裝備，要下潛了嗎？
                 </h2>
             </div>
-            <div class="product-main-pic">
-                <div class="product-item product-item-in-1">
-                    <a href="">
-                        <img src="pic/product-pic-1.jpg" alt="">
-
-                    </a>
-                </div>
-                <div class="product-item product-item-in-2">
-                    <a href="">
-                        <img src="pic/product-pic-2.jpg.jpg" alt="">
-                    
-                    </a>
-                    <a href="">
-                        <img src="pic/product-pic-3.webp" alt="">
-                       
-                    </a>
-                </div>
-                <div class="product-item product-item-main">
-                    <a href="">
-                        <img src="pic/product-pic-4.webp" alt="">
-
-                    </a>
-                </div>
-                <div class="product-item product-item-in-2">
-                    <a href="">
-                        <img src="pic/product-pic-5.webp" alt="">
-
-                    </a>
-                    <a href="">
-                        <img src="pic/product-pic-6.webp" alt="">
-                    </a>
-                </div>
-                <div class="product-item product-item-in-1">
-                   <a href="">
-                    <img src="pic/product-pic-7.webp" alt="">
-
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="product-main-content">
-            <div class="product-group">
-                <h2>下潛必備</h2>
-                <div class="product-item-list">
-                    <div class="product-sale">
-                        <img src="pic/product-pic-2.jpg.jpg" alt="">
-                        <div class="product-sale-info">
-                            <p>個人面鏡</p>
-                            <p>$NT250/天</p>
+              <div class="container cover-container">
+                    <div class="row cover-row row-cols-1 row-cols-md-5">
+                        <div class="col">
+                            <a href="">
+                                <img src="pic/product-pic-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <div class="row cover-row row-cols-2 row-cols-md-1">
+                            
+                                <div class="col cover-pic-2">
+                                    <a href="">
+                                        <img src="pic/product-pic-2.jpg.jpg" alt="">
+                                    
+                                    </a>
+                                </div>
+                                
+                                <div class="col cover-pic-2">
+                                    <a href="">
+                                        <img src="pic/product-pic-3.webp" alt="">
+                                       
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a href="">
+                                <img src="pic/product-pic-4.webp" alt="">
+        
+                            </a>
+                        </div>
+                        <div class="col">
+                            <div class="row cover-row row-cols-2 row-cols-md-1">
+                                <div class="col cover-pic-2">
+                                    <a href="">
+                                        <img src="pic/product-pic-5.webp" alt="">
+                
+                                    </a>
+                                </div>
+                                <div class="col cover-pic-2">
+                                    <a href="">
+                                        <img src="pic/product-pic-6.webp" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a href="">
+                                <img src="pic/product-pic-7.webp" alt="">
+            
+                            </a>
                         </div>
                     </div>
+              </div>
+
+        </div>
+        <div class="product-main-content">
+            <div  class="product-group swiper S-mySwiper">
+                <h2>下潛必備</h2>
+                <div class="swiper-wrapper product-item-list">
+                    <div class="swiper-slide">   
+                            <div class="product-sale">
+                                <img src="pic/product-pic-5.webp" alt="">
+                                <div class="product-sale-info">
+                                    <p>短僕蛙鞋</p>
+                                    <p>$NT500/天</p>
+                                </div>
+                            </div>
+                    </div>   
+                    <div class="swiper-slide">   
+                        <div class="product-sale">
+                            <img src="pic/product-pic-2.jpg.jpg" alt="">
+                            <div class="product-sale-info ">
+                                <p>個人面鏡</p>
+                                <p>$NT250/天</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">   
+                        <div class="product-sale">
+                            <img src="pic/product-pic-6.webp" alt="">
+                            <div class="product-sale-info">
+                                <p>個人呼吸管</p>
+                                <p>$NT100/天</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">   
+                        <div class="product-sale">
+                            <img src="pic/product-pic-5.webp" alt="">
+                            <div class="product-sale-info">
+                                <p>短僕蛙鞋</p>
+                                <p>$NT500/天</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">   
+                        <div class="product-sale">
+                            <img src="pic/product-pic-3.webp" alt="">
+                            <div class="product-sale-info">
+                                <p>輕薄防寒衣</p>
+                                <p>$NT300/天</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">   
+                        <div class="product-sale">
+                            <img src="pic/product-pic-5.webp" alt="">
+                            <div class="product-sale-info">
+                                <p>短僕蛙鞋</p>
+                                <p>$NT500/天</p>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="swiper-slide">   
+                        <div class="product-sale">
+                            <img src="pic/product-pic-2.jpg.jpg" alt="">
+                            <div class="product-sale-info ">
+                                <p>個人面鏡</p>
+                                <p>$NT250/天</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">   
                     <div class="product-sale">
                         <img src="pic/product-pic-6.webp" alt="">
                         <div class="product-sale-info">
                             <p>個人呼吸管</p>
                             <p>$NT100/天</p>
                         </div>
-                      
                     </div>
+                    </div>
+                    <div class="swiper-slide">   
                     <div class="product-sale">
                         <img src="pic/product-pic-5.webp" alt="">
                         <div class="product-sale-info">
@@ -364,6 +669,8 @@
                             <p>$NT500/天</p>
                         </div>
                     </div>
+                    </div>
+                    <div class="swiper-slide">   
                     <div class="product-sale">
                         <img src="pic/product-pic-3.webp" alt="">
                         <div class="product-sale-info">
@@ -371,53 +678,178 @@
                             <p>$NT300/天</p>
                         </div>
                     </div>
+                    </div>
+                    
+                    
                 </div>
+                <br>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
 
-            <div class="product-group">
+
+            <div  class="product-group swiper M-mySwiper">
                 <h2>精選組合</h2>
-                <div class="product-multi-mix">
-                    <div class="product-multi-item">
-                        <div class="multi-item-pic-4">
-                            <img src="pic/product-pic-2.jpg.jpg" alt="">
-                            <img src="pic/product-pic-3.webp" alt="">
-                            <img src="pic/product-pic-5.webp" alt="">
-                            <img src="pic/product-pic-6.webp" alt="">
-                        </div>
-                        <div class="product-item-info">
-                            <p>新手套組</p>
-                            <p>$NT799/天</p>
-                        </div>
-                    </div>
-                    <div class="product-multi-item">
-                        <div class="multi-item-pic-3">
-                            <img src="pic/product-pic-7.webp" alt="">
-                            <div class="multi-item-2-pic">
-                                <img src="pic/product-pic-3.webp" alt="">
-                                <img src="pic/product-pic-5.webp" alt="">
+                    <div class="swiper-wrapper product-item-list product-multi-mix">
+                        <div class="swiper-slide">   
+                            <div class="product-multi-item">
+                                <div class="multi-item-pic-4">
+                                    <img src="pic/product-pic-2.jpg.jpg" alt="">
+                                    <img src="pic/product-pic-3.webp" alt="">
+                                    <img src="pic/product-pic-5.webp" alt="">
+                                    <img src="pic/product-pic-6.webp" alt="">
+                                </div>
+                                <div class="product-item-info">
+                                    <p>新手套組</p>
+                                    <p>$NT799/天</p>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="swiper-slide">   
+                            <div class="product-multi-item">
+                                <div class="multi-item-pic-3">
+                                    <img src="pic/product-pic-7.webp" alt="">
+                                    <div class="multi-item-2-pic">
+                                        <img src="pic/product-pic-3.webp" alt="">
+                                        <img src="pic/product-pic-5.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-item-info">
+                                    <p>潮流套組</p>
+                                    <p>$NT599/天</p>
+                                </div>
+                            </div>
+                        </div>    
+                        
+                        <div class="swiper-slide">   
+                            <div class="product-multi-item">
+                                <div class="multi-item-pic-4">
+                                    <img src="pic/product-pic-2.jpg.jpg" alt="">
+                                    <img src="pic/product-pic-3.webp" alt="">
+                                    <img src="pic/product-pic-5.webp" alt="">
+                                    <img src="pic/product-pic-6.webp" alt="">
+                                </div>
+                                <div class="product-item-info">
+                                    <p>新手套組</p>
+                                    <p>$NT799/天</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="product-item-info">
-                            <p>潮流套組</p>
-                            <p>$NT599/天</p>
-                        </div>
-                    </div>
-                    <div class="product-multi-item">
-                        <div class="multi-item-pic-3-mix">
-                            <img src="pic/product-pic-4.webp" alt="">
-                            <div class="multi-item-2-mix">
-                                <img src="pic/product-pic-3.webp" alt="">
-                                <img src="pic/product-pic-5.webp" alt="">
+                        <div class="swiper-slide">   
+                            <div class="product-multi-item">
+                                <div class="multi-item-pic-3-mix">
+                                    <img src="pic/product-pic-4.webp" alt="">
+                                    <div class="multi-item-2-mix">
+                                        <img src="pic/product-pic-3.webp" alt="">
+                                        <img src="pic/product-pic-5.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-item-info">
+                                    <p>水肺套組</p>
+                                    <p>$NT899/天</p>
+                                </div>
+                            </div>
+                        </div>       
+                        <div class="swiper-slide">   
+                            <div class="product-multi-item">
+                                <div class="multi-item-pic-3">
+                                    <img src="pic/product-pic-7.webp" alt="">
+                                    <div class="multi-item-2-pic">
+                                        <img src="pic/product-pic-3.webp" alt="">
+                                        <img src="pic/product-pic-5.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-item-info">
+                                    <p>潮流套組</p>
+                                    <p>$NT599/天</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="product-item-info">
-                            <p>水肺套組</p>
-                            <p>$NT899/天</p>
+                        <div class="swiper-slide">   
+                            <div class="product-multi-item">
+                                <div class="multi-item-pic-4">
+                                    <img src="pic/product-pic-2.jpg.jpg" alt="">
+                                    <img src="pic/product-pic-3.webp" alt="">
+                                    <img src="pic/product-pic-5.webp" alt="">
+                                    <img src="pic/product-pic-6.webp" alt="">
+                                </div>
+                                <div class="product-item-info">
+                                    <p>新手套組</p>
+                                    <p>$NT799/天</p>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="swiper-slide">   
+                            <div class="product-multi-item">
+                                <div class="multi-item-pic-3">
+                                    <img src="pic/product-pic-7.webp" alt="">
+                                    <div class="multi-item-2-pic">
+                                        <img src="pic/product-pic-3.webp" alt="">
+                                        <img src="pic/product-pic-5.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-item-info">
+                                    <p>潮流套組</p>
+                                    <p>$NT599/天</p>
+                                </div>
+                            </div>
                         </div>
+                        <div class="swiper-slide">   
+                            <div class="product-multi-item">
+                                <div class="multi-item-pic-3-mix">
+                                    <img src="pic/product-pic-4.webp" alt="">
+                                    <div class="multi-item-2-mix">
+                                        <img src="pic/product-pic-3.webp" alt="">
+                                        <img src="pic/product-pic-5.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-item-info">
+                                    <p>水肺套組</p>
+                                    <p>$NT899/天</p>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="swiper-slide">   
+                            <div class="product-multi-item">
+                                <div class="multi-item-pic-4">
+                                    <img src="pic/product-pic-2.jpg.jpg" alt="">
+                                    <img src="pic/product-pic-3.webp" alt="">
+                                    <img src="pic/product-pic-5.webp" alt="">
+                                    <img src="pic/product-pic-6.webp" alt="">
+                                </div>
+                                <div class="product-item-info">
+                                    <p>新手套組</p>
+                                    <p>$NT799/天</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">   
+                            <div class="product-multi-item">
+                                <div class="multi-item-pic-3-mix">
+                                    <img src="pic/product-pic-4.webp" alt="">
+                                    <div class="multi-item-2-mix">
+                                        <img src="pic/product-pic-3.webp" alt="">
+                                        <img src="pic/product-pic-5.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-item-info">
+                                    <p>水肺套組</p>
+                                    <p>$NT899/天</p>
+                                </div>
+                            </div>
+                        </div>  
+                       
+                         
+                        
                     </div>
-                </div>
-                
-                
+                    <br>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+            </div>
+    
+
             </div>
             <div class="product-ad-group">
                 <div class="product-ad-pic">
@@ -452,68 +884,188 @@
                     </div>
                 </div>
             </div>
-            
+            <footer class="uts-footer">
+                <nav class="footer-nav">
+                    <input type="checkbox" id="li-pull-1st">
+                    <ul class="footer-item">
+                       
+                        <label for="li-pull-1st">
+                            <li>
+                                <h2>自由潛水</h2>
+                                <i class="fa-solid fa-plus"></i>
+                            </li>
+                        </label>
+                        <li><a href="UTS-free-buddy-page.html">尋找潛伴</a></li>
+                        <li><a href="UTS-free-coach-page.html">尋找教練</a></li>
+                        <li><a href="#">證照考試</a></li>
+                        <li><a href="#">活動競賽</a></li>
+                        <li><a href="UTS-pool-page.html">練習場地</a></li>
+                    </ul>
+                    <input type="checkbox" id="li-pull-2nd">
+                    <ul class="footer-item">
+                       
+                        <label for="li-pull-2nd">
+                            <li>
+                                <h2>水肺潛水</h2>
+                                <i class="fa-solid fa-plus"></i>
+                            </li>
+                        </label>
+                     
+                        <li><a href="UTS-scuba-buddy-page.html">尋找潛伴</a></li>
+                        <li><a href="UTS-scuba-coach-page.html">尋找教練</a></li>
+                        <li><a href="#">證照考試</a></li>
+                        <li><a href="#">活動競賽</a></li>
+                        <li><a href="UTS-pool-scuba-page.html">練習場地</a></li>
+                    </ul>
+                    <input type="checkbox" id="li-pull-3rd">
+                    <ul class="footer-item">
+                        <label for="li-pull-3rd">
+                            <li>
+                                <h2>揪團潛水</h2>
+                                <i class="fa-solid fa-plus"></i>
+                            </li>
+                        </label>
+                      
+                        <li><a href="#">一日潛旅</a></li>
+                        <li><a href="#">國內潛旅</a></li>
+                        <li><a href="#">國外潛旅</a></li>
+                        <li><a href="#">團練專區</a></li>
+                        <li><a href="#">主題潛旅</a></li>
+                    </ul>
+                    <input type="checkbox" id="li-pull-4th">
+                    <ul class="footer-item">
+                       
+                        <label for="li-pull-4th">
+                            <li>
+                                <h2>裝備租借</h2>
+                                <i class="fa-solid fa-plus"></i>
+                            </li>
+                        </label>
+                       
+                        <li><a href="#">蛙鞋</a></li>
+                        <li><a href="#">面鏡</a></li>
+                        <li><a href="#">防寒衣</a></li>
+                        <li><a href="#">潛水錶</a></li>
+                        <li><a href="#">浮球</a></li>
+                    </ul>
+                    <input type="checkbox" id="li-pull-5th">
+                    <ul class="footer-item">
+                        <label for="li-pull-5th">
+                            <li>
+                                <h2>潛點介紹</h2>
+                                <i class="fa-solid fa-plus"></i>
+                            </li>
+                        </label>
+                     
+                        <li><a href="#">北台灣</a></li>
+                        <li><a href="#">中台灣</a></li>
+                        <li><a href="#">南台灣</a></li>
+                        <li><a href="#">離島</a></li>
+                        <li><a href="#">國外潛點</a></li>
+                    </ul> 
+                    <input type="checkbox" id="li-pull-6th">
+                    <ul class="footer-item">
+                        <label for="li-pull-6th">
+                            <li>
+                                <h2>潛水百科</h2>
+                                <i class="fa-solid fa-plus"></i>
+                            </li>
+                        </label>
+                        <li><a href="#">自潛知識</a></li>
+                        <li><a href="#">水肺知識</a></li>
+                        <li><a href="#">安全觀念</a></li>
+                        <li><a href="#">競賽項目</a></li>
+                        <li><a href="#">世界紀錄</a></li>
+                    </ul>
+                </nav>
+        
+                <div class="copyright">
+                    本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。
+                    若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
+                    COPYRIGHT © 2022 UnderTheSea Co.,Ltd. All rights reserved.
+                </div>
+            </footer>
         </div>
-        <footer class="uts-footer">
-            <nav class="footer-nav">
-            <ul class="footer-item">
-                <li><h2>自由潛水</h2></li>
-                <li><a href="UTS-free-buddy-page.html">尋找潛伴</a></li>
-                <li><a href="UTS-free-coach-page.html">尋找教練</a></li>
-                <li><a href="#">證照考試</a></li>
-                <li><a href="#">活動競賽</a></li>
-                <li><a href="UTS-pool-page.html">練習場地</a></li>
-            </ul>
-            <ul class="footer-item">
-                <li><h2>水肺潛水</h2></li>
-                <li><a href="UTS-scuba-buddy-page.html">尋找潛伴</a></li>
-                <li><a href="UTS-scuba-coach-page.html">尋找教練</a></li>
-                <li><a href="#">證照考試</a></li>
-                <li><a href="#">活動競賽</a></li>
-                <li><a href="UTS-pool-scuba-page.html">練習場地</a></li>
-            </ul>
-            <ul class="footer-item">
-                <li><h2>揪團潛水</h2></li>
-                <li><a href="#">一日潛旅</a></li>
-                <li><a href="#">國內潛旅</a></li>
-                <li><a href="#">國外潛旅</a></li>
-                <li><a href="#">團練專區</a></li>
-                <li><a href="#">主題潛旅</a></li>
-            </ul>
-            <ul class="footer-item">
-                <li><h2>裝備租借</h2></li>
-                <li><a href="#">蛙鞋</a></li>
-                <li><a href="#">面鏡</a></li>
-                <li><a href="#">防寒衣</a></li>
-                <li><a href="#">潛水錶</a></li>
-                <li><a href="#">浮球</a></li>
-            </ul>
-            <ul class="footer-item">
-                <li><h2>潛點介紹</h2></li>
-                <li><a href="#">北台灣</a></li>
-                <li><a href="#">中台灣</a></li>
-                <li><a href="#">南台灣</a></li>
-                <li><a href="#">離島</a></li>
-                <li><a href="#">國外潛點</a></li>
-            </ul>
-            <ul class="footer-item">
-                <li><h2>潛水百科</h2></li>
-                <li><a href="#">自潛知識</a></li>
-                <li><a href="#">水肺知識</a></li>
-                <li><a href="#">安全觀念</a></li>
-                <li><a href="#">競賽項目</a></li>
-                <li><a href="#">世界紀錄</a></li>
-            </ul>
-            </nav>
-    
-            <div class="copyright">
-                本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。
-                若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
-                COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.
-            </div>
-       </footer>
+        
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".S-mySwiper", {
+            
+            breakpoints: {
+         
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                    slidesPerGroup: 1,
+                    width:1200,
+                }
+
+            },
+
+
+            width:345,
+            slidesPerView: 2,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+
+            },
+        
+            
+      });
+    </script>
+    <script>
+        var swiper = new Swiper(".M-mySwiper", {
+              
+              breakpoints: {
+           
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        slidesPerGroup: 2,
+                        width:1200,
+                    },
+
+                  768: {
+                        slidesPerView: 2,
+                        spaceBetween: 50,
+                        slidesPerGroup: 2,
+                        width:768,
+                  }
+  
+              },
+  
+  
+              width:390,
+              slidesPerView: 2,
+              spaceBetween: 30,
+              slidesPerGroup: 1,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+              },
+              navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+  
+              },
+          
+              
+        });
+      </script>
 
 </body>
 </html>

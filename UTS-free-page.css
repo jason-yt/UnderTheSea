@@ -120,6 +120,7 @@
 .cover-text p>span:nth-child(2){
     opacity: 0;
     color:#006eff ;
+
 }
 #coach:checked+#buddy+.cover-bg>.cover-bg-main>.cover-text p>span:nth-child(2){
     opacity: 1;
@@ -442,10 +443,10 @@ ul>.main-nav-btn:nth-child(1)>a{
     }
 
     .main-nav-btn:hover >.sub-menu a:hover {
-        color: #b1cbd5
+        color: #e4f2f7;
     }
     .main-nav-btn:hover >.sub-menu a:hover>i{
-        color: #b1cbd5
+        color: #e4f2f7;
     }
 
 
@@ -484,7 +485,7 @@ ul>.main-nav-btn:nth-child(1)>a{
     }
     .cover-text p>span:nth-child(2){
         opacity: 0;
-        left: -25vmin;
+        left: -178px;
     }
 
     .cover-input{
