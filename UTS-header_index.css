@@ -396,7 +396,7 @@
         font-size: 30px;
         padding-bottom: 15px;
     }
-    /* .main-nav-btn:hover >.sub-menu{
+    .main-nav-btn:hover >.sub-menu{
         display:flex ;
         position: absolute;
         top: 60px;
@@ -404,7 +404,7 @@
         background-color: rgba(97, 134, 164);
         width: 100%;
         justify-content: center;
-    } */
+    }
     .sub-menu-btn a{
         display: flex;
         flex-direction: column;

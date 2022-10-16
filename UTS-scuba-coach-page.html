@@ -11,10 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/quicksilver" rel="stylesheet">
-    <link rel="stylesheet" href="UTS-headr_2.css">
+    <link rel="stylesheet" href="UTS-header_rwd.css">
     <link rel="stylesheet" href="UTS-rank.css">
     <link rel="stylesheet" href="UTS-footer.css">
-    <link rel="stylesheet" href="UTS-filter-nav.css">
+    <link rel="stylesheet" href="UTS-buddy-card-sq.css">
+    <link rel="stylesheet" href="UTS-filter-nav-935.css">
     <link rel="stylesheet" href="UTS-scuba-coach-page.css">
     <link rel="icon" href="logo.ico" type="image/x-icon" >
     <title>Under The Sea</title>
@@ -27,7 +28,7 @@
     </style>
 </head>
 <body>
-    <header class="main-header">
+    <header class="uts-header">
     
         <input type="checkbox" id="menu-switch">
        
@@ -44,7 +45,7 @@
                 </h1>
             </div>
     
-            <nav class="main-nav">
+            <nav class="main-nav">  
                     <form action="" class="search">
                       
                         <input type="" name="search" id="search" placeholder="立即找潛伴">
@@ -52,7 +53,7 @@
                        
                     </form>
                     <ul>
-                        <li class="main-nav-btn freedivg-btn">
+                        <li class="main-nav-btn">
                             <a href="UTS-free-page.html">自由潛水</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-btn">
@@ -89,7 +90,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="main-nav-btn scuba-btn">
+                        <li class="main-nav-btn">
                             <a href="UTS-scuba-page.html">水肺潛水</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-btn">
@@ -98,7 +99,7 @@
                                         <span>尋找潛伴</span>
                                     </a>
                                 </li>
-                                <li class="sub-menu-btn ">
+                                <li class="sub-menu-btn">
                                     <a href="UTS-scuba-coach-page.html">
     
                                         <i class="fa-solid fa-user-astronaut sub-icon"></i>
@@ -290,27 +291,257 @@
             <div class="singup">
                 <a href="#"><i class="fa-solid fa-user"></i></a>
             </div>
-    
+           
         </div>
+        <nav class="sec-main-nav">  
+            <!-- <div class="dir-btn">
+                <i class="fa-solid fa-chevron-left" id="btnLeft"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div> -->
+          
+    
+            <ul>
+                <li class="main-nav-btn">
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="UTS-free-buddy-page.html">
+                                <i class="fa-solid fa-users sub-icon"></i>
+                                <span>尋找潛伴</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="UTS-free-coach-page.html">
+    
+                                <i class="fa-solid fa-user-astronaut sub-icon"></i>
+                                <span>尋找教練</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-address-card sub-icon"></i>
+                                <span>證照考試</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                <span>活動競賽</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="UTS-pool-page.html">
+                                <i class="fa-solid fa-water-ladder sub-icon"></i>
+                                <span>練習場地</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-users sub-icon"></i>
+                                <span>尋找潛伴</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+    
+                                <i class="fa-solid fa-user-astronaut sub-icon"></i>
+                                <span>尋找教練</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-address-card sub-icon"></i>
+                                <span>證照考試</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                <span>活動競賽</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-water-ladder sub-icon"></i>
+                                <span>練習場地</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-car sub-icon"></i>
+                                <span>一日潛旅</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-ship sub-icon"></i>
+                                <span>國內潛旅</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-sharp fa-solid fa-plane sub-icon"></i>
+                                <span>國外潛旅</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-people-roof sub-icon"></i>
+                                <span>團練專區</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-sharp fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>主題潛旅</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+              
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-socks sub-icon"></i>
+                                <span>蛙鞋</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-mask sub-icon"></i>
+                                <span>面鏡</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-shirt sub-icon"></i>
+                                <span>防寒衣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-stopwatch sub-icon"></i>
+                                <span>潛水錶</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-circle-dot sub-icon"></i>
+                                <span>浮球</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+                
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>北台灣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>中台灣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>南台灣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>離島</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                
+                                <i class="fa-solid fa-plane-departure sub-icon"></i>
+                                <span>國外潛點</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">        
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-user-shield sub-icon"></i>
+                                <span>自潛知識</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-user-shield sub-icon"></i>
+                                <span>水肺知識</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-water sub-icon"></i>
+                                <span>安全觀念</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                <span>競賽項目</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-stopwatch sub-icon"></i>
+                                <span>世界紀錄</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+       
+    
      
     </header>
     <div class="coach-main-body">
         <div class="coach-content">
             <div class="class-info">
-                <a href="">
-                    <div class="coach-class">
-                        <h2>本月主題課程</h2>
-                        <img src="pic/diving-class-1.jpg" alt="diving-class">
-                        <p>安全水下戒護教練課</p>
-                        <p>Jack 教練</p>
-                        <div class="class-tag">即將滿團</div>
-                    </div>
-                </a>
+                <div class="main-class">
+                    <a href="">
+                        <div class="coach-class coach-main-class">
+                            <h2>本月主題課程</h2>
+                            <img src="pic/diving-class-1.jpg" alt="diving-class">
+                            <p>安全水下戒護教練課</p>
+                            <p>Jack 教練</p>
+                            <div class="class-tag">即將滿團</div>
+                        </div>
+        
+                      
+                    </a>
+                </div>
                 <div class="class-sec">
                     <a href="">
                         <div class="coach-class">
                             <img src="pic/diving-class-3.jpg" alt="diving-class">
-                            <p>小琉球 泳池+海訓 3天2夜</p>
+                            <p>小琉球<br>泳池+海訓 3天2夜</p>
                             <p>Lauren 教練</p>
                             <div class="class-tag">好評再加開</div>
                         </div>
@@ -318,7 +549,8 @@
                     <a href="">
                         <div class="coach-class">
                             <img src="pic/diving-class-4.jpg" alt="diving-class">
-                            <p>綠島 泳池+海訓 3天2夜</p>
+                            <p>綠島<br>泳池+海訓 3天2夜</p>
+
                             <p>Paul 教練</p>
                             <div class="class-tag">即將滿團</div>
                         </div>
@@ -334,12 +566,14 @@
                 </div>
                 
             </div>
+        
             <div class="coach-rank">
                 <div class="hito-coach">
-                    <h2 class="rank-title">
-                        <i class="fa-solid fa-fire"></i>熱門教練
-                    </h2>
+                    
                     <div class="rank-list">
+                        <h2 class="rank-title">
+                            <i class="fa-solid fa-fire"></i>熱門教練
+                        </h2>
                         <a href="UTS-personal-page-coach.html">
                             <div class="rank-item">
                                 <div class="rank-pic">
@@ -417,8 +651,11 @@
 
 
                 <div class="new-coach">
-                    <h2 class="rank-title"><i class="fa-solid fa-arrow-up-wide-short"></i></i>新上線教練</h2>
+                 
                     <div class="rank-list">
+                        <h2 class="rank-title">
+                            <i class="fa-solid fa-arrow-up-wide-short"></i>新上線教練
+                        </h2>
                         <a href="UTS-personal-page-coach.html">
                             <div class="rank-item">
                                 <div class="rank-pic">
@@ -581,8 +818,8 @@
                                  <label for="cocah">需要住宿</label>
                             </div> 
                             <div class="filter-submit">
-                                <input type="submit" value="確定">
-                            </div>
+                                <label for="filter-switch">確定</label>
+                             </div>
     
     
                         </div>
@@ -594,841 +831,597 @@
 
 
         <div class="uts-content">
-            <div class="animation-content"><img src="diving_animation.gif" alt="diving_animation"></div>
-    
-           
           
-            <div class="freediving-content">
-                <div class="freecard-part">
-                    <i class="fa-solid fa-circle-chevron-left arrow-icon card-select"></i>
-                    <i class="fa-solid fa-circle-chevron-right arrow-icon card-select"></i>
-                    <div class="free-card-group">
-                        <div class="free-part-side">
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-3.jpg" alt="free-diving-card-paul"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">SSI</div>
-                                                <div class="card-license-tag">ADIA 2</div>
-                                            </div>
-                                            <p class="name">Paul</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>3y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>25m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-2.jpg" alt="free-diving-card-Anna"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 2</div>
-                                            </div>
-                                            <p class="name">Anna</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>1y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>15m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                        
-                        </div>
-                          <!-- coach -->
-                        <div class="free-part-side">
+              <div class="container">
+                    <div class="row row-cols-2  row-cols-lg-3 row-cols-xl-4">
+                        <div class="col">
                             <a href="UTS-personal-page-coach.html">
                                 <div class="diving-card free-card-coach freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
+                                   
                                     <div class="card-info">
                                         <div class="card_pic">
-                                            <img src="pic/diving-card/f-4.jpg" alt="free-diving-card-Bill"  >
+                                            <img src="pic/diving-card/s-1.jpg" alt="scuba-diving-card-Mary"  >
                                         </div>
                         
                                         <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 4</div>
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Mary</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
                                             </div>
-                                            <p class="name">Bill</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>4y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>45m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card-coach freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-1.jpg" alt="free-diving-card-Jack"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
                                             <div class="card-license">
                                                 <div class="card-license-tag">PADI</div>
                                                 <div class="card-license-tag">ADIA 3</div>
                                             </div>
-                                            <p class="name">Jack</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
                                         </div>
                                     </div>
-                                
                                 </div>
                             </a>
-                        
                         </div>
-                    </div>
-                    <div class="free-card-group">
-                        <div class="free-part-side">
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-5.jpg" alt="free-diving-card-cindy"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 2</div>
-                                            </div>
-                                            <p class="name">Cindy</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>1y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>18m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-6.jpg" alt="free-diving-card-Emma"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 2</div>
-                                            </div>
-                                            <p class="name">Emma</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>1y5m</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>25m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                        
-                        </div>
-                          <!-- coach -->
-                        <div class="free-part-side">
+                        <div class="col">
                             <a href="UTS-personal-page-coach.html">
                                 <div class="diving-card free-card-coach freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
+                                   
                                     <div class="card-info">
                                         <div class="card_pic">
-                                            <img src="pic/diving-card/f-7.jpg" alt="free-diving-card-roy"  >
+                                            <img src="pic/diving-card/s-2jpg.jpg" alt="sscuba-diving-card-Owen"  >
                                         </div>
                         
                                         <div class="card-profile">
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Owen</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
+                                            </div>
                                             <div class="card-license">
                                                 <div class="card-license-tag">PADI</div>
                                                 <div class="card-license-tag">ADIA 3</div>
                                             </div>
-                                            <p class="name">Roy</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>4y2m</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>36m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
                                         </div>
                                     </div>
-                                
                                 </div>
                             </a>
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card-coach freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-8.jpg" alt="free-diving-card-Lulu"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 4</div>
-                                            </div>
-                                            <p class="name">Lulu</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>3y2m</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>43m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                        
                         </div>
-                    </div>
-                </div>
-                <div class="freecard-part">
-                    <i class="fa-solid fa-circle-chevron-left arrow-icon card-select"></i>
-                    <i class="fa-solid fa-circle-chevron-right arrow-icon card-select"></i>
-                    <div class="free-card-group">
-                        <div class="free-part-side">
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-3.jpg" alt="free-diving-card-paul"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">SSI</div>
-                                                <div class="card-license-tag">ADIA 2</div>
-                                            </div>
-                                            <p class="name">Paul</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>3y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>25m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-2.jpg" alt="free-diving-card-Anna"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 2</div>
-                                            </div>
-                                            <p class="name">Anna</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>1y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>15m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                        
-                        </div>
-                          <!-- coach -->
-                        <div class="free-part-side">
+                        <div class="col">
                             <a href="UTS-personal-page-coach.html">
                                 <div class="diving-card free-card-coach freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
+                                   
                                     <div class="card-info">
                                         <div class="card_pic">
-                                            <img src="pic/diving-card/f-4.jpg" alt="free-diving-card-Bill"  >
+                                            <img src="pic/diving-card/s-3jpg.jpg" alt="scuba-diving-card-Paul"  >
                                         </div>
                         
                                         <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 4</div>
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Paul</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
                                             </div>
-                                            <p class="name">Bill</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>4y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>45m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card-coach freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-1.jpg" alt="free-diving-card-Jack"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
                                             <div class="card-license">
                                                 <div class="card-license-tag">PADI</div>
                                                 <div class="card-license-tag">ADIA 3</div>
                                             </div>
-                                            <p class="name">Jack</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
                                         </div>
                                     </div>
-                                
                                 </div>
                             </a>
-                        
                         </div>
-                    </div>
-                    <div class="free-card-group">
-                        <div class="free-part-side">
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-5.jpg" alt="free-diving-card-cindy"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 2</div>
-                                            </div>
-                                            <p class="name">Cindy</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>1y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>18m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-6.jpg" alt="free-diving-card-Emma"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 2</div>
-                                            </div>
-                                            <p class="name">Emma</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>1y5m</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>25m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                        
-                        </div>
-                          <!-- coach -->
-                        <div class="free-part-side">
+                        <div class="col">
                             <a href="UTS-personal-page-coach.html">
                                 <div class="diving-card free-card-coach freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
+                                   
                                     <div class="card-info">
                                         <div class="card_pic">
-                                            <img src="pic/diving-card/f-7.jpg" alt="free-diving-card-roy"  >
+                                            <img src="pic/diving-card/s-4jpg.jpg" alt="scuba-diving-card-Chris"  >
                                         </div>
                         
                                         <div class="card-profile">
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Chris</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
+                                            </div>
                                             <div class="card-license">
                                                 <div class="card-license-tag">PADI</div>
                                                 <div class="card-license-tag">ADIA 3</div>
                                             </div>
-                                            <p class="name">Roy</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>4y2m</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>36m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
                                         </div>
                                     </div>
-                                
                                 </div>
                             </a>
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card-coach freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-8.jpg" alt="free-diving-card-Lulu"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 4</div>
-                                            </div>
-                                            <p class="name">Lulu</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>3y2m</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>43m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                        
                         </div>
-                    </div>
-                </div>
-                <div class="freecard-part">
-                    <i class="fa-solid fa-circle-chevron-left arrow-icon card-select"></i>
-                    <i class="fa-solid fa-circle-chevron-right arrow-icon card-select"></i>
-                    <div class="free-card-group">
-                        <div class="free-part-side">
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-3.jpg" alt="free-diving-card-paul"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">SSI</div>
-                                                <div class="card-license-tag">ADIA 2</div>
-                                            </div>
-                                            <p class="name">Paul</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>3y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>25m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-2.jpg" alt="free-diving-card-Anna"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 2</div>
-                                            </div>
-                                            <p class="name">Anna</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>1y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>15m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                        
-                        </div>
-                          <!-- coach -->
-                        <div class="free-part-side">
+                        <div class="col">
                             <a href="UTS-personal-page-coach.html">
                                 <div class="diving-card free-card-coach freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
+                                   
                                     <div class="card-info">
                                         <div class="card_pic">
-                                            <img src="pic/diving-card/f-4.jpg" alt="free-diving-card-Bill"  >
+                                            <img src="pic/diving-card/s-5.jpg" alt="scuba-diving-card-Dora"  >
                                         </div>
                         
                                         <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 4</div>
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Dora</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
                                             </div>
-                                            <p class="name">Bill</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>4y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>45m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card-coach freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-1.jpg" alt="free-diving-card-Jack"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
                                             <div class="card-license">
                                                 <div class="card-license-tag">PADI</div>
                                                 <div class="card-license-tag">ADIA 3</div>
                                             </div>
-                                            <p class="name">Jack</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
                                         </div>
                                     </div>
-                                
                                 </div>
                             </a>
-                        
                         </div>
-                    </div>
-                    <div class="free-card-group">
-                        <div class="free-part-side">
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-5.jpg" alt="free-diving-card-cindy"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 2</div>
-                                            </div>
-                                            <p class="name">Cindy</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>1y</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>18m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                            <a href="UTS-personal-page-coach.html">
-                                <div class="diving-card free-card freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
-                                    <div class="card-info">
-                                        <div class="card_pic">
-                                            <img src="pic/diving-card/f-6.jpg" alt="free-diving-card-Emma"  >
-                                        </div>
-                        
-                                        <div class="card-profile">
-                                            <div class="card-license">
-                                                <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 2</div>
-                                            </div>
-                                            <p class="name">Emma</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>1y5m</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>25m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </a>
-                        
-                        </div>
-                          <!-- coach -->
-                        <div class="free-part-side">
+                        <div class="col">
                             <a href="UTS-personal-page-coach.html">
                                 <div class="diving-card free-card-coach freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
+                                   
                                     <div class="card-info">
                                         <div class="card_pic">
-                                            <img src="pic/diving-card/f-7.jpg" alt="free-diving-card-roy"  >
+                                            <img src="pic/diving-card/s-6.jpg" alt="scuba-diving-card-Kyle"  >
                                         </div>
                         
                                         <div class="card-profile">
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Kyle</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
+                                            </div>
                                             <div class="card-license">
                                                 <div class="card-license-tag">PADI</div>
                                                 <div class="card-license-tag">ADIA 3</div>
                                             </div>
-                                            <p class="name">Roy</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>4y2m</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>36m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
                                         </div>
                                     </div>
-                                
                                 </div>
                             </a>
+                        </div>
+                        <div class="col">
                             <a href="UTS-personal-page-coach.html">
                                 <div class="diving-card free-card-coach freediving-card">
-                                    <div class="card-title">
-                                        <p>Free Diving</p>
-                                    </div>  
+                                   
                                     <div class="card-info">
                                         <div class="card_pic">
-                                            <img src="pic/diving-card/f-8.jpg" alt="free-diving-card-Lulu"  >
+                                            <img src="pic/diving-card/s-7.jpg" alt="scuba-diving-card-Ray"  >
                                         </div>
                         
                                         <div class="card-profile">
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Ray</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
+                                            </div>
                                             <div class="card-license">
                                                 <div class="card-license-tag">PADI</div>
-                                                <div class="card-license-tag">ADIA 4</div>
+                                                <div class="card-license-tag">ADIA 3</div>
                                             </div>
-                                            <p class="name">Lulu</p>
-                        
-                                            <div class="personal-tag">
-                                                <p><i class="fa-solid fa-image-portrait tag-icon"></i>3y2m</p>
-                                                <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>43m</p>
-                                            </div>
-                                        </div>
-                                        <div class="diving-card-tag">
-                                            <div class="coach">COACH</div>
                                         </div>
                                     </div>
-                                
                                 </div>
                             </a>
-                        
                         </div>
+                        <div class="col">
+                            <a href="UTS-personal-page-coach.html">
+                                <div class="diving-card free-card-coach freediving-card">
+                                   
+                                    <div class="card-info">
+                                        <div class="card_pic">
+                                            <img src="pic/diving-card/s-8.jpg" alt="scuba-diving-card-Emma"  >
+                                        </div>
+                        
+                                        <div class="card-profile">
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Emma</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
+                                            </div>
+                                            <div class="card-license">
+                                                <div class="card-license-tag">PADI</div>
+                                                <div class="card-license-tag">ADIA 3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="UTS-personal-page-coach.html">
+                                <div class="diving-card free-card-coach freediving-card">
+                                   
+                                    <div class="card-info">
+                                        <div class="card_pic">
+                                            <img src="pic/diving-card/s-1.jpg" alt="scuba-diving-card-Mary"  >
+                                        </div>
+                        
+                                        <div class="card-profile">
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Mary</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
+                                            </div>
+                                            <div class="card-license">
+                                                <div class="card-license-tag">PADI</div>
+                                                <div class="card-license-tag">ADIA 3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="UTS-personal-page-coach.html">
+                                <div class="diving-card free-card-coach freediving-card">
+                                   
+                                    <div class="card-info">
+                                        <div class="card_pic">
+                                            <img src="pic/diving-card/s-2jpg.jpg" alt="sscuba-diving-card-Owen"  >
+                                        </div>
+                        
+                                        <div class="card-profile">
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Owen</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
+                                            </div>
+                                            <div class="card-license">
+                                                <div class="card-license-tag">PADI</div>
+                                                <div class="card-license-tag">ADIA 3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="UTS-personal-page-coach.html">
+                                <div class="diving-card free-card-coach freediving-card">
+                                   
+                                    <div class="card-info">
+                                        <div class="card_pic">
+                                            <img src="pic/diving-card/s-3jpg.jpg" alt="scuba-diving-card-Paul"  >
+                                        </div>
+                        
+                                        <div class="card-profile">
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Paul</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
+                                            </div>
+                                            <div class="card-license">
+                                                <div class="card-license-tag">PADI</div>
+                                                <div class="card-license-tag">ADIA 3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="UTS-personal-page-coach.html">
+                                <div class="diving-card free-card-coach freediving-card">
+                                   
+                                    <div class="card-info">
+                                        <div class="card_pic">
+                                            <img src="pic/diving-card/s-4jpg.jpg" alt="scuba-diving-card-Chris"  >
+                                        </div>
+                        
+                                        <div class="card-profile">
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Chris</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
+                                            </div>
+                                            <div class="card-license">
+                                                <div class="card-license-tag">PADI</div>
+                                                <div class="card-license-tag">ADIA 3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="UTS-personal-page-coach.html">
+                                <div class="diving-card free-card-coach freediving-card">
+                                   
+                                    <div class="card-info">
+                                        <div class="card_pic">
+                                            <img src="pic/diving-card/s-5.jpg" alt="scuba-diving-card-Dora"  >
+                                        </div>
+                        
+                                        <div class="card-profile">
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Dora</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
+                                            </div>
+                                            <div class="card-license">
+                                                <div class="card-license-tag">PADI</div>
+                                                <div class="card-license-tag">ADIA 3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="UTS-personal-page-coach.html">
+                                <div class="diving-card free-card-coach freediving-card">
+                                   
+                                    <div class="card-info">
+                                        <div class="card_pic">
+                                            <img src="pic/diving-card/s-6.jpg" alt="scuba-diving-card-Kyle"  >
+                                        </div>
+                        
+                                        <div class="card-profile">
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Kyle</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
+                                            </div>
+                                            <div class="card-license">
+                                                <div class="card-license-tag">PADI</div>
+                                                <div class="card-license-tag">ADIA 3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="UTS-personal-page-coach.html">
+                                <div class="diving-card free-card-coach freediving-card">
+                                   
+                                    <div class="card-info">
+                                        <div class="card_pic">
+                                            <img src="pic/diving-card/s-7.jpg" alt="scuba-diving-card-Ray"  >
+                                        </div>
+                        
+                                        <div class="card-profile">
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Ray</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
+                                            </div>
+                                            <div class="card-license">
+                                                <div class="card-license-tag">PADI</div>
+                                                <div class="card-license-tag">ADIA 3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="UTS-personal-page-coach.html">
+                                <div class="diving-card free-card-coach freediving-card">
+                                   
+                                    <div class="card-info">
+                                        <div class="card_pic">
+                                            <img src="pic/diving-card/s-8.jpg" alt="scuba-diving-card-Emma"  >
+                                        </div>
+                        
+                                        <div class="card-profile">
+                                            
+                                            <div class="personal-info">
+                                                <p class="name">Emma</p>
+                                                <div class="personal-tag">
+                                                    <p><i class="fa-solid fa-image-portrait tag-icon"></i>2y</p>
+                                                    <p><i class="fa-solid fa-arrow-down-wide-short tag-icon"></i>30m</p>
+                                                </div>
+                                               
+                                                
+                                            </div>
+                                            <div class="card-license">
+                                                <div class="card-license-tag">PADI</div>
+                                                <div class="card-license-tag">ADIA 3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                     
                     </div>
-                </div>
-            </div>
+              </div>
+              <div class="change-page">
+                <ol>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                </ol>
+              </div>
             
-            <footer class="uts-footer">
-                <nav class="footer-nav">
+
+
+
+
+
+        </div>
+        <footer class="uts-footer">
+            <nav class="footer-nav">
+                <input type="checkbox" id="li-pull-1st">
                 <ul class="footer-item">
-                    <li><h2>自由潛水</h2></li>
+                   
+                    <label for="li-pull-1st">
+                        <li>
+                            <h2>自由潛水</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
                     <li><a href="UTS-free-buddy-page.html">尋找潛伴</a></li>
                     <li><a href="UTS-free-coach-page.html">尋找教練</a></li>
                     <li><a href="#">證照考試</a></li>
                     <li><a href="#">活動競賽</a></li>
                     <li><a href="UTS-pool-page.html">練習場地</a></li>
                 </ul>
+                <input type="checkbox" id="li-pull-2nd">
                 <ul class="footer-item">
-                    <li><h2>水肺潛水</h2></li>
+                   
+                    <label for="li-pull-2nd">
+                        <li>
+                            <h2>水肺潛水</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                 
                     <li><a href="UTS-scuba-buddy-page.html">尋找潛伴</a></li>
                     <li><a href="UTS-scuba-coach-page.html">尋找教練</a></li>
                     <li><a href="#">證照考試</a></li>
                     <li><a href="#">活動競賽</a></li>
                     <li><a href="UTS-pool-scuba-page.html">練習場地</a></li>
                 </ul>
+                <input type="checkbox" id="li-pull-3rd">
                 <ul class="footer-item">
-                    <li><h2>揪團潛水</h2></li>
+                    <label for="li-pull-3rd">
+                        <li>
+                            <h2>揪團潛水</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                  
                     <li><a href="#">一日潛旅</a></li>
                     <li><a href="#">國內潛旅</a></li>
                     <li><a href="#">國外潛旅</a></li>
                     <li><a href="#">團練專區</a></li>
                     <li><a href="#">主題潛旅</a></li>
                 </ul>
+                <input type="checkbox" id="li-pull-4th">
                 <ul class="footer-item">
-                    <li><h2>裝備租借</h2></li>
+                   
+                    <label for="li-pull-4th">
+                        <li>
+                            <h2>裝備租借</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                   
                     <li><a href="#">蛙鞋</a></li>
                     <li><a href="#">面鏡</a></li>
                     <li><a href="#">防寒衣</a></li>
                     <li><a href="#">潛水錶</a></li>
                     <li><a href="#">浮球</a></li>
                 </ul>
+                <input type="checkbox" id="li-pull-5th">
                 <ul class="footer-item">
-                    <li><h2>潛點介紹</h2></li>
+                    <label for="li-pull-5th">
+                        <li>
+                            <h2>潛點介紹</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                 
                     <li><a href="#">北台灣</a></li>
                     <li><a href="#">中台灣</a></li>
                     <li><a href="#">南台灣</a></li>
                     <li><a href="#">離島</a></li>
                     <li><a href="#">國外潛點</a></li>
-                </ul>
+                </ul> 
+                <input type="checkbox" id="li-pull-6th">
                 <ul class="footer-item">
-                    <li><h2>潛水百科</h2></li>
+                    <label for="li-pull-6th">
+                        <li>
+                            <h2>潛水百科</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
                     <li><a href="#">自潛知識</a></li>
                     <li><a href="#">水肺知識</a></li>
                     <li><a href="#">安全觀念</a></li>
                     <li><a href="#">競賽項目</a></li>
                     <li><a href="#">世界紀錄</a></li>
                 </ul>
-                </nav>
-        
-                <div class="copyright">
-                    本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。
-                    若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
-                    COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.
-                </div>
-           </footer>
-        </div>
+            </nav>
     
+            <div class="copyright">
+                本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。
+                若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
+                COPYRIGHT © 2022 UnderTheSea Co.,Ltd. All rights reserved.
+            </div>
+        </footer>
     </div>
-
-  
-   
-
 
     
 </body>
+
 </html>

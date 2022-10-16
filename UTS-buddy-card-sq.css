@@ -3,24 +3,11 @@
 
 .diving-card{
     margin: 10px;
-    width: 250px;
-    height: 380px;
-    box-shadow:2px 3px 7px 1px rgba(49, 49, 49, 0.3);
+    width: fit-content;
+    box-shadow:2px 3px 3px 2.2px rgba(49, 49, 49, 0.2);
     border-radius: 8px;
     display: flex;
     position: relative;
-}
-
-.card-title{
-    width: 60px;
-    height:380px;
-    background-color:#0F1B33;
-    border-radius: 8px 0px 0px 8px; 
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    letter-spacing:2px;
-    z-index: 1;
 }
 
 .Scubadiving-card .card-title{
@@ -29,113 +16,125 @@
 }
 
 
-.card-title p{
-   color: #fff;
-   font-size: 45px;
-   margin-top:10px;
-   margin-left: 10px;
-   font-weight: 600;
-   writing-mode:vertical-rl;
-   font-family: 'Quicksilver','Roboto Flex', sans-serif;
+.card_pic{
+    width: 35vmin;
+    height: 35vmin;
 }
 
-.card_pic {
-    width: 250px;
-    height: 380px;
-  
-}
 .card_pic img{
     border-radius: 8px;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover
    
 }
-.ivycard img{
-    object-position: bottom 0px right -100px;
-}
 
-.diving-card-img{
-    object-fit: fill; 
-}
 
 .card-info{
     position: relative;
 }
-/* .card-info:hover>.card-profile{
-    opacity: 1;
-
-    transition:opacity .5s;
-
-} */
 
 .card-profile{
 
     display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: 380px;
-    border-radius: 8px;
-    background-color: rgb(15, 27, 51,0.5);
-    justify-content: flex-end;
+    width: 100%;
+    height: 25%;
+    border-radius: 0px  0px 8px 8px;
+    background-color: #fff;
+    justify-content: space-around;
     align-items: flex-end;
     position: absolute;
-    top: 0;
-    opacity: 0;
+    bottom: 0;
+    opacity: 1;
     transition: opacity .5s;
+    overflow: hidden;
 
 }
+/* .card-info:hover>.card-profile{
+    opacity: 1;
+    height: 25%;
+    transition:height .2s, opacity .5s ;
+
+} */
+
+
+
+
+
+.card-license{
+    display: flex;
+    margin: auto;
+}
 .card-license-tag{
-    width: 55px;
+    width: fit-content;
     color: #fff;
-    font-size: 14px;
+    font-size: 2.2vmin;
     padding: 5px;
-    font-weight: 300;
+    font-weight: 350;
     text-align: center;
     background-color:#154770;
-    border: .8px solid  #A0DFF9;
-    margin-right:10px ;
-    margin-top: 10px;
-    letter-spacing:1.5px;
+    letter-spacing:1px;
+}
+.card-license-tag:first-child{
+    margin-right: 10px;
 }
 .personal-tag{
-    display: flex;
-  
+    display: none;
+    gap: 5px;
+    /* margin-bottom: 8px; */
 }
 .personal-tag p{
-    font-size:15px ;
-    color: #fff;
-    padding: 10px 10px 80px;
+    font-size:1.3vmin ;
+    color: #0F1B33;
+    /* padding: 10px 10px 80px; */
     display: flex;
 }   
 .personal-tag p>i{
-    padding:0 5px ;
+    padding:0 .3vmin ;
+    color: #0F1B33;
 }
-
+.personal-info{
+    margin: auto;
+}
 .name{
-
-    text-shadow: 1px 2px 2px  rgb(20, 20, 20,.5);
-    color: #fff;
-    font-size: 50px;
+    color: #0F1B33;
+    font-size: 4vmin;
     font-weight:600;
-    padding:10px 10px 0px;
-}
-.coach{
-    position: absolute;
-    right: 0;
-    top: 320px;
-    padding: 0 10px 3px;
-    font-weight:bold;
-    font-size: 30px;
-    background-color: #fff;
-    color:#0F1B33;
+    margin: auto;
+    margin-bottom: 5px;
 }
 
-.divingcards{
-    width: 10px;
-    display: flex;
-}
 
+
+ @media screen and (min-width:768px) {
+    .card-profile{
+
+        display: flex;
+        width: 100%;
+        height: 0%;
+        border-radius: 0px  0px 8px 8px;
+        background-color: #fff;
+        justify-content: space-around;
+        align-items: flex-end;
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        transition: opacity .5s;
+        overflow: hidden;
+    
+    }
+    .card-info:hover>.card-profile{
+        opacity: 1;
+        height: 25%;
+        transition:height .2s, opacity .5s ;
+    
+    }
+    .personal-tag{
+        display: flex;
+        gap: 5px;
+    }
+    
+ }
 
 /* @media screen and (max-width:575px) {
     .diving-card{
@@ -318,7 +317,7 @@
 
 
 } */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .diving-card{
         width: 240px;
         height: 380px;
@@ -524,11 +523,8 @@
         height: 314.13px;
     }
     .card-profile{
-
-        width:0px;
-        left: 198.4px;
+        width: 198.4px;
         height: 314.13px;
-        overflow: hidden;
     }
     .card-title p{
         font-size: 37.2px;
@@ -567,11 +563,10 @@
     }
     .card-info:hover>.card-profile{
         opacity: 1;
-        width: 198.4px;
-        left: 0;
-        transition:left .5s, opacity .5s,width .5s;
+    
+        transition:opacity .5s;
     
     }
     
-}
+} */
 

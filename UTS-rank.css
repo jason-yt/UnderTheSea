@@ -1,11 +1,12 @@
 .rank-list{
     background-color: rgb(17, 133, 235);
-    max-width: 300px;
-    height: 100%;
+    /* max-width: 300px; */
+    /* height: 100%;
     margin: 5px;
     padding: 5px;
-    padding-right: 26px;
+    padding-right: 26px; */
     border-radius: 5px;
+
 
 }
 .rank-item{
@@ -15,6 +16,9 @@
     background-color: rgb(255, 255, 255);
     margin: 10px;
     border-radius: 5px;
+    padding: 5px;
+    
+
 }
 .rank-list a:hover .rank-item{
     background-color:rgb(179, 227, 255);
@@ -23,22 +27,25 @@
 .rank-pic{
     width: 10%;
     height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .rank-text{
     width: 90%;
     height: 100%;
     display: flex;
-    padding-right: 5px;
-    align-items: center;
+    /* padding:0px 5px; */
+
+    
 }
 .rank-pic img{
     width: 30px;
     height:30px;
     object-fit: cover;
     border-radius: 500px;
-    margin: auto;
-    margin-left: 6%;
-    margin-top: 9.5%;
+
 }
 
 .rank-text p{
