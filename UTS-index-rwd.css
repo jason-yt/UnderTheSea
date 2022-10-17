@@ -2,6 +2,8 @@
 html{
     scroll-behavior: smooth;
     
+    transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+    
 }
 .uts-title{
     min-height: 100vh;

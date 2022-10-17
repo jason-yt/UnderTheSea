@@ -96,7 +96,8 @@
 } */
 .product-multi-mix{
 
-
+    transform: translate3d(0px, 0px, 0px);
+    transition-duration: 0ms;
     margin: auto;
 
 }

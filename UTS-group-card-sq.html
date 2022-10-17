@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="UTS-group-card-sq.css">
+    <link href="http://fonts.cdnfonts.com/css/quicksilver" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <script src="jquery-3.6.1.js"></script>
+    <title>Document</title>
+    <script>
+        $(function(){
+            $('#heart').click(function(){
+                    let color =$(this).css('color')
+
+                if(color ==='rgb(212, 18, 0)'){    
+                    $(this).css({
+                        color: 'rgba(47, 59, 67, 0.8)',
+                        WebkitTextStroke: '.2vmin #f7e6e4',
+                    });
+                }else{ 
+                        $(this).css({
+                        color: '#d41200',
+                        WebkitTextStroke: 0,
+                    });
+
+                }
+               
+            })
+ 
+        })
+    </script>
+</head>
+<body>
+  
+    
+        <div class="group-card">
+           
+            <div class="card-info">
+                <div class="card_pic">
+                    <a href="UTS-group-buy-page.html" id="page">
+                        <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
+                    </a>
+                    <i class="fa-solid fa-heart" id="heart"></i>
+                </div>
+               
+
+                <div class="group-card-info">
+                    <div class="group-card-title">
+                        <h3>八代灣船潛</h3>
+                        <p>2022.09.30</p>
+                        <p>開團人數<span>12人</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ 
+   
+</body>
+</html>
