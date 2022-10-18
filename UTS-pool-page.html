@@ -22,6 +22,136 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Oswald:wght@300;400;600&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750;8..144,100,800,750&display=swap');
     </style>
+     <script src="jquery-3.6.1.js"></script>
+     <script>
+         $(function(){
+             $('#n-tab').click(function(){
+                 $('#n-tab>h3').css({
+                     color:'#fff',
+                     backgroundColor: '#0f1b33',
+                 })
+                 $('#c-tab>h3').css({
+                     color:'#0f1b33',
+                     backgroundColor: 'rgb(39, 170, 245)',
+                 })
+                 $('#s-tab>h3').css({
+                     color:'#0f1b33',
+                     backgroundColor: 'rgb(39, 170, 245)',
+                 })
+ 
+                 
+                 $('.s-list').css({
+                     opacity:0,
+                 })
+ 
+                 $('.c-list').css({
+                     opacity:0,
+                 })
+ 
+                 $('.n-list').css({
+                     opacity:1,
+                 })
+ 
+ 
+             })
+             $('#s-tab').click(function(){
+ 
+                 $('#s-tab>h3').css({
+                     color:'#fff',
+                     backgroundColor: '#0f1b33',
+                 })
+                 $('n-list').css({
+                     opacity:0,
+                 })
+ 
+                 $('.c-list').css({
+                     opacity:0,
+                 })
+                 $('.s-list').css({
+                     opacity:1,
+                 })
+                 $('#c-tab>h3').css({
+                     color:'#0f1b33',
+                     backgroundColor: 'rgb(39, 170, 245)',
+                 })
+                 $('#n-tab>h3').css({
+                     color:'#0f1b33',
+                     backgroundColor: 'rgb(39, 170, 245)',
+                 })
+ 
+ 
+             })
+             $('#c-tab').click(function(){
+                 $('.s-list').css({
+                     opacity:0,
+                 })
+                 $('.n-list').css({
+                     opacity:0,
+                 })
+ 
+                 $('.c-list').css({
+                     opacity:1,
+                 })
+                 $('#c-tab>h3').css({
+                     color:'#fff',
+                     backgroundColor: '#0f1b33',
+                 })
+ 
+                 $('#n-tab>h3').css({
+                     color:'#0f1b33',
+                     backgroundColor: 'rgb(39, 170, 245)',
+                 })
+                 $('#s-tab>h3').css({
+                     color:'#0f1b33',
+                     backgroundColor: 'rgb(39, 170, 245)',
+                 })
+ 
+             })
+         })
+         $(function(){
+ 
+             $('#switch-select').change(function(){
+                 if($(this).val()=="n"){
+                     $('.s-list').css({
+                     opacity:0,
+                 })
+ 
+                     $('.c-list').css({
+                     opacity:0,
+                 })
+ 
+                     $('.n-list').css({
+                     opacity:1,
+                 })
+                 }else if($(this).val()=="c"){
+                     $('.s-list').css({
+                     opacity:0,
+                 })
+                     $('.n-list').css({
+                     opacity:0,
+                 })
+ 
+                     $('.c-list').css({
+                     opacity:1,
+                 })
+                 }else if($(this).val()=="s"){
+                     $('.n-list').css({
+                     opacity:0,
+                 })
+ 
+                     $('.c-list').css({
+                     opacity:0,
+                 })
+                     $('.s-list').css({
+                     opacity:1,
+                 })
+                     
+ 
+                 }
+             })
+         })
+ 
+     </script>
 </head>
 <body>
     <header class="uts-header">
@@ -526,167 +656,237 @@
         <div class="pool-main-cotent">
           
             <div class="pool-nav">
-                <h2>各地泳池介紹</h2>
-                <input type="radio" id="location-switch-3"name="location">   
-                <input type="radio" id="location-switch-2"name="location">
-                <input type="radio" id="location-switch-1"name="location">
-                <ul class="pool-ul">
-                    
-                    <li class="pool-li">
-                        <label for="location-switch-1"><p>北部</p></label>
-                        <div class="sub-list">
-                        
-                            <div class="sub-item">
-                            <img src="pic/pool-1.jpg" alt="">
-                            <h3>臺北市松山運動中心</h3>
-                            <div class="sub-text">
-                                <p><span>泳池深度</span> 2.6-5m</p>
-                                <p><span>入場門票</span> $250/人(2小時)</p>
+                <div class="pool-list">
+                       
+                        <div class="location-switch">
+                            <div class="location-switch-select">
+                                <select id="switch-select">
+                                    <option value="">請選擇地區</option>
+                                    <option value="n">北部</option>
+                                    <option value="c">中部</option>
+                                    <option value="s">南部</option>
+                                </select>
                             </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57833.15245971818!2d121.55038500000002!3d25.048594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x500716a751b4bfa6!2z6Ie65YyX5biC5p2-5bGx6YGL5YuV5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1664564224354!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <button><i class="fa-solid fa-phone"></i></button>
-                        
-                            </div>
-                            <div class="sub-item">
-                                <img src="pic/pool-1.jpg" alt="">
-                                <h3>臺北市松山運動中心</h3>
-                                <div class="sub-text">
-                                    <p><span>泳池深度</span> 2.6-5m</p>
-                                    <p><span>入場門票</span> $250/人(2小時)</p>
+                            <div class="location-switch-tab">
+                                <div class="location" id="n-tab">
+                                    <h3>
+                                        北部
+                                    </h3>
                                 </div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57833.15245971818!2d121.55038500000002!3d25.048594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x500716a751b4bfa6!2z6Ie65YyX5biC5p2-5bGx6YGL5YuV5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1664564224354!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <button><i class="fa-solid fa-phone"></i></button>
-                            </div>
-                            <div class="sub-item">
-                                <img src="pic/pool-1.jpg" alt="">
-                                <h3>臺北市松山運動中心</h3>
-                                <div class="sub-text">
-                                    <p><span>泳池深度</span> 2.6-5m</p>
-                                    <p><span>入場門票</span> $250/人(2小時)</p>
+                                <div class="location" id="c-tab">
+                                    <h3>
+                                        中部
+                                    </h3>
                                 </div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57833.15245971818!2d121.55038500000002!3d25.048594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x500716a751b4bfa6!2z6Ie65YyX5biC5p2-5bGx6YGL5YuV5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1664564224354!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <button><i class="fa-solid fa-phone"></i></button>
-                            </div>
-                            <div class="sub-item">
-                                <img src="pic/pool-1.jpg" alt="">
-                                <h3>臺北市松山運動中心</h3>
-                                <div class="sub-text">
-                                    <p><span>泳池深度</span> 2.6-5m</p>
-                                    <p><span>入場門票</span> $250/人(2小時)</p>
+                                <div class="location" id="s-tab">
+                                    <h3>
+                                        南部
+                                    </h3>
                                 </div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57833.15245971818!2d121.55038500000002!3d25.048594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x500716a751b4bfa6!2z6Ie65YyX5biC5p2-5bGx6YGL5YuV5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1664564224354!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <button><i class="fa-solid fa-phone"></i></button>
                             </div>
                         </div>
-                             
-                    </li>
                    
-                    <li class="pool-li">
-                        <label for="location-switch-2"><p>中部</p></label>
                         <div class="sub-list">
                         
-                            <div class="sub-item">
-                            <img src="pic/pool-2.jpeg" alt="">
-                            <h3>台中潛立方</h3>
-                            <div class="sub-text">
-                                <p><span>泳池深度</span>21m</p>
-                                <p><span>入場門票</span> $1200元 起</p>
-                            </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3408.6756263662883!2d120.61863125149823!3d24.175564466956814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691600218727df%3A0xb90c502f8c8a57d1!2z5Y-w5Lit5r2b56uL5pa5!5e0!3m2!1szh-TW!2stw!4v1664594202617!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <button><i class="fa-solid fa-phone"></i></button>
+                            <div class="sub sub-n">
+                                <div class="sub-item n-list">
+                                    <img src="pic/pool-1.jpg" alt="">
+                                    <h3>臺北市松山運動中心</h3>
+                                    <div class="sub-content">
+                                        <div class="sub-text">
+                                            <p><span>泳池深度</span> 2.6-5m</p>
+                                            <p><span>入場門票</span> $250/人(2小時)</p>
+                                        
+                                        </div>
+                                        <button>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </button>
+                                    </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57833.15245971818!2d121.55038500000002!3d25.048594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x500716a751b4bfa6!2z6Ie65YyX5biC5p2-5bGx6YGL5YuV5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1664564224354!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    
+                                </div>
+                                <div class="sub-item n-list">
+                                    <img src="pic/pool-1.jpg" alt="">
+                                    <h3>臺北市松山運動中心</h3>
+                                    <div class="sub-content">
+                                        <div class="sub-text">
+                                            <p><span>泳池深度</span> 2.6-5m</p>
+                                            <p><span>入場門票</span> $250/人(2小時)</p>
+                                        
+                                        </div>
+                                        <button>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </button>
+                                    </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57833.15245971818!2d121.55038500000002!3d25.048594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x500716a751b4bfa6!2z6Ie65YyX5biC5p2-5bGx6YGL5YuV5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1664564224354!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    
+                                </div>
+                                <div class="sub-item n-list">
+                                    <img src="pic/pool-1.jpg" alt="">
+                                    <h3>臺北市松山運動中心</h3>
+                                    <div class="sub-content">
+                                        <div class="sub-text">
+                                            <p><span>泳池深度</span> 2.6-5m</p>
+                                            <p><span>入場門票</span> $250/人(2小時)</p>
+                                        
+                                        </div>
+                                        <button>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </button>
+                                    </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57833.15245971818!2d121.55038500000002!3d25.048594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x500716a751b4bfa6!2z6Ie65YyX5biC5p2-5bGx6YGL5YuV5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1664564224354!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    
+                                </div>
+                                <div class="sub-item n-list">
+                                    <img src="pic/pool-1.jpg" alt="">
+                                    <h3>臺北市松山運動中心</h3>
+                                    <div class="sub-content">
+                                        <div class="sub-text">
+                                            <p><span>泳池深度</span> 2.6-5m</p>
+                                            <p><span>入場門票</span> $250/人(2小時)</p>
+                                        
+                                        </div>
+                                        <button>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </button>
+                                    </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57833.15245971818!2d121.55038500000002!3d25.048594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x500716a751b4bfa6!2z6Ie65YyX5biC5p2-5bGx6YGL5YuV5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1664564224354!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    
+                                </div>
                         
                             </div>
-                            <div class="sub-item">
-                                <img src="pic/pool-2.jpeg" alt="">
-                                <h3>台中潛立方</h3>
-                                <div class="sub-text">
-                                    <p><span>泳池深度</span>21m</p>
-                                    <p><span>入場門票</span> $1200元 起</p>
+                            <div class="sub sub-c">
+                                <div class="sub-item c-list">
+                                    <img src="pic/pool-2.jpeg" alt="">
+                                    <h3>台中潛立方</h3>
+                                    <div class="sub-content">
+                                        <div class="sub-text">
+                                            <p><span>泳池深度</span>21m</p>
+                                            <p><span>入場門票</span> $1200元 起</p>
+                                        </div>
+                                        <button>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </button>
+                                    </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3408.6756263662883!2d120.61863125149823!3d24.175564466956814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691600218727df%3A0xb90c502f8c8a57d1!2z5Y-w5Lit5r2b56uL5pa5!5e0!3m2!1szh-TW!2stw!4v1664594202617!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    
                                 </div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3408.6756263662883!2d120.61863125149823!3d24.175564466956814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691600218727df%3A0xb90c502f8c8a57d1!2z5Y-w5Lit5r2b56uL5pa5!5e0!3m2!1szh-TW!2stw!4v1664594202617!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <button><i class="fa-solid fa-phone"></i></button>
+                                <div class="sub-item c-list">
+                                    <img src="pic/pool-2.jpeg" alt="">
+                                    <h3>台中潛立方</h3>
+                                    <div class="sub-content">
+                                        <div class="sub-text">
+                                            <p><span>泳池深度</span>21m</p>
+                                            <p><span>入場門票</span> $1200元 起</p>
+                                        </div>
+                                        <button>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </button>
+                                    </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3408.6756263662883!2d120.61863125149823!3d24.175564466956814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691600218727df%3A0xb90c502f8c8a57d1!2z5Y-w5Lit5r2b56uL5pa5!5e0!3m2!1szh-TW!2stw!4v1664594202617!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    
+                                </div>
+                                <div class="sub-item c-list">
+                                    <img src="pic/pool-2.jpeg" alt="">
+                                    <h3>台中潛立方</h3>
+                                    <div class="sub-content">
+                                        <div class="sub-text">
+                                            <p><span>泳池深度</span>21m</p>
+                                            <p><span>入場門票</span> $1200元 起</p>
+                                        </div>
+                                        <button>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </button>
+                                    </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3408.6756263662883!2d120.61863125149823!3d24.175564466956814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691600218727df%3A0xb90c502f8c8a57d1!2z5Y-w5Lit5r2b56uL5pa5!5e0!3m2!1szh-TW!2stw!4v1664594202617!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    
+                                </div>
+                                <div class="sub-item c-list">
+                                    <img src="pic/pool-2.jpeg" alt="">
+                                    <h3>台中潛立方</h3>
+                                    <div class="sub-content">
+                                        <div class="sub-text">
+                                            <p><span>泳池深度</span>21m</p>
+                                            <p><span>入場門票</span> $1200元 起</p>
+                                        </div>
+                                        <button>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </button>
+                                    </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3408.6756263662883!2d120.61863125149823!3d24.175564466956814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691600218727df%3A0xb90c502f8c8a57d1!2z5Y-w5Lit5r2b56uL5pa5!5e0!3m2!1szh-TW!2stw!4v1664594202617!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    
+                                </div>
                             
+                        
                             </div>
-                            <div class="sub-item">
-                                <img src="pic/pool-2.jpeg" alt="">
-                                <h3>台中潛立方</h3>
-                                <div class="sub-text">
-                                    <p><span>泳池深度</span>21m</p>
-                                    <p><span>入場門票</span> $1200元 起</p>
+                            <div class="sub sub-s">
+                                <div class="sub-item s-list">
+                                    <img src="pic/pool-3.png" alt="">
+                                    <h3>樹德科大 大社游泳池</h3>
+                                    <div class="sub-content">
+                                        <div class="sub-text">
+                                            <p><span>泳池深度</span> 2.6-5m</p>
+                                            <p><span>入場門票</span>52元</p>
+                                        </div>
+                                        <button>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </button>
+                                    </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14719.832549991632!2d120.3532537!3d22.7297973!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8383fda0ad4b6f00!2z5qi55b6356eR5oqA5aSn5a245aSn56S-5ri45rOz5rGg!5e0!3m2!1szh-TW!2stw!4v1664594325653!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    
                                 </div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3408.6756263662883!2d120.61863125149823!3d24.175564466956814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691600218727df%3A0xb90c502f8c8a57d1!2z5Y-w5Lit5r2b56uL5pa5!5e0!3m2!1szh-TW!2stw!4v1664594202617!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <button><i class="fa-solid fa-phone"></i></button>
-                            
+                                <div class="sub-item s-list">
+                                    <img src="pic/pool-3.png" alt="">
+                                    <h3>樹德科大 大社游泳池</h3>
+                                    <div class="sub-content">
+                                        <div class="sub-text">
+                                            <p><span>泳池深度</span> 2.6-5m</p>
+                                            <p><span>入場門票</span>52元</p>
+                                        </div>
+                                        <button>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </button>
+                                    </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14719.832549991632!2d120.3532537!3d22.7297973!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8383fda0ad4b6f00!2z5qi55b6356eR5oqA5aSn5a245aSn56S-5ri45rOz5rGg!5e0!3m2!1szh-TW!2stw!4v1664594325653!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    
+                                </div>
+                                <div class="sub-item s-list">
+                                    <img src="pic/pool-3.png" alt="">
+                                    <h3>樹德科大 大社游泳池</h3>
+                                    <div class="sub-content">
+                                        <div class="sub-text">
+                                            <p><span>泳池深度</span> 2.6-5m</p>
+                                            <p><span>入場門票</span>52元</p>
+                                        </div>
+                                        <button>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </button>
+                                    </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14719.832549991632!2d120.3532537!3d22.7297973!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8383fda0ad4b6f00!2z5qi55b6356eR5oqA5aSn5a245aSn56S-5ri45rOz5rGg!5e0!3m2!1szh-TW!2stw!4v1664594325653!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    
+                                </div>
+                                <div class="sub-item s-list">
+                                    <img src="pic/pool-3.png" alt="">
+                                    <h3>樹德科大 大社游泳池</h3>
+                                    <div class="sub-content">
+                                        <div class="sub-text">
+                                            <p><span>泳池深度</span> 2.6-5m</p>
+                                            <p><span>入場門票</span>52元</p>
+                                        </div>
+                                        <button>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </button>
+                                    </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14719.832549991632!2d120.3532537!3d22.7297973!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8383fda0ad4b6f00!2z5qi55b6356eR5oqA5aSn5a245aSn56S-5ri45rOz5rGg!5e0!3m2!1szh-TW!2stw!4v1664594325653!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    
+                                </div>
                             </div>
-                            <div class="sub-item">
-                                <img src="pic/pool-2.jpeg" alt="">
-                                <h3>台中潛立方</h3>
-                                <div class="sub-text">
-                                    <p><span>泳池深度</span>21m</p>
-                                    <p><span>入場門票</span> $1200元 起</p>
-                                </div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3408.6756263662883!2d120.61863125149823!3d24.175564466956814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691600218727df%3A0xb90c502f8c8a57d1!2z5Y-w5Lit5r2b56uL5pa5!5e0!3m2!1szh-TW!2stw!4v1664594202617!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <button><i class="fa-solid fa-phone"></i></button>
                             
-                                </div>
+                            
                         </div>
-                    </li>
-                    
-                    <li class="pool-li">
-                        <label for="location-switch-3"><p>南部</p></label>
-                        <div class="sub-list">
-                        
-                            <div class="sub-item">
-                            <img src="pic/pool-3.png" alt="">
-                            <h3>樹德科大 大社游泳池</h3>
-                            <div class="sub-text">
-                                <p><span>泳池深度</span> 2.6-5m</p>
-                                <p><span>入場門票</span>52元</p>
-                            </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14719.832549991632!2d120.3532537!3d22.7297973!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8383fda0ad4b6f00!2z5qi55b6356eR5oqA5aSn5a245aSn56S-5ri45rOz5rGg!5e0!3m2!1szh-TW!2stw!4v1664594325653!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <button><i class="fa-solid fa-phone"></i></button>
-                        
-                            </div>
-                            <div class="sub-item">
-                                <img src="pic/pool-3.png" alt="">
-                                <h3>樹德科大 大社游泳池</h3>
-                                <div class="sub-text">
-                                    <p><span>泳池深度</span> 2.6-5m</p>
-                                    <p><span>入場門票</span>52元</p>
-                                </div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14719.832549991632!2d120.3532537!3d22.7297973!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8383fda0ad4b6f00!2z5qi55b6356eR5oqA5aSn5a245aSn56S-5ri45rOz5rGg!5e0!3m2!1szh-TW!2stw!4v1664594325653!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <button><i class="fa-solid fa-phone"></i></button>
-                            
-                            </div>
-                            <div class="sub-item">
-                                <img src="pic/pool-3.png" alt="">
-                                <h3>樹德科大 大社游泳池</h3>
-                                <div class="sub-text">
-                                    <p><span>泳池深度</span> 2.6-5m</p>
-                                    <p><span>入場門票</span>52元</p>
-                                </div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14719.832549991632!2d120.3532537!3d22.7297973!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8383fda0ad4b6f00!2z5qi55b6356eR5oqA5aSn5a245aSn56S-5ri45rOz5rGg!5e0!3m2!1szh-TW!2stw!4v1664594325653!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <button><i class="fa-solid fa-phone"></i></button>
-                            
-                            </div>
-                            <div class="sub-item">
-                                <img src="pic/pool-3.png" alt="">
-                                <h3>樹德科大 大社游泳池</h3>
-                                <div class="sub-text">
-                                    <p><span>泳池深度</span> 2.6-5m</p>
-                                    <p><span>入場門票</span>52元</p>
-                                </div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14719.832549991632!2d120.3532537!3d22.7297973!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8383fda0ad4b6f00!2z5qi55b6356eR5oqA5aSn5a245aSn56S-5ri45rOz5rGg!5e0!3m2!1szh-TW!2stw!4v1664594325653!5m2!1szh-TW!2stw" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <button><i class="fa-solid fa-phone"></i></button>
-                            
-                            </div>
-                        </div>
-                    </li>
-               
-                   
                     
                
-                </ul>
+                </div>
         
             </div>
            
@@ -695,7 +895,7 @@
              
             
         </div>
-        <!-- <footer class="uts-footer">
+        <footer class="uts-footer">
             <nav class="footer-nav">
                 <input type="checkbox" id="li-pull-1st">
                 <ul class="footer-item">
@@ -795,7 +995,7 @@
                 若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
                 COPYRIGHT © 2022 UnderTheSea Co.,Ltd. All rights reserved.
             </div>
-        </footer> -->
+        </footer> 
 
 
     </div>

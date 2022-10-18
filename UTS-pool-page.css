@@ -11,8 +11,10 @@
    
  }
  .pool-main-head-title {
- width: 300px;
+ width: fit-content;
  margin: auto;
+ height: fit-content;
+ margin-top: -50px;
 }
 .pool-main-head h2{
     font-size: 50px;
@@ -37,17 +39,18 @@
     margin: auto;
 }
 .pool-main-head{
-
-    height: 600px;
+    background-position: center;
+    
+    height: 80vh;
     background-image: url(pic/pool-head.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 .pool-page-main{
     width:100%;
-    height: 3000px;
-    background-image: url(main-content-bg-group.jpg);
-    background-size: cover;
+    height: 100%;
+    background-image: url(pool-page-bg-mbjpg.jpg);
+    background-size:cover;
 
 }
 
@@ -90,6 +93,14 @@ ul>.main-nav-btn:nth-child(1)>a{
     /* li:nth-child(3)>.sub-menu a{
         color: #fff;
     } */
+
+    .pool-page-main{
+
+
+        background-image: url(pool-page-bg.jpg);
+
+    
+    }
     
     .sub-icon{
         color: #0f1b33;

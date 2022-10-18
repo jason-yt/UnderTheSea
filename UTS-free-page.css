@@ -413,12 +413,15 @@ ul>.main-nav-btn:nth-child(1)>a{
     .main-nav-btn:hover>.sub-menu{
         display:none ;
     }
+    .sec-main-nav>ul>li:nth-child(1){
+        display: none;
+    }
     .main-nav-btn:nth-child(1)>.sub-menu{
         display:flex ;
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: rgba(97, 134, 164, 0.85);
+        background-color: rgba(97, 134, 164);
         width: 100%;
         justify-content: center;
     }

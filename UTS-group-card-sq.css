@@ -13,6 +13,8 @@
     width: 30vmin;
     height: 30vmin;
     position: relative;
+    min-width: 150px;
+    min-height: 150px;
 }
 
 .card_pic img{

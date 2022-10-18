@@ -19,6 +19,8 @@
 .card_pic{
     width: 30vmin;
     height: 30vmin;
+    min-width: 150px;
+    min-height: 150px;
 }
 
 .card_pic img{
@@ -68,12 +70,12 @@
 .card-license-tag{
     width: fit-content;
     color: #fff;
-    font-size: 2.2vmin;
+    font-size: 1.5vmin;
     padding: 5px;
     font-weight: 350;
     text-align: center;
     background-color:#154770;
-    letter-spacing:1px;
+    letter-spacing:.5px;
 }
 .card-license-tag:first-child{
     margin-right: 10px;
@@ -98,15 +100,26 @@
 }
 .name{
     color: #0F1B33;
-    font-size: 4vmin;
+    font-size: 3vmin;
     font-weight:600;
     margin: auto;
-    margin-bottom: 5px;
+    
+    
 }
 
 
 
  @media screen and (min-width:768px) {
+    .name{
+        margin-top: -3px;
+        font-size: 3.5vmin;
+        margin-bottom: 5px;
+    }
+    .personal-tag p{
+        font-size:1.5vmin ;
+      
+    }   
+    
     .card-profile{
 
         display: flex;

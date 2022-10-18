@@ -290,9 +290,7 @@ a:nth-child(2)>.coach-class>.class-tag{
 
 
 
-.sec-main-nav>ul>.main-nav-btn{
-    display: none;
-}
+
 .sec-main-nav>ul>.main-nav-btn ul{
     display: flex;
 }
@@ -379,7 +377,18 @@ ul>.main-nav-btn:nth-child(2)>a{
         justify-content: center;
         
     }
+
+  
+
+    .sec-main-nav>ul>.main-nav-btn{
+        display: none;
+    }
+
     .sec-main-nav>ul>li:nth-child(1){
+        display: none;
+    }
+
+    .sec-main-nav>ul>li:nth-child(2){
         display: none;
     }
     .coach-rank{
