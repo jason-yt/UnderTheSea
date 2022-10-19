@@ -8,6 +8,7 @@
     border-radius: 8px;
     display: flex;
     position: relative;
+    margin: auto;
 }
 
 .Scubadiving-card .card-title{
@@ -17,10 +18,13 @@
 
 
 .card_pic{
-    width: 30vmin;
-    height: 30vmin;
-    min-width: 150px;
-    min-height: 150px;
+    max-width: 300px;
+    max-height: 300px;
+    width: 38vmin;
+    height: 38vmin;
+    min-width: 120px;
+    min-height: 120px;
+
 }
 
 .card_pic img{
@@ -43,13 +47,15 @@
     height: 25%;
     border-radius: 0px  0px 8px 8px;
     background-color: #fff;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content: space-evenly;
+    /* align-items: center; */
     position: absolute;
     bottom: 0;
     opacity: 1;
     transition: opacity .5s;
     overflow: hidden;
+    margin: auto;
+    
 
 }
 /* .card-info:hover>.card-profile{
@@ -70,8 +76,8 @@
 .card-license-tag{
     width: fit-content;
     color: #fff;
-    font-size: 1.5vmin;
-    padding: 5px;
+    font-size: 2.3vmin;
+    padding: .8vmin;
     font-weight: 350;
     text-align: center;
     background-color:#154770;
@@ -86,7 +92,7 @@
     /* margin-bottom: 8px; */
 }
 .personal-tag p{
-    font-size:1.3vmin ;
+    font-size:1vmin ;
     color: #0F1B33;
     /* padding: 10px 10px 80px; */
     display: flex;
@@ -100,9 +106,10 @@
 }
 .name{
     color: #0F1B33;
-    font-size: 3vmin;
+    font-size: 5vmin;
     font-weight:600;
     margin: auto;
+
     
     
 }
@@ -145,6 +152,14 @@
     .personal-tag{
         display: flex;
         gap: 5px;
+    }
+    .card_pic{
+        max-width: 270px;
+        max-height: 270px;
+        width: 35vmin;
+        height: 35vmin;
+        min-width: 150px;
+        min-height: 150px;
     }
     
  }

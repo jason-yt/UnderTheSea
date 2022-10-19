@@ -483,6 +483,7 @@ ul>.main-nav-btn:nth-child(1)>a{
         .coach-content{
             display: flex;
             width: 90%;
+            max-width: 1200px;;
             height: 100%;
             position: relative;
             margin: auto;
@@ -559,10 +560,15 @@ ul>.main-nav-btn:nth-child(1)>a{
         }
         .nav-bar{
             width: 90%;
-            max-width:90%
+            max-width: 1200px;
         }
         .nav-bar>.filter-ul>.filter-li>label {
             padding: 7px 35px;
+        }
+
+        .container{
+            width: 90%;
+            max-width: 1200px;
         }
 
 }

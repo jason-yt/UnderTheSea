@@ -1,58 +1,76 @@
-
- header{
+ .uts-header{
     position: sticky;
     top: 0;
     z-index: 20;
+ }
 
-}
-.buddy-main-body{
+ .buddy-main-body{
     background-image: url(pic/coach-page-bg.png);
     background-size:cover ;
 }
 .buddy-content{
     display: flex;
-    width: 1200px;
+    flex-direction: column;
     height: 100%;
     position: relative;
     margin: auto;
     top: 90px;
 }
 .activity-info{
-    width: 60%;
-    max-height: 100%;
-    margin: 10px;
+    /* width: 60%; */
+    width: 80%;
+    /* max-height: 100%; */
+    /* margin: 10px; */
+    margin: auto;
 
 }
 .buddy-type{
-    width: 40%;
-    height:100% ;
-    margin: 10px;
-    
+    /* width: 40%; */
+    width: 80%;
+    /* height:10vmin ; */
+    /* margin: 10px; */
+    margin: auto;
 
 }
+.buddy-activity{
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: 30px;
+
+}
+
+.activity-2{
+    margin-top: 10px;
+}
+   
+
 .type-pic{
-    width: 436px;
-    height: 237px;
-    overflow: hidden;
-    border-radius: 8px;
+    width: 100%;
+    height: 30vmin;
+    /* overflow: hidden; */
+    /* border-radius: 8px; */
     margin-bottom: 20px;
-    box-shadow: 1px 2px 5px rgba(1, 33, 59, 0.55);
+    /* box-shadow: 2px 2px 5px rgba(1, 33, 59, 0.55); */
+    /* display: none; */
 }
 
 .buddy-activity img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    object-position: center;
+    border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 1px 2px 5px rgba(1, 33, 59, 0.55);
 }
 .buddy-type img{
     width: 100%;
-    max-height: 237px;
+    border-radius: 8px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 1px 2px 5px rgba(1, 33, 59, 0.55);
+    box-shadow: 2px 2px 5px rgba(1, 33, 59, 0.55);
+    vertical-align: middle;
+    /* object-position: center; */
     
 }
 
@@ -65,22 +83,13 @@
 }
 .buddy-activity h2{
     position: absolute;
-    left: 20px;
+    left: 5%;
     top: 20px;
     color: #e4f2f7;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 600;
 }
-.buddy-activity p{
-   color: #e4f2f7;
-   font-size: 35px;
-   font-weight: 600;
-   position: absolute;
-   bottom: 100px;
-   left: 30px;
-   letter-spacing: 2px;
 
-}
 .activity-1 :nth-child(3){
   border-bottom: 1.5px solid white;
     padding-bottom: 10px;
@@ -90,16 +99,25 @@
       padding-bottom: 10px;
    }
 
-
+.buddy-activity p{
+    color: #e4f2f7;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 60px;
+    left: 5%;
+    letter-spacing: 1px;
+ }
+ 
 
 
 .buddy-activity p+p{
-    font-size: 20px;
-    bottom: 70px;
-    left: 30px;
+    font-size: 15px;
+    bottom: 40px;
     font-weight: 400;
-   
  }
+
+
  .activity-tag{
     color: #e4f2f7;
     background-color: #f00901;
@@ -112,58 +130,38 @@
  .buddy-type-item{
     position: relative;
     margin: auto;
-    
  }
 
  .buddy-type-item p{
     color: #e4f2f7;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     display: block;
-    width: 80px;
-    height: 20px;
+    /* width: 80px; */
+    /* height: 20px; */
     position: absolute;
-    left: -27px;
+    left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
+    padding: 20px;
     /* top: -20px; */
-    background-color: rgba(12, 39, 60, 0.55);
-    padding:108.5px 178px ;
+    /* background-color: rgba(12, 39, 60, 0.55); */
+    /* padding:108.5px 178px ; */
     border-radius: 8px;
     opacity: 1;
     z-index: 2;
+    letter-spacing: 1px;
  }
 
-.text-algin{
-    width: 426px;
-    height: 237px
-}
+
  .buddy-type h2{
     font-size: 30px;
     font-weight: 600;
     color: #0f1b33;
     margin-bottom: 20px;
  }
-
-
- .buddy-type-item:hover p{
-    opacity: 0;
-    transition:  opacity .5s;
- }
- .buddy-type-item:hover img{
-    transform:scale(1.4);
-    transition:  transform .5s;
-
- }
-
-
- /* ---------------------------------- */
- footer{
-    margin-top: 200px;
-
-}
 
 
 
@@ -178,734 +176,292 @@
 
 }
 
-
-.filter-ul>li:nth-child(3)>label{
-
-    text-align: center;
-    line-height: 40px;
-    padding: 10px 30px;
-
-    background-color: rgb(240, 238, 238,.3);
-    border-radius: 5px;
-
-}
-.filter-ul>li:nth-child(5)>label{
-
-    text-align: center;
-    line-height: 40px;
-    padding: 10px 30px;
-
-    background-color: rgb(240, 238, 238,.3);
-    border-radius: 5px;
+.nav-bar{
+    width: 80vmin;
+    box-shadow: 1px 2px 5px rgba(1, 33, 59, 0.55);
 
 }
 .filter-nav{
-    margin: auto;
+   margin: 50px 0;
+}
+
+
+
+
+.sec-main-nav>ul>.main-nav-btn{
+    display: none;
+}
+.sec-main-nav>ul>.main-nav-btn ul{
+    display: flex;
+}
+.sec-main-nav>ul>li:nth-child(1){
+    display: block;
+}
+.sec-main-nav>ul>li:nth-child(1){
+        display: block;
+} 
+
+
+.main-nav-btn:nth-child(1) >.sub-menu .sub-menu-btn:nth-child(1) a{
+    color: #e4f2f7;
+   }
+.main-nav-btn:nth-child(1) >.sub-menu .sub-menu-btn:nth-child(1) a>i{
+    color: #e4f2f7;
+}
+
+ul>.main-nav-btn:nth-child(1)>a{
+        color: #e4f2f7;
+        font-weight: 400;
+        font-size: 15px;
+}
+.uts-content{
     width: 100%;
-    margin-bottom: 80px;
-    margin-top: 150px;
 }
-.nav-bar{
+.container{
+    max-width: 90%;
     margin: auto;
-    width: 100%;
 }
-
-
-
-.filter-ul>li:nth-child(7)>label{
-
-    text-align: center;
-    line-height: 40px;
-    padding: 10px 30px;
-    
-    background-color: rgb(240, 238, 238,.3);
-    border-radius: 5px;
-
-}
-
-
-.filter-menu{
-    z-index: 50;
-}
-
-
-
-/* -----------buddy----------- */
 
 .diving-card{
-    margin: 10px;
-    width: 250px;
-    height: 380px;
-    box-shadow:2px 3px 7px 1px rgba(49, 49, 49, 0.3);
-    border-radius: 8px;
-    display: flex;
-    position: relative;
-}
-
-.card-title{
-    width: 60px;
-    height:100%;
-    background-color:#0F1B33;
-    border-radius: 8px 0px 0px 8px; 
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    letter-spacing:2px;
-    z-index: 1;
-}
-
-.Scubadiving-card .card-title{
-    background-color:#0079e0;
-    word-spacing:-4px;
-}
-
-
-.card-title p{
-   color: #fff;
-   font-size: 45px;
-   margin-top:10px;
-   margin-left: 10px;
-   font-weight: 600;
-   writing-mode:vertical-rl;
-   font-family: 'Quicksilver','Roboto Flex', sans-serif;
-
-}
-
-.card_pic {
-    width: 250px;
-    height:100%;
-  
-}
-.card_pic img{
-    border-radius: 8px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    margin: 15px auto;
    
 }
 
-.owencard img{
-    object-position: bottom 0px right -30px;
-}
-.diving-card-img{
-    object-fit: fill; 
+.change-page{
+    margin: 50px auto;
 }
 
-.card-info{
-    position: relative;
-}
-.card-info:hover>.card-profile{
-    opacity: 1;
-
-    transition:opacity .5s;
-
-}
-
-.card-profile{
-
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: 100%;
-    border-radius: 8px;
-    background-color: rgb(15, 27, 51,0.5);
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    transition: opacity .5s;
-
-}
-.card-license-tag{
-    width: 55px;
-    color: #fff;
-    font-size: 14px;
-    padding: 5px;
-    font-weight: 300;
-    text-align: center;
-    background-color:#154770;
-    border: .8px solid  #A0DFF9;
-    margin-right:10px ;
-    margin-top: 10px;
-    letter-spacing:1.5px;
-}
-.personal-tag{
-    display: flex;
-  
-}
-.personal-tag p{
-    font-size:15px ;
-    color: #fff;
-    padding: 10px 10px 80px;
-    display: flex;
-}   
-.personal-tag p>i{
-    padding:0 5px ;
-}
-
-.name{
-
-    text-shadow: 1px 2px 2px  rgb(20, 20, 20,.5);
-    color: #fff;
-    font-size: 50px;
-    font-weight:600;
-    padding:10px 10px 0px;
-}
-.coach{
-    position: absolute;
-    right: 0;
-    top: 320px;
-    padding: 0 10px 3px;
-    font-weight:bold;
-    font-size: 30px;
-    background-color: #fff;
-    color:#0F1B33;
-}
-
-.divingcards{
-    width: 10px;
-    display: flex;
-}
-
-
-
-
-
-
-
-
-/* -----------buddy----------- */
-/* -------------footer----------- */
-.footer-nav{
+.change-page>ol{
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
+    align-items: flex-end;
 }
-.footer-nav{
-    padding: 20px;
-    max-width: 1200px;
-    position: relative;
-    z-index: 1;
-    margin: auto;
+.change-page>ol a{
+   text-decoration: none;
+   font-size: 20px;
+   padding-bottom: .3px;
+   font-weight: 400;
+   color: rgb(28, 156, 211);
+   border-bottom: 1px solid transparent;
 }
-.footer-item>li:hover a{
-    color: #f6fafc;
-    border-bottom: 1px solid #f6fafc;;
-}
-.footer-item a{
-    text-decoration: none;
-    color:#b1cbd5;
-    font-size: 12px;
-    font-weight: 300;
-    display: inline-block;
-    padding: 17px 0px 3px;
-
-}
-.footer-item h2{
-    font-size: 15px;
-    font-weight: 400;
-    color:#deeef5;
-    display: inline-block;
-    padding: 10px 0px;
-}
-.footer-item{
-    padding: 0px 40px;
-    text-align: center;
-}
-
-.copyright{
-    padding-top: 100px;
-    text-align: center;
-    width: 500px;
-    font-size: 12px;
-    color: #ffffff;
-    line-height: 20px;
-    /* z-index: ; */
-    position: relative;
-    margin: auto;
-    opacity: .3;
-}
-
-
-/* -------------footer----------- */
-
-
-/*--------------- index--------------- */
-.uts-index{
-    position: relative;
-
-
-}
-.uts-header{
-    position: sticky;
-    top: 0;
-    z-index: 5;
-}
-
-/* ---------------title--------- */
-.uts-title{
-    /* background-image: url(main-content.jpg); */
-    /* position: relative; */
-    background-size: cover;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.arrow-icon{
-    font-size:50px;
-    color: rgb(255, 255, 255,.9);
-}
-.uts-title img{
-    margin-top: 100px;
-    margin-bottom: 60px;
-    width: 20%;
-
-}
-.uts-title>i{
-    margin-top: 0px;
-    margin-bottom: 200px;
-}
-/* ---------------@title--------- */
-/* -------------content------------ */
-/* -------------bubble------------ */
-.uts-content{
-    position: relative;
-    max-width: 100%;
- 
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.animation-content{
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    text-align: center;
-    /* background-color: #fff; */
-   
-}
-
-
-.animation-content>img{
-    position: sticky;
-    top:140px;
-    max-width: 7%;
-    min-width: 5%;
-    margin: auto;
-}
-
-
-/* ---------------freediving----------- */
-
-
-
-
-
-.card-select{
-    position: absolute;
-    left:-3%;
-    top:47.5%;
-}
-.card-select+.card-select{
-    left:99%;
-}
-.freecard-part{
-    position: relative;
-    margin-bottom:0px;
-}
-.freecard-part:last-child{
-    position: relative;
-}
-
-
-
-.free-card-group{
-    display: flex;
-    justify-content: space-between;
-    gap: 70px;
-
-}
-.free-part-side{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 20px;
-}
-/* ----------------card-rwd--------------- */
-
-@media screen and (max-width:575px) {
-    .diving-card{
-        width: 115.2px;
-        height: 179.55px;
-       
-    }
-    .card-title{
-        height: 179.55px;
-        width: 28.8px;
-    }
-    .card_pic {
-        width: 115.2px;
-        height: 179.55px;
-       
-      
-    }
-    .card-profile{
-        width: 115.2px;
-        height: 179.55px;
-       
-    }
-    .card-title p{
-        font-size: 21.6px;
-        margin-top:4.8px;
-        margin-left:4.8px;
-
-     }
-
-
-
-     .card-license-tag{
-        width: 45.47px; 
-        font-size: 6.72px;
-        padding: 2.4px;
-        margin-right:4.8px;
-        margin-top: 4.8px;
-        letter-spacing:1px;
-    }
-
-    .personal-tag p{
-        font-size: 6.72px;
-        padding: 4.8px 4.8px 38.4px .5px;
-    }   
-    .personal-tag p>i{
-        padding:0 2.4px ;
-    }
-    
-    .name{
-        font-size: 30px;
-        font-weight:600;
-        padding:4.8px 4.8px 0px;
-    }
-    .coach{
-        right: 0;
-        top: 150.6px;
-        padding: 1.44px 4.8px 1.44px;
-        font-size: 14.4px;
-    }
-
-
-}
-
-@media screen and (min-width:576px) {
-    .diving-card{
-        width: 115.2px;
-        height: 179.55px;
-       
-    }
-    .card-title{
-        height: 179.55px;
-        width: 28.8px;
-    }
-    .card_pic {
-        width: 115.2px;
-        height: 179.55px;
-       
-      
-    }
-    .card-profile{
-        width: 115.2px;
-        height: 179.55px;
-       
-    }
-    .card-title p{
-        font-size: 21.6px;
-        margin-top:4.8px;
-        margin-left:4.8px;
-
-     }
-
-     .card-license-tag{
-        width: 45.47px; 
-        font-size: 12px;
-        padding: 2.4px;
-        margin-right:4.8px;
-        margin-top: 4.8px;
-        letter-spacing:1px;
-    }
-
-    .personal-tag p{
-        font-size: 12px;
-        padding: 4.8px 4.8px 38.4px .5px;
-    }   
-    .personal-tag p>i{
-        padding:0 2.4px ;
-    }
-    
-    .name{
-        font-size: 30px;
-        font-weight:600;
-        padding:4.8px 4.8px 0px;
-    }
-    .coach{
-        right: 0;
-        top: 150.6px;
-        padding: 1.44px 4.8px 1.44px;
-        font-size: 14.4px;
-    }
-
-}
-
-@media screen and (min-width:768px) {
-    /* li:nth-child(3)>.sub-menu a{
+.change-page>ol>li:first-child a{
+        font-weight: 500;
         color: #fff;
-    } */
+        font-size: 25px;
+
+        padding-bottom: .3px;
+        border-bottom: 1px solid #fff;
+ }
+ .change-page>ol>li:hover a{
+    border-bottom: 1px solid #fff;
+
+    transition:border-bottom .5s ;
+ }
+ .filter-nav{
+    padding-top: 80px;
+}
+.container{
+    margin:0;
+}
+
+@media screen and (min-width:400px) {
+    .coach-class>img{
+        object-fit: cover;
+    }
     
-    .sub-icon{
-        color: #0f1b33;
-        font-size: 30px;
-        padding-bottom: 15px;
-    }
-    .main-nav-btn:hover>.sub-menu{
-        display:none ;
-    }
+ }
+@media screen and (min-width:768px) {
     .main-nav-btn:nth-child(1)>.sub-menu{
         display:flex ;
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: rgba(97, 134, 164, 0.85);
+        background-color: rgba(97, 134, 164);
         /* padding: 10px; */
         width: 100%;
         justify-content: center;
-        z-index: 10;
-    }
-    .sub-menu-btn a{
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        padding: 10px 35px;
-        font-size: 14px;
-        font-weight: 350;
-       
-    }
-    .main-nav-btn>.sub-menu a{
-        color: #0f1b33;
-    }
-    /* .main-nav-btn>a:hover >.sub-menu a:hover{
-        color: #e4f2f7;
-    } */
-    ul>.freedivg-btn >a{
-        color:rgb(255, 255, 255);
-        font-weight: 500;
-        font-size: 15px;
-    }
-
-    
-    .freedivg-btn>ul>li:nth-child(1) a{
-        color: #e4f2f7;
-        font-weight: 400;
-    }
-    .freedivg-btn>ul>li:nth-child(1) a>i{
-        color: #e4f2f7;
         
     }
-    .personal-main-title{
-
-        margin-top:79px ;
+    .sec-main-nav>ul>li:nth-child(1){
+        display: none;
+    }
+    .nav-bar{
+        width: 80%;
+        max-width:80%
+    }
+    .filter-ul{
+        justify-content: space-evenly;
+    }
+    .filter-ul>.filter-li:nth-child(1){
+        width: 0;
+        flex-grow: 3;
+    }
+    .filter-ul>.filter-li:nth-child(3){
+        width: 0;
+        flex-grow: 3;
 
     }
+    .filter-ul>.filter-li:nth-child(5){
+        width: 0;
+        flex-grow: 3;
+    }
+    .filter-ul>.filter-li:nth-child(7){
+        width: 0;
+        flex-grow: 3;
+    }
+    .filter-ul>.filter-li:nth-child(8){
+        width: 0;
+        flex-grow: 4;
+    }
+    .filter-ul>.filter-li:nth-child(9){
+        width: 0;
+        flex-grow: 1;
+    }
+    .nav-bar>.filter-ul>.filter-li>label {
+        padding: 5px 3vmin;
+    }
+    .filter-li>button {
+        padding: 0px 1.5vmin;
+        margin: auto;
+    }
+
+    .buddy-content{
+        display: flex;
+
+        max-width: 1200px;
+        height: 100%;
+        position: relative;
+        margin: auto;
+        top: 90px;
+        flex-direction: row;
+    }
+    .activity-info{
+        width: 55%;
+        margin-top: 35px;
+    }
+    .buddy-type{
+
+        width: 30%;
+        margin: 0 auto;
+        margin-top:35px ;
+    }
+    .activity-2{
+        height: 25vmin;
+    }
+    .activity-1{
+        height: 45vmin;
+        margin-bottom:20px ;
+    }
+
+
+    .buddy-type-item p{
+        color: #e4f2f7;
+        font-size: 20px;
+        font-weight: 600;
+        display: block;
+        padding: 15px;
+        border-radius: 8px;
+        opacity: 1;
+        z-index: 2;
+     }
+    
+     .type-pic{
+        width: 100%;
+        height: 20vmin;
+      
+        margin-bottom: 20px;
+        
+    }
+    .filter-nav{
+        margin-top: 130px;
+    }
+
+    .buddy-activity h2{
+        font-size: 45px;
+    }
+
+
+    .buddy-activity p{
+        font-size: 25px;
+        bottom: 60px;
+     }
+     
+    
+    
+    .buddy-activity p+p{
+        font-size: 15px;
+        bottom: 40px;
+     }
+
+
+     .activity-2 p{
+        bottom: 50px;
+     }
+     .activity-2 p+p{
+        bottom: 25px;
+     }
+     .buddy-activity{
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    
+    }
+}
+    
+@media screen and (min-width:1024px){
+    .buddy-activity h2{
+        font-size: 50px;
+    }
+
+
+    .buddy-activity p{
+        font-size: 30px;
+        bottom: 60px;
+     }
+     .type-pic{
+
+      
+        margin-bottom: 25px;
+        
+    }
+    
+    
+    .buddy-activity p+p{
+        font-size: 18px;
+        bottom: 40px;
+     }
+
+
+     .activity-2 p{
+        bottom: 50px;
+     }
+     .activity-2 p+p{
+        bottom: 25px;
+     }
+
+}
+
+    
+@media screen and (min-width:1200px){
+    .buddy-main-body{
+        background-image: url(coach-page-bg.jpg);
+        background-size:cover ;
+    }
+    
+    .container{
+        width: 90%;
+        max-width:1200px
+    }
+    
+    .nav-bar{
+        width: 90%;
+        max-width:1200px
+    }
+    .nav-bar>.filter-ul>.filter-li>label {
+        padding: 7px 35px;
+    }
+
+}
  
 
-
-}
-@media screen and (max-width:767px) {
-    .personal-main-title{
-
-        margin-top:0px ;
-
-    }
-     
- }
-
-@media screen and (min-width:768px) {
-    .diving-card{
-        width: 153.6px;
-        height: 243.2px;
-       
-    }
-    .card-title{
-        height: 243.2px;
-        width: 38.4px;
-    }
-    .card_pic {
-        width: 153.6px;
-        height: 243.2px;
-      
-    }
-    .card-profile{
-        width: 153.6px;
-        height: 243.2px;
-    }
-    .card-title p{
-        font-size: 28.8px;
-        margin-top:6.4px;
-        margin-left: 6.4px;
-
-     }
-
-
-     .card-license-tag{
-        width: 45.47px; 
-        font-size: 12px;
-        padding: 3.2px;
-        margin-right:6.4px;
-        margin-top: 6.4px;
-        letter-spacing:1px;
-    }
-
-    .personal-tag p{
-        font-size: 12px;
-        padding: 6.4px 6.4px 51.2px;
-    }   
-    .personal-tag p>i{
-        padding:0 3.2px ;
-    }
-    
-    .name{
-        font-size: 32px;
-        font-weight:600;
-        padding:6.4px 6.4px 0px;
-    }
-    .coach{
-        right: 0;
-        top: 204.8px;
-        padding: 1.92px 6.4px 1.92px;
-        font-size: 19.2px;
-    }
-
-
-
-
-}
-
-@media screen and (min-width:992px) {
-    .diving-card{
-        width: 198.4px;
-        height: 314.13px;
-       
-    }
-    .card-title{
-        height: 314.13px;
-        width: 49.6px;
-    }
-    .card_pic {
-        width: 198.4px;
-        height: 314.13px;
-    }
-    .card-profile{
-        width: 198.4px;
-        height: 314.13px;
-    }
-    .card-title p{
-        font-size: 37.2px;
-        margin-top:8.27px;
-        margin-left: 8.27px;
-
-     }
-
-     .card-license-tag{
-       width: 55px;
-        font-size: 14px;
-        padding: 4.13px;
-        margin-right:8.27px ;
-        margin-top: 8.27px;
-        /* letter-spacing:1.5px; */
-    }
-
-    .personal-tag p{
-        font-size: 14px;
-        padding: 8.27px 8.27px  66.13px;
-    }   
-    .personal-tag p>i{
-        padding:0 4.13px ;
-    }
-    
-    .name{
-        font-size: 41.33px;
-        font-weight:600;
-        padding:8.27px 8.27px 0px;
-    }
-    .coach{
-        right: 0;
-        top: 264.53px;
-        padding: 2.48px  8.27px 2.48px;
-        font-size: 24.8px;
-    }
-
-
-
-
-
-}
-
-@media screen and (min-width:1200px) {
-    .diving-card{
-        width: 240px;
-        height: 380px;
-       
-    }
-    .card-title{
-        height: 380px;
-        width: 60px;
-    }
-    .card_pic {
-        width: 240px;
-        height: 380px;
-       
-      
-    }
-    .card-profile{
-        width: 240px;
-        height: 380px;
-    }
-
-
-    .card-title p{
-        font-size: 45px;
-        margin-top:10px;
-        margin-left: 10px;
-
-     }
-
-
-     .card-license-tag{
-        width: 55px;
-        font-size: 14px;
-        padding: 5px;
-        margin-right:10px ;
-        margin-top: 10px;
-        letter-spacing:1.5px;
-    }
-
-    .personal-tag p{
-        font-size:14px ;
-        padding: 10px 10px 80px;
-    }   
-    .personal-tag p>i{
-        padding:0 5px ;
-    }
-    
-    .name{
-        font-size: 50px;
-        font-weight:600;
-        padding:10px 10px 0px;
-    }
-    .coach{
-        right: 0;
-        top: 320px;
-        padding: 3px 10px 3px;
-        font-size: 30px;
-    }
-}
-/* ----------------@card-rwd--------------- */

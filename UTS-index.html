@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -19,10 +18,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="UTS-footer.css">
     <link rel="stylesheet" href="UTS-index-rwd.css">
+   
     <link rel="icon" href="logo.ico" type="image/x-icon" >
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
     <title>Under The Sea</title>
     <style>
-
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Oswald:wght@300;400;600&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750;8..144,100,800,750&display=swap');  
         @import url('http://fonts.cdnfonts.com/css/quicksilver');
         *{
@@ -30,7 +31,8 @@
         }
         
     </style>
-       
+
+    
 </head>
 <body>
     
@@ -545,7 +547,7 @@
         </div>
 
 
-        <div class="bubble-pic-content">
+        <div class="bubble-pic-content" data-aos="fade-up" data-aos-duration="1500">
             <h2>Let's Go Diving</h2>
             <div class="bubble-pic-main">
                 <div class="bubble-group">
@@ -617,7 +619,7 @@
                     <p>FREEDIVING</p>
                 </div>
             </div>
-            <div class="G-cards">
+            <div class="G-cards" data-aos="fade-up" data-aos-duration="1500" >
                 <div  class=" swiper G-mySwiper">
                     <div class="swiper-wrapper G-wrapper">
                       <div class="swiper-slide G-swiper-slide">
@@ -920,7 +922,7 @@
                 </div>
             </div>
         </div>
-        <div class="buddycard-flex">
+        <div class="buddycard-flex" data-aos="fade-up" data-aos-duration="1500">
             <div  class="freecard-part swiper R-mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -1229,7 +1231,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-        <div class="buddycard-flex">
+        <div class="buddycard-flex" data-aos="fade-up" data-aos-duration="1500">
             <div  class="freecard-part swiper R-mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -1558,7 +1560,7 @@
                         <p>SCUBADIVING</p>
                     </div>
                 </div>
-                <div class="G-cards">
+                <div class="G-cards" data-aos="fade-up" data-aos-duration="1500">
                     <div  class=" swiper G-mySwiper">
                         <div class="swiper-wrapper G-wrapper">
                           <div class="swiper-slide G-swiper-slide">
@@ -1861,7 +1863,7 @@
                     </div>
                 </div>
             </div>
-            <div class="buddycard-flex">
+            <div class="buddycard-flex" data-aos="fade-up" data-aos-duration="1500">
                 <div  class="scubacard-part swiper R-mySwiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
@@ -2170,7 +2172,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <div class="buddycard-flex">
+            <div class="buddycard-flex" data-aos="fade-up" data-aos-duration="1500">
                 <div  class="scubacard-part swiper R-mySwiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
@@ -2701,6 +2703,9 @@
     }
 });
     </script>
-
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init();
+ </script>
 </body>
 </html>

@@ -399,12 +399,20 @@ ul>.main-nav-btn:nth-child(3)>a{
  
         .nav-bar{
             width: 90%;
-            max-width:90%
+            max-width:1200px
         }
         .nav-bar>.filter-ul>.filter-li>label {
             padding: 7px 35px;
         }
-
+        .product-group{
+            width: 90%;
+            max-width:1200px;
+            margin: auto;
+        }
+        .container{
+            width: 90%;
+            max-width:1200px
+        }
 }
  
 

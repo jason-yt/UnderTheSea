@@ -389,6 +389,21 @@ ul>.main-nav-btn:nth-child(4)>a{
         max-width: 85vmax;
       
     }
+
+    .product-group,.product-ad-group{
+        width: 90%;
+        max-width:1200px;
+        margin: 80px auto;
+    }
+    .product-main-content+.product-ad-group{
+        margin-top: 180px;
+    }
+
+    .product-main-content+.product-ad-group+.product-ad-group+.product-ad-group{
+        margin-bottom: 150px;
+    }
+
+
 }
 
 
