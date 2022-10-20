@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="UTS-group-card-sq.css">
     <link rel="stylesheet" href="UTS-travel-page.css">
     <script src="jquery-3.6.1.js"></script>
-   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="logo.ico" type="image/x-icon" >
     <title>Under The Sea</title>
     <style>
@@ -1053,732 +1053,250 @@
       
 
 
-        <div class="group-content">
-            <div class="filter-nav">
-
-                <nav class="nav-bar">
-                    <div class="select-list">
-                        <label for="diving-select">證照系統</label>
-                         <select name="diving" id="diving-select" >
-                                <option value="">請選擇證照系統</option>
-                                <option value="AIDA">AIDA</option>
-                                <option value="CMAS">CMAS</option>
-                                <option value="SSI">SSI</option>
-                                <option value="PADI">PADI</option>
-                                <option value="DIWA">DIWA</option>
-                                <option value="RAID">RAID</option>
-                        </select>
-                    </div>
-        
-                    
-                    
-                    <ul class="filter-ul">
-                        <li class="filter-li">教學地區</li>
-                        <input type="checkbox" id="filter-btn-1"> 
-                        <li class="filter-li"><label  for="filter-btn-1" href="#">北部</label></li>
-        
-                        <input type="checkbox" id="filter-btn-2"> 
-                        <li class="filter-li"><label  for="filter-btn-2" href="#">中部</label></li>
-                        <input type="checkbox" id="filter-btn-3"> 
-                        <li class="filter-li"><label  for="filter-btn-3" href="#">南部</label></li>
-                        <li class="filter-li"><button>立即找教練</button></li>
-                        <li class="filter-li">
-                            <label for="filter-switch">
-                                <i class="fa-solid fa-filter"></i>
-                            </label>
-                            <input type="checkbox" id="filter-switch">
-                            <div class="filter-menu">
-                                <div class="filtr-title">   
-                                    <p>篩選條件</p>
-                                </div>
-                             
-                                <div class="filter-select-num">
-                                    <div class="filter-select num-people">
-                                        <label for="num-people">開課人數</label>
-                                        <select name="num-people" id="num-people">
-                                            <option value="">選擇開課人數</option>
-                                            <option value="s">1-5人</option>
-                                            <option value="m">6-10人</option>
-                                            <option value="l">11-24人</option>
-                                            <option value="xl">25人以上</option>
-                                        </select>
-                                    </div>
-                                    <div class="filter-select num-day">
-                                        <label for="num-day">課程天數</label>
-                                        <select name="num-day" id="num-day">
-                                            <option value="">選擇課程天數</option>
-                                            <option value="s">1-3天</option>
-                                            <option value="m">4-7天</option>
-                                            <option value="l">8-24天</option>
-                                            <option value="xl">25天</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <!-- <div class="filter-select date">
-                                    時間
-                                    <input type="date">
-                                </div> -->
-                                <div class="filter-select travel-type">
-                                    <div class="in-checkbox">
-                                        <input type="checkbox" id="travel-type-in" name="travel-type-in"
-                                        checked>
-                                         <label for="travel-type-in">泳池</label>
-                                    </div>
-                                    <div class="out-checkbox">
-                                        <input type="checkbox" id="travel-type-out" name="travel-type-out"
-                                     checked>
-                                      <label for="travel-type-out">海訓</label>
-                                    </div>
-                                 
-                                     
-                                </div> 
-                                <div class="filter-select cocah">
-                                    <input type="checkbox" id="cocah" name="cocah"
-                                    checked>
-                                     <label for="cocah">需要住宿</label>
-                                </div> 
-                                <div class="filter-submit">
-                                    <label for="filter-switch">確定</label>
-                                 </div>
-        
-        
+        <div class="travel-content">
+            <div class="famous-travel" data-aos="fade-up" data-aos-duration="1500">
+                <div class="famous-title">
+                    <h2>
+                        熱門潛點
+                    </h2>
+                </div>
+                <div class="famous-travel-content">
+                    <div class="famous-item">
+                        
+                        <div class="famous-pic">
+                            <div class="item">
+                                <img src="pic/gl-1.jpg" alt="">
                             </div>
-                        </li>
+                            <div class="item item-2">
+                                <img src="pic/lu.jpg" alt="">
+                                <img src="pic/ph-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="famous-info">
+                            <h3>綠島 海底郵筒</h3>
+                            <p>在綠島石朗浮潛區的11.5公尺的水下，設置了可愛的豆丁海馬海底郵筒，是目前世界上最深的海底郵筒!</p>
+                        </div>
+                    </div>
+                    <div class="famous-item ">
+                        
+                        <div class="famous-pic">
+                            <div class="item">
+                                <img src="pic/gl-1.jpg" alt="">
+                            </div>
+                            <div class="item item-2">
+                                <img src="pic/lu.jpg" alt="">
+                                <img src="pic/ph-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="famous-info">
+                            <h3>綠島 海底郵筒</h3>
+                            <p>在綠島石朗浮潛區的11.5公尺的水下，設置了可愛的豆丁海馬海底郵筒，是目前世界上最深的海底郵筒!</p>
+                        </div>
+                    </div>
+                    <div class="famous-item">
+                        
+                        <div class="famous-pic">
+                            <div class="item">
+                                <img src="pic/gl-1.jpg" alt="">
+                            </div>
+                            <div class="item item-2">
+                                <img src="pic/lu.jpg" alt="">
+                                <img src="pic/ph-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="famous-info">
+                            <h3>綠島 海底郵筒</h3>
+                            <p>在綠島石朗浮潛區的11.5公尺的水下，設置了可愛的豆丁海馬海底郵筒，是目前世界上最深的海底郵筒!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="travel-hito" data-aos="fade-up" data-aos-duration="1500">
+                <h2>秘境潛點</h2>
+                <div class="travel-all">
+                    <div class="travel-hito-main">
+                        <div class="travel-main-pic">
+                            <h3>蘭嶼秘境</h3>
+                            <img src="pic/travel-pic-1.jpg" alt="">
+                        </div>
+                        <div class="travel-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.4394752714943!2d121.61951695013946!3d21.956089985432314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x19c8485ce4b5845e!2zMjHCsDU3JzIxLjkiTiAxMjHCsDM3JzE4LjIiRQ!5e0!3m2!1szh-TW!2stw!4v1666272084173!5m2!1szh-TW!2stw" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="travel-icon">
+                        <div class="travel-icon-item">
+                            <i class="fa-solid fa-ship"></i>
+                            <p>船潛</p>
+                        </div>
+                        <div class="travel-icon-item">
+                            <i class="fa-solid fa-mask sub-icon"></i>
+                            <p>自潛/水肺</p>
+                        </div>
+                        <div class="travel-icon-item">
+                            <i class="fa-solid fa-address-card sub-icon"></i>
+                            <p>ADIA 3以上</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="travel-blog" data-aos="fade-up" data-aos-duration="1500">
+                <div class="travel-blog-content">
+                    <h2>
+                        潛伴日記
+                    </h2>
+                    <p>
+                        探索大海的美妙之餘，紀錄下潛水日記，與潛伴的第一次相遇，哪個潛點讓你怦然心動永生難忘！
+                    </p>
+                    <a href="#">查看更多</a>
+                </div>
+                <div class="travel-blog-pic">
+                    <div class="travel-blog-pic-item">
+                        <img src="pic/travel-blog-pic-1.jpg" alt="">
+                    </div>
+                    <div class="travel-blog-pic-item">
+                        <img src="pic/travel-blog-pic-2.jpg" alt="">
+                    </div>
+                    <div class="travel-blog-pic-item">
+                        <img src="pic/travel-blog-pic-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="travel-focus" data-aos="fade-up" data-aos-duration="1500">
+                <div class="travel-focus-title">
+                    <h2>
+                        特別企劃
+                    </h2>
+                </div>
+                <div class="travel-focus-content">
+                    <div class="travel-focus-pic">
+                        <img src="pic/travel-focus.jpeg" alt="">
+                    </div>
+                    <div class="travel-focus-info">
+                        <div class="travel-focus-info-text">
+                            <h3>菲律賓 潛水天堂</h3>
+                            <p>巨大的海底石峰地形，深度12-35米，是龜島的進階潛點。整個山峰被粉紅色海葵鋪滿，粉紅色小丑魚在裡面棲息。可以看到龜島著名的魚群風暴，成群的梭魚（barracuda）與雀鯛，優雅的神仙魚、還有正在啃老化珊瑚的鸚哥魚。</p>
+                            <p><a href="">
+                                查看更多
+                            </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <footer class="uts-footer">
+                <nav class="footer-nav">
+                    <input type="checkbox" id="li-pull-1st">
+                    <ul class="footer-item">
+                       
+                        <label for="li-pull-1st">
+                            <li>
+                                <h2>自由潛水</h2>
+                                <i class="fa-solid fa-plus"></i>
+                            </li>
+                        </label>
+                        <li><a href="UTS-free-buddy-page.html">尋找潛伴</a></li>
+                        <li><a href="UTS-free-coach-page.html">尋找教練</a></li>
+                        <li><a href="#">證照考試</a></li>
+                        <li><a href="#">活動競賽</a></li>
+                        <li><a href="UTS-pool-page.html">練習場地</a></li>
+                    </ul>
+                    <input type="checkbox" id="li-pull-2nd">
+                    <ul class="footer-item">
+                       
+                        <label for="li-pull-2nd">
+                            <li>
+                                <h2>水肺潛水</h2>
+                                <i class="fa-solid fa-plus"></i>
+                            </li>
+                        </label>
+                     
+                        <li><a href="UTS-scuba-buddy-page.html">尋找潛伴</a></li>
+                        <li><a href="UTS-scuba-coach-page.html">尋找教練</a></li>
+                        <li><a href="#">證照考試</a></li>
+                        <li><a href="#">活動競賽</a></li>
+                        <li><a href="UTS-pool-scuba-page.html">練習場地</a></li>
+                    </ul>
+                    <input type="checkbox" id="li-pull-3rd">
+                    <ul class="footer-item">
+                        <label for="li-pull-3rd">
+                            <li>
+                                <h2>揪團潛水</h2>
+                                <i class="fa-solid fa-plus"></i>
+                            </li>
+                        </label>
+                      
+                        <li><a href="#">一日潛旅</a></li>
+                        <li><a href="#">國內潛旅</a></li>
+                        <li><a href="#">國外潛旅</a></li>
+                        <li><a href="#">團練專區</a></li>
+                        <li><a href="#">主題潛旅</a></li>
+                    </ul>
+                    <input type="checkbox" id="li-pull-4th">
+                    <ul class="footer-item">
+                       
+                        <label for="li-pull-4th">
+                            <li>
+                                <h2>裝備租借</h2>
+                                <i class="fa-solid fa-plus"></i>
+                            </li>
+                        </label>
+                       
+                        <li><a href="#">蛙鞋</a></li>
+                        <li><a href="#">面鏡</a></li>
+                        <li><a href="#">防寒衣</a></li>
+                        <li><a href="#">潛水錶</a></li>
+                        <li><a href="#">浮球</a></li>
+                    </ul>
+                    <input type="checkbox" id="li-pull-5th">
+                    <ul class="footer-item">
+                        <label for="li-pull-5th">
+                            <li>
+                                <h2>潛點介紹</h2>
+                                <i class="fa-solid fa-plus"></i>
+                            </li>
+                        </label>
+                     
+                        <li><a href="#">北台灣</a></li>
+                        <li><a href="#">中台灣</a></li>
+                        <li><a href="#">南台灣</a></li>
+                        <li><a href="#">離島</a></li>
+                        <li><a href="#">國外潛點</a></li>
+                    </ul> 
+                    <input type="checkbox" id="li-pull-6th">
+                    <ul class="footer-item">
+                        <label for="li-pull-6th">
+                            <li>
+                                <h2>潛水百科</h2>
+                                <i class="fa-solid fa-plus"></i>
+                            </li>
+                        </label>
+                        <li><a href="#">自潛知識</a></li>
+                        <li><a href="#">水肺知識</a></li>
+                        <li><a href="#">安全觀念</a></li>
+                        <li><a href="#">競賽項目</a></li>
+                        <li><a href="#">世界紀錄</a></li>
                     </ul>
                 </nav>
-            </div>
-
-
-            <div  class="product-group swiper M-mySwiper">
-                <h2>精選組合</h2>
-                    <div class="swiper-wrapper product-item-list group-multi-mix">
-                        <div class="swiper-slide">   
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>     
-                        <div class="swiper-slide">   
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>    
-                        
-                        <div class="swiper-slide">   
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">   
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>       
-                        <div class="swiper-slide">   
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">   
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>     
-                        <div class="swiper-slide">   
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">   
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
- 
-                       
-                         
-                        
-                    </div>
-                    <br>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-            </div>
-            
-
-
-
-            <div class="container">
-                    <div class="row row-cols-2  row-cols-lg-3 row-cols-xl-4">
-                        <div class="col">
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="group-card">
-           
-                                <div class="card-info">
-                                    <div class="card_pic">
-                                        <a href="UTS-group-buy-page.html" id="page">
-                                            <img src="pic/group-card-1.jpg" alt="free-diving-card-Jack"  >
-                                        </a>
-                                        <i class="fa-solid fa-heart" id="heart"></i>
-                                    </div>
-                                   
-                    
-                                    <div class="group-card-info">
-                                        <div class="group-card-title">
-                                            <h3>八代灣船潛</h3>
-                                            <p>2022.09.30</p>
-                                            <p>開團人數<span>12人</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      
-
-
-
-            
-                    </div>
-            </div>
-
-            <div class="change-page">
-                <ol>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                </ol>
-            </div>
-            
-
-
-
-
-
+        
+                <div class="copyright">
+                    本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。
+                    若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
+                    COPYRIGHT © 2022 UnderTheSea Co.,Ltd. All rights reserved.
+                </div>
+            </footer>
         </div>
-        <footer class="uts-footer">
-            <nav class="footer-nav">
-                <input type="checkbox" id="li-pull-1st">
-                <ul class="footer-item">
-                   
-                    <label for="li-pull-1st">
-                        <li>
-                            <h2>自由潛水</h2>
-                            <i class="fa-solid fa-plus"></i>
-                        </li>
-                    </label>
-                    <li><a href="UTS-free-buddy-page.html">尋找潛伴</a></li>
-                    <li><a href="UTS-free-coach-page.html">尋找教練</a></li>
-                    <li><a href="#">證照考試</a></li>
-                    <li><a href="#">活動競賽</a></li>
-                    <li><a href="UTS-pool-page.html">練習場地</a></li>
-                </ul>
-                <input type="checkbox" id="li-pull-2nd">
-                <ul class="footer-item">
-                   
-                    <label for="li-pull-2nd">
-                        <li>
-                            <h2>水肺潛水</h2>
-                            <i class="fa-solid fa-plus"></i>
-                        </li>
-                    </label>
-                 
-                    <li><a href="UTS-scuba-buddy-page.html">尋找潛伴</a></li>
-                    <li><a href="UTS-scuba-coach-page.html">尋找教練</a></li>
-                    <li><a href="#">證照考試</a></li>
-                    <li><a href="#">活動競賽</a></li>
-                    <li><a href="UTS-pool-scuba-page.html">練習場地</a></li>
-                </ul>
-                <input type="checkbox" id="li-pull-3rd">
-                <ul class="footer-item">
-                    <label for="li-pull-3rd">
-                        <li>
-                            <h2>揪團潛水</h2>
-                            <i class="fa-solid fa-plus"></i>
-                        </li>
-                    </label>
-                  
-                    <li><a href="#">一日潛旅</a></li>
-                    <li><a href="#">國內潛旅</a></li>
-                    <li><a href="#">國外潛旅</a></li>
-                    <li><a href="#">團練專區</a></li>
-                    <li><a href="#">主題潛旅</a></li>
-                </ul>
-                <input type="checkbox" id="li-pull-4th">
-                <ul class="footer-item">
-                   
-                    <label for="li-pull-4th">
-                        <li>
-                            <h2>裝備租借</h2>
-                            <i class="fa-solid fa-plus"></i>
-                        </li>
-                    </label>
-                   
-                    <li><a href="#">蛙鞋</a></li>
-                    <li><a href="#">面鏡</a></li>
-                    <li><a href="#">防寒衣</a></li>
-                    <li><a href="#">潛水錶</a></li>
-                    <li><a href="#">浮球</a></li>
-                </ul>
-                <input type="checkbox" id="li-pull-5th">
-                <ul class="footer-item">
-                    <label for="li-pull-5th">
-                        <li>
-                            <h2>潛點介紹</h2>
-                            <i class="fa-solid fa-plus"></i>
-                        </li>
-                    </label>
-                 
-                    <li><a href="#">北台灣</a></li>
-                    <li><a href="#">中台灣</a></li>
-                    <li><a href="#">南台灣</a></li>
-                    <li><a href="#">離島</a></li>
-                    <li><a href="#">國外潛點</a></li>
-                </ul> 
-                <input type="checkbox" id="li-pull-6th">
-                <ul class="footer-item">
-                    <label for="li-pull-6th">
-                        <li>
-                            <h2>潛水百科</h2>
-                            <i class="fa-solid fa-plus"></i>
-                        </li>
-                    </label>
-                    <li><a href="#">自潛知識</a></li>
-                    <li><a href="#">水肺知識</a></li>
-                    <li><a href="#">安全觀念</a></li>
-                    <li><a href="#">競賽項目</a></li>
-                    <li><a href="#">世界紀錄</a></li>
-                </ul>
-            </nav>
-    
-            <div class="copyright">
-                本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。
-                若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
-                COPYRIGHT © 2022 UnderTheSea Co.,Ltd. All rights reserved.
-            </div>
-        </footer>
+       
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        var swiper = new Swiper(".M-mySwiper", {
-              
-              breakpoints: {
-           
-                    1200: {
-                        slidesPerView: 
-                        4,
-                        spaceBetween: 85,
-                        slidesPerGroup: 4,
-                        width:1200,
-                    },
-
-                  768: {
-                        slidesPerView: 3,
-                        spaceBetween: 50,
-                        slidesPerGroup: 2,
-                        width:768,
-                  }
-  
-              },
-  
-  
-              width:335,
-              slidesPerView: 1,
-              spaceBetween: 20,
-              slidesPerGroup:1,
-              loop: true,
-              loopFillGroupWithBlank: true,
-              pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-              },
-              navigation: {
-                  nextEl: ".swiper-button-next",
-                  prevEl: ".swiper-button-prev",
-  
-              },
-          
-              
-        });
+      AOS.init();
     </script>
 </body>
 
