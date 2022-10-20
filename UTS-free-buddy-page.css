@@ -262,7 +262,7 @@ ul>.main-nav-btn:nth-child(1)>a{
     padding-top: 80px;
 }
 .container{
-    margin:0;
+    margin:auto;
 }
 
 @media screen and (min-width:400px) {

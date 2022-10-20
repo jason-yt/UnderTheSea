@@ -167,7 +167,7 @@
 
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:769px) {
     .title{
         justify-content: space-between;
        z-index: 2;
@@ -390,7 +390,7 @@
     }
      */
  }
- @media screen and (min-width:768px) {
+ @media screen and (min-width:769px) {
     .sub-icon{
         color: #0f1b33;
         font-size: 30px;

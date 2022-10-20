@@ -11,7 +11,7 @@
     
    
  }
- .pool-main-head-title {
+ /* .pool-main-head-title {
  width: fit-content;
  margin: auto;
  height: fit-content;
@@ -22,7 +22,7 @@
     line-height: 600px;
     color:#fff;
   
-}
+} */
 
 .pool-nav>h2{
     font-size: 30px;
@@ -42,7 +42,7 @@
 .pool-main-head{
     background-position: center;
     
-    height: 80vh;
+    height: 40vh;
     background-image: url(pic/pool-head.jpg);
     background-size: cover;
     /* background-attachment: fixed; */
@@ -87,6 +87,19 @@ ul>.main-nav-btn:nth-child(2)>a{
     margin-top:0px ;
 
 }
+@media screen and (min-width:576px) {
+    .pool-main-head{
+        background-position: center;
+        
+        height: 70vh;
+        background-image: url(pic/pool-head.jpg);
+        background-size: cover;
+    
+    
+    }
+   
+ }
+
 
 @media screen and (min-width:768px) {
     /* li:nth-child(3)>.sub-menu a{

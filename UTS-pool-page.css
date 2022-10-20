@@ -11,15 +11,20 @@
    
  }
  .pool-main-head-title {
- width: fit-content;
- margin: auto;
- height: fit-content;
- margin-top: -50px;
+ width: 100%;
+ /* margin: auto; */
+ 
+ /* margin-top: -50px; */
 }
 .pool-main-head h2{
-    font-size: 50px;
-    line-height: 600px;
+    width:fit-content ;
+    font-size: 9vmin;
+    line-height: 40vh;
     color:#fff;
+    font-weight: 800;
+    /* margin-top: -150px; */
+    height: fit-content;
+    margin: auto;
   
 }
 
@@ -41,10 +46,11 @@
 .pool-main-head{
     background-position: center;
     
-    height: 80vh;
+    height: 40vh;
     background-image: url(pic/pool-head.jpg);
     background-size: cover;
-    /* background-attachment: fixed; */
+
+
 }
 .pool-page-main{
     width:100%;
@@ -88,6 +94,18 @@ ul>.main-nav-btn:nth-child(1)>a{
     margin-top:0px ;
 
 }
+ @media screen and (min-width:576px) {
+    .pool-main-head{
+        background-position: center;
+        
+        height: 70vh;
+        background-image: url(pic/pool-head.jpg);
+        background-size: cover;
+    
+    
+    }
+   
+ }
 
 @media screen and (min-width:768px) {
     /* li:nth-child(3)>.sub-menu a{
@@ -95,7 +113,6 @@ ul>.main-nav-btn:nth-child(1)>a{
     } */
 
     .pool-page-main{
-
 
         background-image: url(pool-page-bg.jpg);
 
