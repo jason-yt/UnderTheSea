@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="UTS-footer.css">
     <link rel="icon" href="logo.ico" type="image/x-icon" >
     <title>Under The Sea</title>
+    <script src="jquery-3.6.1.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Oswald:wght@300;400;600&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750;8..144,100,800,750&display=swap');
         *{
@@ -25,6 +26,17 @@
         }
         
     </style>
+    <!-- <script>
+        $(function(){
+            $('#ship').click(function(){
+                if($(this).css('background-color')==rbg(0, 132, 255)){
+                    $('#total-mony').text('$NT'+8800+'#ship.val()')
+                }else{
+                    $('#total-mony').text('$NT'+'#total-mony'-'#ship.val()')
+                }
+            })
+        })
+    </script> -->
 </head>
 <body>
     <header class="uts-header">
@@ -589,43 +601,43 @@
                 <div class="group-product-add">
                     <div class="ship-add add-selet">
                         <h3>船票加購</h3>
-                        <input type="checkbox" id="ship">
+                        <input type="checkbox" id="ship" value="2000">
                         <label for="ship">
                             <span>台東－蘭嶼 來回船票</span>   <span>+NT$2,000</span>
                         </label>
                     </div>
                     <div class="hotel-day add-selet">
                         <h3>加購民宿</h3>
-                        <input type="radio" id="hotel-1" name="hotel-day">
+                        <input type="radio" id="hotel-1" name="hotel-day" value="0">
                         <label for="hotel-1" >
                             <span>不需要加購</span>
                         </label>
-                        <input type="radio" id="hotel-2" name="hotel-day">
+                        <input type="radio" id="hotel-2" name="hotel-day" value="3000">
                         <label for="hotel-2">
                             <span>來潛水 民宿2天1夜</span><span>+NT$3,000</span>
                         </label>
-                        <input type="radio" id="hotel-3" name="hotel-day">
+                        <input type="radio" id="hotel-3" name="hotel-day" value="4500">
                         <label for="hotel-3">
                             <span>來潛水 民宿3天2夜</span><span>+NT$4,500</span>
                         </label>
                     </div>
                     <div class="moto-day add-selet">
                         <h3>加購機車</h3>
-                        <input type="radio" id="moto-1" name="moto-day">
+                        <input type="radio" id="moto-1" name="moto-day" value="0">
                         <label for="moto-1">
                             <span>不需要加購</span>
                         </label>
-                        <input type="radio" id="moto-2"name="moto-day">
+                        <input type="radio" id="moto-2"name="moto-day" value="400">
                         <label for="moto-2">
                             <span>租機車1天</span><span>+NT$400</span>
                         </label>
-                        <input type="radio" id="moto-3" name="moto-day">
+                        <input type="radio" id="moto-3" name="moto-day" value="750">
                         <label for="moto-3">
                             <span>租機車2天</span><span>+NT$750</span>
                         </label>
                     </div>
                     <div class="total">
-                        <p>總共<span>$NT8,800</span></p>
+                        <p>總共<span id="total-mony">$NT8,800</span></p>
                     </div>
                     <div class="buy-btn">
 

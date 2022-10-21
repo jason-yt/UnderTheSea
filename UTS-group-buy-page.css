@@ -88,7 +88,7 @@ header{
 }
 .back-btn{
     position: absolute;
-    left: 20px; 
+    left: 35px; 
     top: 50px;
     color: #fff;
     z-index: 10;
@@ -338,7 +338,12 @@ display: none;
     display: block;
 }
 
+.group-product-main-pic{
+    position: sticky;
+    top: 155px;
+    height: fit-content;
 
+}
 
 @media screen and (min-width:768px) {
     .group-buy-main{

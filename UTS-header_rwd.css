@@ -150,7 +150,11 @@
 #search-switch-close{
     display: none;
 }
-
+.search-bar-close p{
+    cursor: pointer;
+   
+    background-color: transparent;
+}
 .search-bar-close button{
     cursor: pointer;
    
