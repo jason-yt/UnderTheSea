@@ -339,9 +339,8 @@ display: none;
 }
 
 .group-product-main-pic{
-    position: sticky;
-    top: 155px;
-    height: fit-content;
+    position:relative;
+   
 
 }
 
@@ -359,7 +358,12 @@ display: none;
          top:79px;
 
     }
+    .group-product-main-pic{
+        position: sticky;
+        top: 155px;
+        height: fit-content;
     
+    }
  }
 
 

@@ -1,0 +1,366 @@
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+.product-buy-content{
+    position: relative;
+    background-image: url(group-buy-bg.png);
+    background-size:cover ;
+   
+}
+.product-buy-main{
+    display: block;
+    max-width: 1200px;
+    position: relative;
+    /* top:79px; */
+    margin: auto;
+    /* margin-bottom: 300px; */
+}
+.product-pic{
+    width:95%;
+    /* max-height:100%; */
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+
+    
+}
+.back-btn{
+    position: absolute;
+    left: 35px; 
+    top: 50px;
+    color: #fff;
+    z-index: 10;
+}
+
+.fa-chevron-left{
+    font-size: 30px;
+}
+.product-pic>img{
+    width: 100%;
+
+    object-fit: cover;
+    margin-top: 10px;
+
+}
+.product-buy-info{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-bottom:10px ;
+    border-radius: 0px 0px 8px 8px;
+    padding-top: 10px;
+}
+.product-title{
+    width: 80%;
+    margin: auto;
+}
+
+.product-title>h2{
+    font-size: 45px;
+    color: #0f1b33;
+    margin-top: 30px;
+}
+
+
+.prodect-spec{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.qtr-select{
+    display: flex;
+    
+}
+.btn-minus,.btn-plus{
+    cursor:pointer;
+    font-size:7px;
+    display:flex;
+    align-items:center;
+    height: 25px;
+    padding: 0px 5px;
+    border:0px;
+    background-color: #094370;
+    border-radius: 5px 0px 0px 5px;
+    border-right:0;
+    color:#e4f2f7;
+    font-weight: 800;
+}
+.qtr-input{
+    border: 0px;
+    border-radius: 0px;
+    outline: transparent;
+}
+.btn-plus{
+    border-radius: 0px 5px 5px 0px;
+}
+
+.product-select{
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: space-between;
+}
+.color-select >input{
+    display: none;
+}
+.black>span,.white>span,.blue>span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 3px solid  transparent;
+}
+
+.black>span{
+   background-color: #101;
+}
+
+.white>span{
+    background-color: #fff;
+}
+.blue>span{
+    background-color: rgb(0, 139, 225);
+}
+  
+
+
+
+
+#product-pic02,#product-pic03{
+    display: none;
+}
+
+
+.product-info-title{
+    font-size: 18px;
+    color: #094370;
+
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.product-info-title+p{
+    font-size: 15px;
+    color:rgb(47, 52, 56);
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.1px;
+    margin-top:1px;
+}
+.product-info-title+p+p{
+    font-size: 14px;
+    color:rgb(47, 52, 56);
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.1px;
+}
+.product-price p:nth-child(2){
+    margin-top: 8px;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+.product-price p:nth-child(2)+p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.product-select .product-info-title,.date-picker .product-info-title{
+    margin-bottom: 10px;
+}
+.color-select label{
+    margin: 10px;
+
+}
+
+.date-picker>input,.size-select>select,.qtr-select>input{
+    border: 0px;
+    border-radius: 5px;
+    height: 25px;
+    width: 120px;
+    padding: 0px 15px;
+}
+.date-picker>input:focus,.size-select>select:focus,.qtr-select>input:focus{
+    outline: none;
+
+}
+.qtr-select>input{
+    border-radius: 0;
+    width: 10px;
+}
+
+#black:checked+label>span{
+    border: 2.5px solid #165594;
+}
+#white:checked+label>span{
+    border: 2.5px solid #165594;
+}
+#blue:checked+label>span{
+    border: 2.5px solid #165594
+}
+
+.product-part{
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+   
+}
+.rent-info{
+    padding-top:10px;
+    margin-top: 30px;
+    border-top:1.5px dashed rgb(255, 255, 255,.5) ;
+}
+.buy-btn{
+    margin: 50px 0px;
+    background-color: #094370;
+    padding: 20px 50px;
+    color: #e4f2f7;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+
+}
+.buy-btn:hover{
+    background-color:#0084ff;
+   
+}
+.date-picker>input{
+    margin-top: 10px;
+}
+
+
+.main-nav-btn:nth-child(4) >.sub-menu .sub-menu-btn:nth-child(1) a{
+    color: #e4f2f7;
+   }
+.main-nav-btn:nth-child(4) >.sub-menu .sub-menu-btn:nth-child(1) a>i{
+    color: #e4f2f7;
+}
+
+.sec-main-nav>ul>.main-nav-btn{
+    display: none;
+}
+.sec-main-nav>ul>.main-nav-btn ul{
+    display: flex;
+}
+
+.sec-main-nav>ul>li:nth-child(4){
+    display: block;
+}
+
+.product-main-pic{
+    position: relative;
+    
+
+}
+
+
+@media screen and (min-width:768px) {
+    .product-buy-main{
+        display: flex;
+    }
+  ul>.main-nav-btn:nth-child(4)>a{
+        color: #e4f2f7;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .product-buy-main{
+      
+         top:79px;
+
+    }
+    .product-main-pic{
+        position: sticky;
+        top: 155px;
+        height: fit-content;
+    
+    }
+    
+ }
+
+
+
+ .uts-footer{
+    background-color:transparent;
+    /* border-top:1px solid #0f1b33 ; */
+}
+footer{
+    margin-top: 200px;
+    
+}
+
+@media screen and (min-width:768px) {
+    /* li:nth-child(3)>.sub-menu a{
+        color: #fff;
+    } */
+    
+    .sub-icon{
+        color: #0f1b33;
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    .main-nav-btn:hover>.sub-menu{
+        display:none ;
+    }
+    .main-nav-btn:nth-child(4)>.sub-menu{
+        display:flex ;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgba(97, 134, 164, 0.85);
+        /* padding: 10px; */
+        width: 100%;
+        justify-content: center;
+        z-index: 10;
+    }
+    .sub-menu-btn a{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding: 10px 35px;
+        font-size: 14px;
+        font-weight: 350;
+       
+    }
+    .main-nav-btn>.sub-menu a{
+        color: #0f1b33;
+    }
+    /* .main-nav-btn>a:hover >.sub-menu a:hover{
+        color: #e4f2f7;
+    } */
+    ul>.product-btn >a{
+        color:rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    
+    .product-btn>ul>li:nth-child(2) a{
+        color: #e4f2f7;
+        font-weight: 400;
+    }
+    .product-btn>ul>li:nth-child(2) a>i{
+        color: #e4f2f7;
+        
+    }
+    .personal-main-title{
+
+        margin-top:79px ;
+
+    }
+    
+}
+ @media screen and (min-width:997px) {
+    .date-picker>input{
+        margin-top: 0px;
+    }
+    
+ }

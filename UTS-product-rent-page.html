@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/quicksilver" rel="stylesheet">
+    <link rel="stylesheet" href="UTS-header_rwd.css">
+    <link rel="stylesheet" href="UTS-group-card.css">
+    <link rel="stylesheet" href="UTS-prodduct-rent-page.css">
+    <link rel="stylesheet" href="UTS-filter-nav.css">
+    <link rel="stylesheet" href="UTS-footer.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon" >
+    <title>Under The Sea</title>
+    <script src="jquery-3.6.1.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Oswald:wght@300;400;600&family=Roboto&family=Roboto+Flex:opsz,wdth,wght,YTAS@8..144,66.8,1000,750;8..144,97.9,801,800;8..144,100,400,750;8..144,100,800,750&display=swap');
+        *{
+            font-family: "Noto Sans TC", sans-serif, "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;;
+        }
+        
+    </style>
+    <script>
+        $(function(){
+            $("#btn-minus").click(function(){
+                let qtr=Number( $('#qtr-input').val())
+               
+            
+                if (qtr>1){
+                    $("#qtr-input").val(parseInt(qtr)-1);
+                }else{
+                    $('#qtr-input').val("1");
+                }
+            })            
+            $("#btn-plus").click(function(){
+                let qtr=Number( $('#qtr-input').val())
+                if (qtr<5){
+                    $("#qtr-input").val(parseInt(qtr)+1);
+                }else{
+                    $('#qtr-input').val("5");
+                }
+            })                        
+
+        })
+      
+    </script>
+    <script>
+        $(function(){
+            $('#black').click(function(){
+                $('#product-pic01').css({
+                    display:'block',
+                    marginTop:'0px',
+                    paddingTop:'11px',
+                })
+                $('#product-pic02').css({
+                    display:'none',
+                })
+                $('#product-pic03').css({
+                    display:'none',
+                })
+            })
+            $('#white').click(function(){
+                $('#product-pic02').css({
+                    display:'block',
+                    marginTop:'0px',
+                    paddingTop:'11px',
+                })
+                $('#product-pic01').css({
+                    display:'none',
+                })
+                $('#product-pic03').css({
+                    display:'none',
+                })
+            })
+            $('#blue').click(function(){
+                $('#product-pic01').css({
+                    display:'none',
+                })
+                $('#product-pic02').css({
+                    display:'none',
+                })
+                $('#product-pic03').css({
+                    display:'block',
+                    marginTop:'0px',
+                    paddingTop:'11px',
+                })
+            })
+        })
+    </script>
+    <script>
+        $( function() {
+             $( "#from" ).datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 1,
+                orientation:'bottom' ,
+                dateFormat: "yy-mm-dd",
+                minDate: +1,
+                maxDate: "+20D"
+            })
+            $( "#from" ).datepicker( "option", "showAnim", "slideDown" )
+            
+
+             $( "#to" ).datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 1,
+                orientation:'bottom' ,
+                dateFormat: "yy-mm-dd",
+                minDate: +2,
+                maxDate: "+21D",
+            })
+            $( "#to" ).datepicker( "option", "showAnim", "slideDown" )
+
+        } );
+    </script>
+</head>
+<body>
+    <header class="uts-header">
+    
+        <input type="checkbox" id="menu-switch">
+       
+        <div class="title">
+          
+            <label  for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+            </label>
+    
+            <div class="logo">
+                <h1>
+                    <a href="UTS-index.html"><img src="UTS_logo.png" alt="UTS_logo"></a>
+                </h1>
+            </div>
+    
+            <nav class="main-nav">  
+                    <form action="" class="search">
+                      
+                        <input type="" name="search" id="search" placeholder="立即找潛伴">
+                        <button for=""><i class="fa-solid fa-magnifying-glass"></i></button>
+                       
+                    </form>
+                    <ul>
+                        <li class="main-nav-btn">
+                            <a href="UTS-free-page.html">自由潛水</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-btn">
+                                    <a href="UTS-free-buddy-page.html">
+                                        <i class="fa-solid fa-users sub-icon"></i>
+                                        <span>尋找潛伴</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="UTS-free-coach-page.html">
+    
+                                        <i class="fa-solid fa-user-astronaut sub-icon"></i>
+                                        <span>尋找教練</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-address-card sub-icon"></i>
+                                        <span>證照考試</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                        <span>活動競賽</span>
+                                    </a>
+                                    
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="UTS-pool-list.html">
+                                        <i class="fa-solid fa-water-ladder sub-icon"></i>
+                                        <span>練習場地</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-btn">
+                            <a href="UTS-scuba-page.html">水肺潛水</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-users sub-icon"></i>
+                                        <span>尋找潛伴</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+    
+                                        <i class="fa-solid fa-user-astronaut sub-icon"></i>
+                                        <span>尋找教練</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-address-card sub-icon"></i>
+                                        <span>證照考試</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                        <span>活動競賽</span>
+                                    </a>
+                                    
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-water-ladder sub-icon"></i>
+                                        <span>練習場地</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-btn">
+                            <a href="UTS-group-page.html">揪團潛水</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-car sub-icon"></i>
+                                        <span>一日潛旅</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-ship sub-icon"></i>
+                                        <span>國內潛旅</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-solid fa-plane sub-icon"></i>
+                                        <span>國外潛旅</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-people-roof sub-icon"></i>
+                                        <span>團練專區</span>
+                                    </a>
+                                    
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-solid fa-umbrella-beach sub-icon"></i>
+                                        <span>主題潛旅</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-btn">
+                            <a href="UTS-product-page.html">裝備租借</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-socks sub-icon"></i>
+                                        <span>蛙鞋</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-mask sub-icon"></i>
+                                        <span>面鏡</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-shirt sub-icon"></i>
+                                        <span>防寒衣</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-stopwatch sub-icon"></i>
+                                        <span>潛水錶</span>
+                                    </a>
+                                    
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-circle-dot sub-icon"></i>
+                                        <span>浮球</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-btn">
+                            <a href="UTS-travel-page.html">潛點介紹</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                        <span>北台灣</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                        <span>中台灣</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                        <span>南台灣</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                        <span>離島</span>
+                                    </a>
+                                    
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        
+                                        <i class="fa-solid fa-plane-departure sub-icon"></i>
+                                        <span>國外潛點</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-btn">
+                            <a href="#">潛水百科</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-user-shield sub-icon"></i>
+                                        <span>自潛知識</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-user-shield sub-icon"></i>
+                                        <span>水肺知識</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-water sub-icon"></i>
+                                        <span>安全觀念</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                        <span>競賽項目</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu-btn">
+                                    <a href="#">
+                                        <i class="fa-solid fa-stopwatch sub-icon"></i>
+                                        <span>世界紀錄</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </nav>
+        
+            <label for="search-switch" class="search-desktop">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </label>
+            <input type="checkbox" id="search-switch-close"> 
+            <input type="checkbox" id="search-switch"> 
+            <form action="" class="search-bar">
+               
+                <input type="search" name="search-bar" 
+                id="search" placeholder="立即找潛伴">
+                <button type="submit"  for="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <label for="search" class=search-bar-close>
+                    <button><i class="fa-solid fa-xmark"></i></button>
+                </label>
+            </form>
+            <div class="singup">
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+            </div>
+           
+        </div>
+        <nav class="sec-main-nav">  
+            <!-- <div class="dir-btn">
+                <i class="fa-solid fa-chevron-left" id="btnLeft"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div> -->
+          
+    
+            <ul>
+                <li class="main-nav-btn">
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="UTS-free-buddy-page.html">
+                                <i class="fa-solid fa-users sub-icon"></i>
+                                <span>尋找潛伴</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="UTS-free-coach-page.html">
+    
+                                <i class="fa-solid fa-user-astronaut sub-icon"></i>
+                                <span>尋找教練</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-address-card sub-icon"></i>
+                                <span>證照考試</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                <span>活動競賽</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="UTS-pool-page.html">
+                                <i class="fa-solid fa-water-ladder sub-icon"></i>
+                                <span>練習場地</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-users sub-icon"></i>
+                                <span>尋找潛伴</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+    
+                                <i class="fa-solid fa-user-astronaut sub-icon"></i>
+                                <span>尋找教練</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-address-card sub-icon"></i>
+                                <span>證照考試</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                <span>活動競賽</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-water-ladder sub-icon"></i>
+                                <span>練習場地</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-car sub-icon"></i>
+                                <span>一日潛旅</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-ship sub-icon"></i>
+                                <span>國內潛旅</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-sharp fa-solid fa-plane sub-icon"></i>
+                                <span>國外潛旅</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-people-roof sub-icon"></i>
+                                <span>團練專區</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-sharp fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>主題潛旅</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+              
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-socks sub-icon"></i>
+                                <span>蛙鞋</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-mask sub-icon"></i>
+                                <span>面鏡</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-shirt sub-icon"></i>
+                                <span>防寒衣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-stopwatch sub-icon"></i>
+                                <span>潛水錶</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-circle-dot sub-icon"></i>
+                                <span>浮球</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">
+                
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>北台灣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>中台灣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>南台灣</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-umbrella-beach sub-icon"></i>
+                                <span>離島</span>
+                            </a>
+                            
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                
+                                <i class="fa-solid fa-plane-departure sub-icon"></i>
+                                <span>國外潛點</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav-btn">        
+                    <ul class="sub-menu wrap">
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-user-shield sub-icon"></i>
+                                <span>自潛知識</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-user-shield sub-icon"></i>
+                                <span>水肺知識</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-water sub-icon"></i>
+                                <span>安全觀念</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-person-swimming sub-icon"></i>
+                                <span>競賽項目</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a href="#">
+                                <i class="fa-solid fa-stopwatch sub-icon"></i>
+                                <span>世界紀錄</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+       
+    
+     
+    </header>
+
+
+
+    <div class="product-buy-content">
+        <div class="product-buy-main">
+            <div class="product-main-pic">
+                <div class="back-btn">
+                    <a href="javascript:history.back()">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                </div>
+                <div class="product-pic">
+                    <img id="product-pic03" src="pic/product-pic-8.jpg" alt="">
+                    <img id="product-pic01" src="pic/product-pic-7.jpg" alt="">
+                    <img id="product-pic02" src="pic/product-pic-6.jpg" alt="">
+                </div>
+            </div>
+            <div class="product-buy-info">
+                <div class="product-title">
+                    <h2>經典碳纖長蛙</h2>
+
+                </div>
+               
+                <div class="product-info-content">
+
+                    <div class="product-info-item product-part">
+                        <p class="product-info-title">產品特色</p>
+                        <p>FREEDOM 專為初學者為出發點的特別設計款，重量非常輕盈，讓你在水中移動時，感受不到阻力。</p>
+                    </div>
+
+                    <div class="prodect-spec product-part">
+                        <div class="product-info-spec">
+                            <p class="product-info-title">長度</p>
+                            <p>76 cm</p>
+                        </div>
+                        <div class="product-info-spec">
+                            <p class="product-info-title">重量</p>
+                            <p>190g</p>
+                        </div>
+                        <div class="product-info-spec">
+                            <p class="product-info-title">寬度</p>
+                            <p>19.5 cm</p>
+                        </div>
+                    </div>
+                   
+                 
+                   
+                    <div class="product-select product-part">
+                            <div class="color-select">
+                                <p class="product-info-title">商品顏色</p>
+                                <input type="radio" name="color" id="black">
+                                
+                                <label class="black"  for="black">
+                                    <span></span>
+                                </label>
+                            
+                                <input type="radio" name="color" id="white">
+                                <label class="white" for="white">
+                                    <span></span>
+                                </label>
+                                <input type="radio" name="color" id="blue">
+                                <label class="blue" for="blue">
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="size-select">
+                                <p class="product-info-title">商品尺寸</p>
+                                <select for="">
+                                    <option value="">請選擇尺寸</option>
+                                    <option value="">36-38</option>
+                                    <option value="">38-40</option>
+                                    <option value="">40-42</option>
+                                </select>
+                                
+                            
+                            </div>
+                            <div class="qtr-s">
+                                <p class="product-info-title">租借數量</p>
+                                <div class="qtr-select">
+                                
+                                    <div class="btn-minus" id="btn-minus">
+                                    －
+                                    </div>
+                                    <input id="qtr-input" type="text" value="1" min="1"  max="5"/>
+                                    <div class="btn-plus" id="btn-plus">    ＋</div>
+                                </div>
+                            </div>
+                    </div>
+                  
+                    <div class="date-picker product-part">
+                        <p class="product-info-title">租借時間</p>
+                        <label for="from"></label>
+                        <input type="text" id="from" name="from" autocomplete="off">
+                        <label for="to">到</label>
+                        <input type="text" id="to" name="to" autocomplete="off">
+                        </input>
+                    </div>
+                    <div class="product-price product-part">
+                        <p class="product-info-title">租借價格</p>
+                        <p>$NT800/天</p>
+                    </div>
+
+                    <div class="rent-info product-part">
+                        <p class="product-info-title">租借規則</p>
+                        <p>
+                            <span>可預約取物期間，租借前一日晚上至當日</span>
+                            <br>
+                            <span>最晚應歸還期限，租借到期當日 21:00前</span>
+                        </p>
+                    </div>
+                    <div class="product-schedule product-part">
+                        <p class="product-info-title">注意事項</p>
+                       
+                            <p>1.視數量收押金,歸還全額退回
+                            <br>
+                            <span>2.遺失與非正常損傷照價賠償</span>
+                            <br>
+                            <span>3.逾時歸還以半日為單位收費</span>
+                            <br>
+                            <span>4.若因個人因素取消恕不退訂</span>
+                            <br>
+                         
+                        </p>
+                    </div>
+
+                    <div class="product-buy-btn product-part">
+                        <p class="buy-btn">加入租借預約</p>
+                    </div>
+                    
+                </div>
+         
+                
+            </div>
+        </div>
+        <footer class="uts-footer">
+            <nav class="footer-nav">
+                <input type="checkbox" id="li-pull-1st">
+                <ul class="footer-item">
+                   
+                    <label for="li-pull-1st">
+                        <li>
+                            <h2>自由潛水</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                    <li><a href="UTS-free-buddy-page.html">尋找潛伴</a></li>
+                    <li><a href="UTS-free-coach-page.html">尋找教練</a></li>
+                    <li><a href="#">證照考試</a></li>
+                    <li><a href="#">活動競賽</a></li>
+                    <li><a href="UTS-pool-page.html">練習場地</a></li>
+                </ul>
+                <input type="checkbox" id="li-pull-2nd">
+                <ul class="footer-item">
+                   
+                    <label for="li-pull-2nd">
+                        <li>
+                            <h2>水肺潛水</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                 
+                    <li><a href="UTS-scuba-buddy-page.html">尋找潛伴</a></li>
+                    <li><a href="UTS-scuba-coach-page.html">尋找教練</a></li>
+                    <li><a href="#">證照考試</a></li>
+                    <li><a href="#">活動競賽</a></li>
+                    <li><a href="UTS-pool-scuba-page.html">練習場地</a></li>
+                </ul>
+                <input type="checkbox" id="li-pull-3rd">
+                <ul class="footer-item">
+                    <label for="li-pull-3rd">
+                        <li>
+                            <h2>揪團潛水</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                  
+                    <li><a href="#">一日潛旅</a></li>
+                    <li><a href="#">國內潛旅</a></li>
+                    <li><a href="#">國外潛旅</a></li>
+                    <li><a href="#">團練專區</a></li>
+                    <li><a href="#">主題潛旅</a></li>
+                </ul>
+                <input type="checkbox" id="li-pull-4th">
+                <ul class="footer-item">
+                   
+                    <label for="li-pull-4th">
+                        <li>
+                            <h2>裝備租借</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                   
+                    <li><a href="#">蛙鞋</a></li>
+                    <li><a href="#">面鏡</a></li>
+                    <li><a href="#">防寒衣</a></li>
+                    <li><a href="#">潛水錶</a></li>
+                    <li><a href="#">浮球</a></li>
+                </ul>
+                <input type="checkbox" id="li-pull-5th">
+                <ul class="footer-item">
+                    <label for="li-pull-5th">
+                        <li>
+                            <h2>潛點介紹</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                 
+                    <li><a href="#">北台灣</a></li>
+                    <li><a href="#">中台灣</a></li>
+                    <li><a href="#">南台灣</a></li>
+                    <li><a href="#">離島</a></li>
+                    <li><a href="#">國外潛點</a></li>
+                </ul> 
+                <input type="checkbox" id="li-pull-6th">
+                <ul class="footer-item">
+                    <label for="li-pull-6th">
+                        <li>
+                            <h2>潛水百科</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </label>
+                    <li><a href="#">自潛知識</a></li>
+                    <li><a href="#">水肺知識</a></li>
+                    <li><a href="#">安全觀念</a></li>
+                    <li><a href="#">競賽項目</a></li>
+                    <li><a href="#">世界紀錄</a></li>
+                </ul>
+            </nav>
+    
+            <div class="copyright">
+                本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。
+                若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
+                COPYRIGHT © 2022 UnderTheSea Co.,Ltd. All rights reserved.
+            </div>
+        </footer>
+    </div>
+       
+   
+    
+    
+</body>
+</html>
