@@ -11,43 +11,6 @@ html{
     transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1);
     
 }
-
-
-#preloader {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0%;
-    top: 0%;
-    background-color: rgb(170, 208, 227);
-    z-index: 9999;
-  }
-#status {
-    position: fixed;
-    width:200px;
-    height: 200px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-
-
-}
-.logoPic{
-    width: 160px;
-    height: 160px;
-    
-    margin: auto;
-    margin-top: 20px;
-}
-#status img {
-    width: 100%;
-    height: 100%;
-    object-position: center;
-    object-fit: cover;
-}
-
 .uts-title{
     min-height: 100vh;
     min-width: 100%;
@@ -97,7 +60,7 @@ html{
     max-width: 100%;
     background-image: url(index-bg-rwd.jpg);
     background-size: cover;
-    background-position:top ;
+    background-position:center ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,11 +70,11 @@ html{
 }
 .animation-content{
     position: absolute;
-    /* width: 30%; */
-    height: 90%;
+    width: 30%;
+    height: 7280px;
     text-align: center;
     opacity: 1;
-    right: 5%;
+    right: 0;
     /* background-color: #fff; */
    
 }
@@ -120,7 +83,7 @@ html{
 .animation-content>img{
     position: sticky;
     top:140px;
-    width: 75px;
+    width: 80px;
     margin: auto;
 }
 .bubble-pic-content>h2{
@@ -135,7 +98,6 @@ html{
     color: rgba(255, 255, 255, 0.25);
     letter-spacing:1px;
     word-spacing: 20px; 
-    margin-left: 5%;
     /* -webkit-text-stroke:1.5px  rgba(255, 255, 255, 0.3); */
     /* line-height: 180px; */
 }
@@ -150,7 +112,6 @@ html{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* margin-left: 5%; */
 
 }
 .bubble-group-part{
@@ -159,23 +120,22 @@ html{
     justify-content: space-evenly;
     gap: 10px;
     margin-top: 50px;
-    /* margin-left: 5%; */
 }
 
 
 
 .freediving-content{
-    margin: auto;
+    margin-right: auto;
     margin-top: 100px;
     border-top:2.54px dotted rgb(255, 255, 255,.5);
-    width: 380px;
+    width: 100%;
     padding-top:50px ;
 }
 .scubadiving-content{
-    margin: auto;
+    margin-right: auto;
     margin-top: 100px;
     border-top:2.54px dotted rgb(255, 255, 255,.5);
-    width: 380px;
+    width: 100%;
     padding-top:50px ;
     margin-bottom: 200px;
 }
@@ -250,29 +210,13 @@ html{
 .uts-footer{
     width: 100%;
 }
-
-
-@keyframes bubble{
-    0% { scale:100% ; }
-    50% { scale:120% ;}
-    100% { scale:100%  }
-}
-
-@keyframes opacity{
-    0% { opacity:0.6 ; }
-    50% { opacity:0.2; }
-    100% { opacity:0.6;  }
-}
-
-
-
- /* @media screen and (min-width:430px) {
+@media screen and (min-width:485px) {
+   
     .animation-content{
-    
-        right: 5%;
-     
+      height: 6850px;
     }
- } */
+    
+ }
 
 @media screen and (max-width:576px) {
     .cover-logo img{
@@ -299,10 +243,10 @@ html{
     }
 
     .animation-content{
-        margin: auto;
-        width: 40%;
-        /* left: 35%; */
-        right: 10%;
+      margin: auto;
+      width: 40%;
+      left: 35%;
+      height: 6780px;
     }
     
     
@@ -315,49 +259,13 @@ html{
  }
 
 @media screen and (min-width:769px) {
-    .bubble-a,.bubble-b,.bubble-c,.bubble-d,.bubble-e,.bubble-f{
-
-        animation-name: bubble;   
-        animation-duration: 5s;   
-        animation-iteration-count: infinite; 
-    }
-    .bubble-a>.bubble,.bubble-b>.bubble,.bubble-c>.bubble,.bubble-d>.bubble,.bubble-e>.bubble,.bubble-f>.bubble{
-    
-        animation-name: opacity;   
-        animation-duration: 5s;   
-        animation-iteration-count: infinite; 
-    }
-    .bubble-a>.bubble,.bubble-a{
-        animation-delay: 1s;
-    }
-    .bubble-b>.bubble,.bubble-b{
-        animation-delay: 3s;
-    }
-    .bubble-c>.bubble,.bubble-c{
-        animation-delay: 1.5s;
-    }
-    .bubble-d>.bubble,.bubble-d{
-        animation-delay: 4s;
-    }
-    .bubble-e>.bubble,.bubble-e{
-        animation-delay: 2s;
-    }
-    .bubble-f>.bubble,.bubble-f{
-        animation-delay: 3.5s;
-    }
-
-
     .freediving-content{
         margin: auto;
         margin-top: 100px;
-        width: 100%;
-        max-width: 1200px;
     }
     .scubadiving-content{
         margin: auto;
         margin-top: 100px;
-        width: 100%;
-        max-width: 1200px;
     }
     .free-intro-main,.scuba-intro-main{
         position: absolute;
@@ -436,24 +344,17 @@ html{
     .animation-content{
         height: 88%;
         left: 0;
-        right: 0;
-    }
-    .bubble-pic-content>h2{
-       width: fit-content;
-        /* margin: auto; */
-        /* -webkit-text-stroke:1.5px  rgba(255, 255, 255, 0.3); */
-        /* line-height: 180px; */
     }
   
-    
 }
- @media screen and (min-width:829px) {
-    .bubble-pic-content>h2 {
-       
-        margin: auto;
-      
+ /* @media screen and (min-width:993px) {
+    .G-mySwiper{
+        max-width: 300px;
     }
- }
+    .G-cards{
+        width:800px;
+    }
+ } */
 
 
  @media screen and (min-width:1024px) {

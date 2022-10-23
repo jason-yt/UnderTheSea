@@ -85,7 +85,7 @@
 
 
  @media screen and (min-width:1024px) {
-    .bubble-pic:hover{
+    /* .bubble-pic:hover{
         transform: scale(150%);
         transition: transform 1s ;
     }
@@ -96,7 +96,7 @@
     .bubble-pic:hover .bubble-text{
         opacity: 1;
         transition: opacity 1s;
-    }
+    } */
     .bubble{
         opacity: 0.6;
         transition: opacity 1s;
