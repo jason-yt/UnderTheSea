@@ -26,17 +26,62 @@
         }
         
     </style>
-    <!-- <script>
+    <script>
         $(function(){
+                let shipVal=0; 
+                let hotelVal=0;
+                let motoVal=0;
+                let money=8800;
+                let ship= $('#ship').val();
+                let hotel1=$('#hotel-1').val();
+                let hotel2=$('#hotel-2').val();
+                let hotel3=$('#hotel-3').val();
+                let moto1=$('#moto-1').val();
+                let moto2=$('#moto-2').val();
+                let moto3=$('#moto-3').val();
+                
             $('#ship').click(function(){
-                if($(this).css('background-color')==rbg(0, 132, 255)){
-                    $('#total-mony').text('$NT'+8800+'#ship.val()')
-                }else{
-                    $('#total-mony').text('$NT'+'#total-mony'-'#ship.val()')
+
+                if($(this).is(":checked")==true){
+                     shipVal=parseInt(ship)
+                }else{ 
+                     shipVal=parseInt(0)
                 }
             })
+            
+
+            $('input[type=radio][name="hotel-day"]').change(function() {
+                if($(this).val()==hotel1){
+                     hotelVal=parseInt(hotel1) 
+                }else if($(this).val()==hotel2){
+                     hotelVal=parseInt(hotel2) 
+                     
+                }else if($(this).val()==hotel3){
+                     hotelVal=parseInt(hotel3) 
+                }
+                
+            })
+            
+            $('input[type=radio][name="moto-day"]').change(function() {
+                if($(this).val()==moto1){
+                     motoVal=parseInt(moto1) 
+                }else if($(this).val()==moto2){
+                     motoVal=parseInt(moto2) 
+                     
+                }else if($(this).val()==moto3){
+                     motoVal=parseInt(moto3) 
+                }
+                
+            })
+
+            $('.group-product-add').change(function(){
+                $('#total-mony').text('$NT'+(money+shipVal+hotelVal+motoVal))
+            })
+           
+       
+
         })
-    </script> -->
+    </script>
 </head>
 <body>
     <header class="uts-header">
