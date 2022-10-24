@@ -4,6 +4,8 @@ header{
     top: 0;
     z-index: 20;
 }
+
+
 .product-buy-content{
     position: relative;
     background-image: url(group-buy-bg.png);
@@ -261,7 +263,15 @@ header{
     
 
 }
-
+.fa-chevron-left{
+    color: #094370;
+}
+input {
+    -webkit-appearance: none;  
+    -moz-appearance: none;    
+    appearance: none;
+    color: #0f1b33;
+}
 
 @media screen and (min-width:768px) {
     .product-buy-main{
