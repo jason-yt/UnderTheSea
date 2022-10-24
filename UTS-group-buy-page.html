@@ -31,7 +31,7 @@
                 let shipVal=0; 
                 let hotelVal=0;
                 let motoVal=0;
-                let money=8800;
+                let money=2600;
                 let ship= $('#ship').val();
                 let hotel1=$('#hotel-1').val();
                 let hotel2=$('#hotel-2').val();
@@ -75,7 +75,7 @@
             })
 
             $('.group-product-add').change(function(){
-                $('#total-mony').text('$NT'+(money+shipVal+hotelVal+motoVal))
+                $('#total-mony').text('$NT'+(money+shipVal+hotelVal+motoVal).toLocaleString('en-US'))
             })
            
        
@@ -623,7 +623,7 @@
                     </div>
                     <div class="group-price">
                         <p class="product-info-title">行程費用</p>
-                        <p>$NT3,000</p>
+                        <p>$NT2,600</p>
                         <p>*行程費用:包含蘭嶼船隻、潛導、浮球、責任險與活動保險</p>
                     </div>
                     <div class="group-schedule">
@@ -682,7 +682,7 @@
                         </label>
                     </div>
                     <div class="total">
-                        <p>總共<span id="total-mony">$NT8,800</span></p>
+                        <p>總共<span id="total-mony">$NT2,600</span></p>
                     </div>
                     <div class="buy-btn">
 
