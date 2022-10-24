@@ -132,7 +132,7 @@ html{
     text-align: left;
     word-break: normal;
     padding-top: 320px;
-    color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.35);
     letter-spacing:1px;
     word-spacing: 20px; 
     margin-left: 5%;
@@ -400,6 +400,9 @@ html{
         transform:scaleY(120%);
         line-height: 150px;
 
+    }
+    .free-intro-text-bg p{
+        color: rgb(255, 255, 255,.35);
     }
 
     .G-cards{
