@@ -514,8 +514,9 @@ html{
 
     }
     .buddycard-flex{
+        width: 100%;
+        max-width: 1200px;
         
-        width: 1200px;
        
 
     }
@@ -525,12 +526,13 @@ html{
     }
 
     .G-cards{
-       
-        width: 1200px;
+        width: 100%;
+        max-width: 1200px;
 
     }
     .bubble-group{
-        width: 1200px;
+        width: 100%;
+        max-width: 1200px;
         
     }
     .bubble-group-part{
